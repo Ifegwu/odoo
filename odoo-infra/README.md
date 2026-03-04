@@ -5,7 +5,7 @@ Oracle VM used for n8n, exposed via nginx and Let's Encrypt TLS.
 
 ## Target Domain
 
-- `erp.healtmate.live` (configurable via `ODOO_DOMAIN`)
+- `erp.healthmate.live` (configurable via `ODOO_DOMAIN`)
 
 ## Components
 

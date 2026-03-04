@@ -20,6 +20,13 @@ require_env "ODOO_POSTGRES_PASSWORD"
 require_env "ODOO_POSTGRES_DB"
 require_env "ODOO_ADMIN_PASSWORD"
 
+log "Validating DNS for ${ODOO_DOMAIN}"
+if ! getent hosts "$ODOO_DOMAIN" >/dev/null 2>&1; then
+  echo "Domain ${ODOO_DOMAIN} does not resolve (NXDOMAIN or missing DNS record)." >&2
+  echo "Create an A/AAAA record for ${ODOO_DOMAIN} to this VM and rerun deployment." >&2
+  exit 1
+fi
+
 DEPLOY_ROOT="/home/ubuntu/odoo-prod"
 TMP_ROOT="/tmp/odoo-infra"
 NGINX_TEMPLATE="$TMP_ROOT/nginx/odoo.conf.template"
