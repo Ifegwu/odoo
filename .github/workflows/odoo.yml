@@ -47,6 +47,7 @@ jobs:
             ODOO_POSTGRES_USER
             ODOO_POSTGRES_PASSWORD
             ODOO_POSTGRES_DB
+            ODOO_ADMIN_EMAIL
             ODOO_ADMIN_PASSWORD
           )
           for k in "${required[@]}"; do
@@ -62,6 +63,7 @@ jobs:
           ODOO_POSTGRES_USER: ${{ secrets.ODOO_POSTGRES_USER }}
           ODOO_POSTGRES_PASSWORD: ${{ secrets.ODOO_POSTGRES_PASSWORD }}
           ODOO_POSTGRES_DB: ${{ secrets.ODOO_POSTGRES_DB }}
+          ODOO_ADMIN_EMAIL: ${{ secrets.ODOO_ADMIN_EMAIL }}
           ODOO_ADMIN_PASSWORD: ${{ secrets.ODOO_ADMIN_PASSWORD }}
 
       - name: Setup SSH key
@@ -100,6 +102,7 @@ jobs:
               printf 'ODOO_POSTGRES_USER=%s\n' "${{ secrets.ODOO_POSTGRES_USER }}"
               printf 'ODOO_POSTGRES_PASSWORD=%s\n' "${{ secrets.ODOO_POSTGRES_PASSWORD }}"
               printf 'ODOO_POSTGRES_DB=%s\n' "${{ secrets.ODOO_POSTGRES_DB }}"
+              printf 'ODOO_ADMIN_EMAIL=%s\n' "${{ secrets.ODOO_ADMIN_EMAIL }}"
               printf 'ODOO_ADMIN_PASSWORD=%s\n' "${{ secrets.ODOO_ADMIN_PASSWORD }}"
             } | sha256sum | awk '{print $1}'
           )"
@@ -153,6 +156,7 @@ jobs:
           ODOO_POSTGRES_USER=${{ secrets.ODOO_POSTGRES_USER }}
           ODOO_POSTGRES_PASSWORD=${{ secrets.ODOO_POSTGRES_PASSWORD }}
           ODOO_POSTGRES_DB=${{ secrets.ODOO_POSTGRES_DB }}
+          ODOO_ADMIN_EMAIL=${{ secrets.ODOO_ADMIN_EMAIL }}
           ODOO_ADMIN_PASSWORD=${{ secrets.ODOO_ADMIN_PASSWORD }}
           EOF
           chmod 600 /tmp/odoo-infra/.deploy.env

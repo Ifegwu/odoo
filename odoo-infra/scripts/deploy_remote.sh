@@ -18,6 +18,7 @@ require_env "ODOO_LETSENCRYPT_EMAIL"
 require_env "ODOO_POSTGRES_USER"
 require_env "ODOO_POSTGRES_PASSWORD"
 require_env "ODOO_POSTGRES_DB"
+require_env "ODOO_ADMIN_EMAIL"
 require_env "ODOO_ADMIN_PASSWORD"
 
 log "Validating DNS for ${ODOO_DOMAIN}"
@@ -75,6 +76,7 @@ ODOO_LETSENCRYPT_EMAIL=${ODOO_LETSENCRYPT_EMAIL}
 ODOO_POSTGRES_USER=${ODOO_POSTGRES_USER}
 ODOO_POSTGRES_PASSWORD=${ODOO_POSTGRES_PASSWORD}
 ODOO_POSTGRES_DB=${ODOO_POSTGRES_DB}
+ODOO_ADMIN_EMAIL=${ODOO_ADMIN_EMAIL}
 ODOO_ADMIN_PASSWORD=${ODOO_ADMIN_PASSWORD}
 EOF
 chmod 600 "$DEPLOY_ROOT/.env"
@@ -117,6 +119,24 @@ if [[ "$HAS_BASE_TABLE" != "t" ]]; then
     --stop-after-init
   sudo docker compose up -d odoo
 fi
+
+log "Ensuring Odoo admin login uses ${ODOO_ADMIN_EMAIL}"
+sudo docker compose run --rm -T odoo odoo shell -d "$ODOO_POSTGRES_DB" <<'PY'
+import os
+
+admin_email = os.environ.get("ODOO_ADMIN_EMAIL")
+admin_password = os.environ.get("ODOO_ADMIN_PASSWORD")
+admin_user = env["res.users"].sudo().browse(2)
+if admin_user.exists():
+    admin_user.write({"login": admin_email, "email": admin_email})
+    admin_user._set_password(admin_password)
+    env.cr.commit()
+    print(f"Admin user updated: {admin_email}")
+else:
+    raise RuntimeError("Admin user (id=2) not found in database.")
+PY
+
+sudo docker compose up -d odoo
 
 log "Waiting for Odoo service to accept HTTP traffic on 127.0.0.1:8069"
 ATTEMPTS=24

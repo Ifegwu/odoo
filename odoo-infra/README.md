@@ -42,6 +42,7 @@ This workflow:
 - `ODOO_POSTGRES_USER`
 - `ODOO_POSTGRES_PASSWORD`
 - `ODOO_POSTGRES_DB`
+- `ODOO_ADMIN_EMAIL`
 - `ODOO_ADMIN_PASSWORD`
 
 ## PostgreSQL isolation from n8n
