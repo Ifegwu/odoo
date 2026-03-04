@@ -82,10 +82,40 @@ chmod 600 "$DEPLOY_ROOT/.env"
 log "Installing compose file"
 cp "$COMPOSE_TEMPLATE" "$DEPLOY_ROOT/docker-compose.yml"
 
+log "Writing Odoo configuration file"
+cat > "$DEPLOY_ROOT/odoo.conf" <<EOF
+[options]
+admin_passwd = ${ODOO_ADMIN_PASSWORD}
+db_host = db
+db_port = 5432
+db_user = ${ODOO_POSTGRES_USER}
+db_password = ${ODOO_POSTGRES_PASSWORD}
+proxy_mode = True
+EOF
+chmod 600 "$DEPLOY_ROOT/odoo.conf"
+
 log "Starting Odoo stack"
 cd "$DEPLOY_ROOT"
 sudo docker compose pull
 sudo docker compose up -d --remove-orphans
+
+log "Waiting for Odoo service to accept HTTP traffic on 127.0.0.1:8069"
+ATTEMPTS=24
+SLEEP_SECONDS=5
+for i in $(seq 1 "$ATTEMPTS"); do
+  CODE="$(curl -sS -o /dev/null -w "%{http_code}" --max-time 10 http://127.0.0.1:8069/ || true)"
+  if [[ "$CODE" != "000" ]]; then
+    log "Odoo upstream is reachable (HTTP $CODE)"
+    break
+  fi
+  if [[ "$i" -eq "$ATTEMPTS" ]]; then
+    echo "Odoo did not become reachable on 127.0.0.1:8069 in time." >&2
+    sudo docker compose ps >&2 || true
+    sudo docker logs --tail 200 odoo-app >&2 || true
+    exit 1
+  fi
+  sleep "$SLEEP_SECONDS"
+done
 
 log "Configuring nginx site"
 sudo cp "$NGINX_TEMPLATE" /etc/nginx/sites-available/odoo
