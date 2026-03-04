@@ -1,0 +1,196 @@
+name: Odoo Infrastructure Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_deploy:
+        description: "Force deployment even when fingerprint matches"
+        required: false
+        default: "true"
+        type: choice
+        options:
+          - "false"
+          - "true"
+  push:
+    branches:
+      - "**"
+    paths:
+      - "odoo-infra/**"
+      - ".github/workflows/odoo.yml"
+      - "!README.md"
+      - "!odoo-infra/README.md"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: Production
+    timeout-minutes: 45
+    permissions:
+      contents: read
+    env:
+      ORACLE_HOST: ${{ secrets.ORACLE_HOST }}
+      ORACLE_USER: ${{ secrets.ORACLE_USER }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate required secrets
+        run: |
+          set -euo pipefail
+          required=(
+            ORACLE_HOST
+            ORACLE_USER
+            ORACLE_SSH_PRIVATE_KEY
+            ODOO_DOMAIN
+            ODOO_LETSENCRYPT_EMAIL
+            ODOO_POSTGRES_USER
+            ODOO_POSTGRES_PASSWORD
+            ODOO_POSTGRES_DB
+            ODOO_ADMIN_PASSWORD
+          )
+          for k in "${required[@]}"; do
+            if [[ -z "${!k:-}" ]]; then
+              echo "Missing secret: $k" >&2
+              exit 1
+            fi
+          done
+        env:
+          ORACLE_SSH_PRIVATE_KEY: ${{ secrets.ORACLE_SSH_PRIVATE_KEY }}
+          ODOO_DOMAIN: ${{ secrets.ODOO_DOMAIN }}
+          ODOO_LETSENCRYPT_EMAIL: ${{ secrets.ODOO_LETSENCRYPT_EMAIL }}
+          ODOO_POSTGRES_USER: ${{ secrets.ODOO_POSTGRES_USER }}
+          ODOO_POSTGRES_PASSWORD: ${{ secrets.ODOO_POSTGRES_PASSWORD }}
+          ODOO_POSTGRES_DB: ${{ secrets.ODOO_POSTGRES_DB }}
+          ODOO_ADMIN_PASSWORD: ${{ secrets.ODOO_ADMIN_PASSWORD }}
+
+      - name: Setup SSH key
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          cat > ~/.ssh/oracle_odoo_key <<'EOF'
+          ${{ secrets.ORACLE_SSH_PRIVATE_KEY }}
+          EOF
+          chmod 600 ~/.ssh/oracle_odoo_key
+          ssh-keyscan -H "$ORACLE_HOST" >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Compute desired configuration fingerprint
+        id: desired_fingerprint
+        run: |
+          set -euo pipefail
+          LOCAL_HASH="$(
+            {
+              find odoo-infra -type f ! -name 'README.md' -print0 | sort -z | xargs -0 sha256sum
+              printf 'ODOO_DOMAIN=%s\n' "${{ secrets.ODOO_DOMAIN }}"
+              printf 'ODOO_LETSENCRYPT_EMAIL=%s\n' "${{ secrets.ODOO_LETSENCRYPT_EMAIL }}"
+              printf 'ODOO_POSTGRES_USER=%s\n' "${{ secrets.ODOO_POSTGRES_USER }}"
+              printf 'ODOO_POSTGRES_PASSWORD=%s\n' "${{ secrets.ODOO_POSTGRES_PASSWORD }}"
+              printf 'ODOO_POSTGRES_DB=%s\n' "${{ secrets.ODOO_POSTGRES_DB }}"
+              printf 'ODOO_ADMIN_PASSWORD=%s\n' "${{ secrets.ODOO_ADMIN_PASSWORD }}"
+            } | sha256sum | awk '{print $1}'
+          )"
+          echo "hash=$LOCAL_HASH" >> "$GITHUB_OUTPUT"
+
+      - name: Read server configuration fingerprint
+        id: remote_fingerprint
+        run: |
+          set -euo pipefail
+          REMOTE_HASH="$(
+            ssh -i ~/.ssh/oracle_odoo_key "$ORACLE_USER@$ORACLE_HOST" \
+              "cat /home/ubuntu/odoo-prod/.odoo-infra-fingerprint 2>/dev/null || true" \
+              | tr -d '\r\n'
+          )"
+          echo "hash=$REMOTE_HASH" >> "$GITHUB_OUTPUT"
+
+      - name: Compare desired vs remote fingerprint
+        id: compare
+        run: |
+          set -euo pipefail
+          FORCE_DEPLOY="${{ github.event.inputs.force_deploy || 'false' }}"
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" && "$FORCE_DEPLOY" != "false" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Manual run detected (force enabled). Deployment will run."
+          elif [[ "$FORCE_DEPLOY" == "true" ]]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Force deploy requested. Deployment will run."
+          elif [[ "${{ steps.desired_fingerprint.outputs.hash }}" == "${{ steps.remote_fingerprint.outputs.hash }}" ]] \
+             && [[ -n "${{ steps.remote_fingerprint.outputs.hash }}" ]]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No server config drift detected. Skipping deployment."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Config drift detected. Deployment will run."
+          fi
+
+      - name: Upload infrastructure bundle
+        if: steps.compare.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          ssh -i ~/.ssh/oracle_odoo_key "$ORACLE_USER@$ORACLE_HOST" "rm -rf /tmp/odoo-infra && mkdir -p /tmp/odoo-infra"
+          scp -i ~/.ssh/oracle_odoo_key -r ./odoo-infra/* "$ORACLE_USER@$ORACLE_HOST:/tmp/odoo-infra/"
+
+      - name: Run remote deployment
+        if: steps.compare.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          ssh -i ~/.ssh/oracle_odoo_key "$ORACLE_USER@$ORACLE_HOST" "cat > /tmp/odoo-infra/.deploy.env <<'EOF'
+          ODOO_DOMAIN=${{ secrets.ODOO_DOMAIN }}
+          ODOO_LETSENCRYPT_EMAIL=${{ secrets.ODOO_LETSENCRYPT_EMAIL }}
+          ODOO_POSTGRES_USER=${{ secrets.ODOO_POSTGRES_USER }}
+          ODOO_POSTGRES_PASSWORD=${{ secrets.ODOO_POSTGRES_PASSWORD }}
+          ODOO_POSTGRES_DB=${{ secrets.ODOO_POSTGRES_DB }}
+          ODOO_ADMIN_PASSWORD=${{ secrets.ODOO_ADMIN_PASSWORD }}
+          EOF
+          chmod 600 /tmp/odoo-infra/.deploy.env
+          set -a
+          . /tmp/odoo-infra/.deploy.env
+          set +a
+          chmod +x /tmp/odoo-infra/scripts/deploy_remote.sh
+          /tmp/odoo-infra/scripts/deploy_remote.sh
+          printf '%s\n' '${{ steps.desired_fingerprint.outputs.hash }}' > /home/ubuntu/odoo-prod/.odoo-infra-fingerprint
+          chmod 600 /home/ubuntu/odoo-prod/.odoo-infra-fingerprint"
+
+      - name: Verify deployment endpoint
+        if: steps.compare.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          URL="https://${{ secrets.ODOO_DOMAIN }}"
+          ATTEMPTS=18
+          SLEEP_SECONDS=10
+          for i in $(seq 1 "$ATTEMPTS"); do
+            CODE=$(curl --proto '=https' --tlsv1.2 -sS -o /dev/null -w "%{http_code}" --max-time 20 "$URL" || true)
+            echo "Attempt $i/$ATTEMPTS -> HTTP $CODE"
+            if [[ "$CODE" == "200" || "$CODE" == "302" || "$CODE" == "303" || "$CODE" == "401" ]]; then
+              echo "Endpoint is healthy."
+              exit 0
+            fi
+            sleep "$SLEEP_SECONDS"
+          done
+          echo "Endpoint did not become healthy in time."
+          curl --proto '=https' --tlsv1.2 -sS -I --max-time 20 "$URL" || true
+          exit 1
+
+      - name: Collect remote diagnostics on verify failure
+        if: failure() && steps.compare.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          ssh -i ~/.ssh/oracle_odoo_key "$ORACLE_USER@$ORACLE_HOST" '
+            set -e
+            echo "=== docker compose ps ==="
+            cd /home/ubuntu/odoo-prod && sudo docker compose ps || true
+            echo
+            echo "=== odoo logs (tail) ==="
+            sudo docker logs --tail 160 odoo-app 2>&1 || true
+            echo
+            echo "=== postgres logs (tail) ==="
+            sudo docker logs --tail 100 odoo-postgres 2>&1 || true
+            echo
+            echo "=== nginx error log (tail) ==="
+            sudo tail -n 120 /var/log/nginx/error.log || true
+          '
+
+      - name: Deployment skipped (already in desired state)
+        if: steps.compare.outputs.changed == 'false'
+        run: echo "Odoo infra is already in sync with server. No deployment performed."
