@@ -99,15 +99,35 @@ cd "$DEPLOY_ROOT"
 sudo docker compose pull
 sudo docker compose up -d --remove-orphans
 
+log "Checking whether Odoo database is initialized"
+HAS_BASE_TABLE="$(
+  sudo docker compose exec -T db psql \
+    -U "$ODOO_POSTGRES_USER" \
+    -d "$ODOO_POSTGRES_DB" \
+    -tAc "SELECT to_regclass('public.ir_module_module') IS NOT NULL;" \
+    | tr -d '[:space:]'
+)"
+
+if [[ "$HAS_BASE_TABLE" != "t" ]]; then
+  log "Base tables not found in $ODOO_POSTGRES_DB. Initializing database with module 'base'."
+  sudo docker compose run --rm odoo odoo \
+    -d "$ODOO_POSTGRES_DB" \
+    -i base \
+    --without-demo=all \
+    --stop-after-init
+  sudo docker compose up -d odoo
+fi
+
 log "Waiting for Odoo service to accept HTTP traffic on 127.0.0.1:8069"
 ATTEMPTS=24
 SLEEP_SECONDS=5
 for i in $(seq 1 "$ATTEMPTS"); do
   CODE="$(curl -sS -o /dev/null -w "%{http_code}" --max-time 10 http://127.0.0.1:8069/ || true)"
-  if [[ "$CODE" != "000" ]]; then
+  if [[ "$CODE" == "200" || "$CODE" == "302" || "$CODE" == "303" || "$CODE" == "401" ]]; then
     log "Odoo upstream is reachable (HTTP $CODE)"
     break
   fi
+  log "Odoo upstream not ready yet (HTTP $CODE), retrying..."
   if [[ "$i" -eq "$ATTEMPTS" ]]; then
     echo "Odoo did not become reachable on 127.0.0.1:8069 in time." >&2
     sudo docker compose ps >&2 || true
