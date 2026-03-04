@@ -76,17 +76,17 @@ jobs:
           ssh-keyscan -H "$ORACLE_HOST" >> ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
-            - name: Validate ODOO_DOMAIN DNS before deploy
-              run: |
-                  set -euo pipefail
-                  DOMAIN="${{ secrets.ODOO_DOMAIN }}"
-                  echo "Checking DNS records for ${DOMAIN}"
-                  if ! getent hosts "$DOMAIN" >/dev/null 2>&1; then
-                    echo "Domain ${DOMAIN} does not resolve (NXDOMAIN or no DNS record)." >&2
-                    echo "Create an A/AAAA record pointing to your Oracle VM public IP, then retry." >&2
-                    exit 1
-                  fi
-                  getent hosts "$DOMAIN"
+      - name: Validate ODOO_DOMAIN DNS before deploy
+        run: |
+          set -euo pipefail
+          DOMAIN="${{ secrets.ODOO_DOMAIN }}"
+          echo "Checking DNS records for ${DOMAIN}"
+          if ! getent hosts "$DOMAIN" >/dev/null 2>&1; then
+            echo "Domain ${DOMAIN} does not resolve (NXDOMAIN or no DNS record)." >&2
+            echo "Create an A/AAAA record pointing to your Oracle VM public IP, then retry." >&2
+            exit 1
+          fi
+          getent hosts "$DOMAIN"
 
       - name: Compute desired configuration fingerprint
         id: desired_fingerprint
