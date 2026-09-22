@@ -5,14 +5,18 @@ set -euo pipefail
 
 DEPLOY_PATH="${ODOO_DEPLOY_PATH:-/opt/odoo/odoo}"
 SERVICE="${ODOO_SERVICE:-odoo}"
-DB_NAME="${ODOO_DB_NAME:-aciu}"
+# Prefer explicit env; else read live conf (droplet uses odoo_prod, not legacy "aciu")
+if [ -z "${ODOO_DB_NAME:-}" ] && [ -f /etc/odoo/odoo.conf ]; then
+  ODOO_DB_NAME="$(awk -F'=' '/^[[:space:]]*db_name[[:space:]]*=/ {gsub(/[[:space:]]/,"",$2); print $2; exit}' /etc/odoo/odoo.conf || true)"
+fi
+DB_NAME="${ODOO_DB_NAME:-odoo_prod}"
 GIT_BRANCH="${GIT_BRANCH:-production}"
 UPDATE_MODULES="${UPDATE_MODULES:-true}"
 REPO_URL="${REPO_URL:-https://github.com/Ifegwu/odoo.git}"
 CLONE_TOKEN="${GH_CLONE_TOKEN:-}"
 GIT_SHA="${GIT_SHA:-unknown}"
 
-echo "==> Deploy host=$(hostname) sha=${GIT_SHA} branch=${GIT_BRANCH}"
+echo "==> Deploy host=$(hostname) sha=${GIT_SHA} branch=${GIT_BRANCH} db=${DB_NAME}"
 
 AUTH_URL="${REPO_URL}"
 if [ -n "${CLONE_TOKEN}" ]; then
@@ -66,10 +70,11 @@ fi
 if [ "${UPDATE_MODULES}" = "true" ]; then
   echo "==> Odoo -u aciu modules on ${DB_NAME}"
   systemctl stop "${SERVICE}" || true
-  sudo -u odoo "${DEPLOY_PATH}/venv/bin/python" "${DEPLOY_PATH}/odoo-bin" \
+  # Odoo 19: run as server command; conf supplies addons_path (incl. custom_addons)
+  sudo -u odoo "${DEPLOY_PATH}/venv/bin/python" "${DEPLOY_PATH}/odoo-bin" server \
     -c /etc/odoo/odoo.conf -d "${DB_NAME}" \
     -u aciu_base,aciu_membership,aciu_dues \
-    --stop-after-init
+    --stop-after-init --http-port=8070
 fi
 
 echo "==> Restart ${SERVICE}"

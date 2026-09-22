@@ -9,7 +9,7 @@
 # Optional:
 #   ODOO_DEPLOY_PATH (default /opt/odoo/odoo)
 #   ODOO_SERVICE (default odoo)
-#   ODOO_DB_NAME (or ODOO_POSTGRES_DB, default aciu)
+#   ODOO_DB_NAME (or ODOO_POSTGRES_DB, default odoo_prod)
 #   ODOO_DB_USER (or ODOO_POSTGRES_USER, default odoo)
 #   GH_CLONE_TOKEN, REPO_URL
 
@@ -95,7 +95,7 @@ jobs:
           SSH_KEY="${DROPLET_SSH_KEY:-}"
           DEPLOY_PATH="${ODOO_DEPLOY_PATH:-/opt/odoo/odoo}"
           SERVICE="${ODOO_SERVICE:-odoo}"
-          DB_NAME="${ODOO_DB_NAME:-${ODOO_POSTGRES_DB:-aciu}}"
+          DB_NAME="${ODOO_DB_NAME:-${ODOO_POSTGRES_DB:-odoo_prod}}"
           DB_USER="${ODOO_DB_USER:-${ODOO_POSTGRES_USER:-odoo}}"
           DB_PASSWORD="${ODOO_DB_PASSWORD:-${ODOO_POSTGRES_PASSWORD:-}}"
           ADMIN_PASSWD="${ODOO_ADMIN_PASSWD:-${ODOO_ADMIN_PASSWORD:-}}"
