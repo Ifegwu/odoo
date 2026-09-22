@@ -57,8 +57,22 @@ echo "==> PostgreSQL role + database"
 systemctl enable --now postgresql
 sudo -u postgres psql -tAc "SELECT 1 FROM pg_roles WHERE rolname='${DB_USER}'" | grep -q 1 \
   || sudo -u postgres psql -c "CREATE USER ${DB_USER} WITH CREATEDB PASSWORD '${DB_PASSWORD}';"
+# Keep password in sync with GitHub secret (also required for localhost auth)
+sudo -u postgres psql -c "ALTER USER ${DB_USER} WITH CREATEDB PASSWORD '${DB_PASSWORD}';"
 sudo -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname='${DB_NAME}'" | grep -q 1 \
   || sudo -u postgres createdb -O "${DB_USER}" "${DB_NAME}"
+
+# Allow password auth over TCP localhost (avoid Unix-socket "peer" failures)
+PG_HBA="$(sudo -u postgres psql -tAc 'SHOW hba_file')"
+if [ -n "${PG_HBA}" ] && [ -f "${PG_HBA}" ]; then
+  if ! grep -qE '^host\s+all\s+all\s+127\.0\.0\.1/32' "${PG_HBA}"; then
+    echo "host all all 127.0.0.1/32 scram-sha-256" >> "${PG_HBA}"
+  fi
+  if ! grep -qE '^host\s+all\s+all\s+::1/128' "${PG_HBA}"; then
+    echo "host all all ::1/128 scram-sha-256" >> "${PG_HBA}"
+  fi
+  systemctl reload postgresql || systemctl restart postgresql
+fi
 
 echo "==> Clone / update repository (shallow — full Odoo history is too large for small droplets)"
 AUTH_URL="${REPO_URL}"
@@ -116,11 +130,13 @@ sudo -u odoo "${DEPLOY_PATH}/venv/bin/pip" install --upgrade pip wheel setuptool
 sudo -u odoo "${DEPLOY_PATH}/venv/bin/pip" install -r "${DEPLOY_PATH}/requirements.txt"
 
 echo "==> /etc/odoo/odoo.conf"
+# Use localhost + password (not Unix socket peer auth) so OS user odoo
+# can connect even when DB role name differs or peer is misconfigured.
 cat > /etc/odoo/odoo.conf <<EOF
 [options]
 admin_passwd = ${ADMIN_PASSWD}
-db_host = False
-db_port = False
+db_host = localhost
+db_port = 5432
 db_user = ${DB_USER}
 db_password = ${DB_PASSWORD}
 db_name = ${DB_NAME}
