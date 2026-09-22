@@ -50,8 +50,13 @@ class ResPartner(models.Model):
 
     @api.model
     def action_aciu_open_members(self):
-        """Members list limited to companies selected in the company switcher."""
-        companies = self.env.companies
+        """Members whose Home Branch is the current company (switcher selection).
+
+        Uses env.company (the active company), not env.companies (all checked
+        companies). Otherwise Admin with every branch ticked still sees Berlin
+        members while 'looking at' Bayern.
+        """
+        company = self.env.company
         return {
             'type': 'ir.actions.act_window',
             'name': _('Members'),
@@ -59,12 +64,12 @@ class ResPartner(models.Model):
             'view_mode': 'list,form',
             'domain': [
                 ('is_aciu_member', '=', True),
-                ('aciu_branch_id', 'in', companies.ids),
+                ('aciu_branch_id', '=', company.id),
             ],
             'context': {
                 'default_is_aciu_member': True,
                 'default_aciu_membership_status': 'active',
-                'default_aciu_branch_id': self.env.company.id,
+                'default_aciu_branch_id': company.id,
             },
         }
 
