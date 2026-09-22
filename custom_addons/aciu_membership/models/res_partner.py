@@ -58,13 +58,22 @@ class ResPartner(models.Model):
         return self.env.company.id
 
     @api.model
+    def _aciu_member_branch_domain(self):
+        """Branch members for a leaf company; all descendant members for central."""
+        company = self.env['res.company'].browse(self._aciu_active_company_id())
+        if company.child_ids:
+            # ACIU Germany (or any parent): include every branch under it
+            return [('aciu_branch_id', 'child_of', company.id)]
+        return [('aciu_branch_id', '=', company.id)]
+
+    @api.model
     def _search(self, domain, offset=0, limit=None, order=None, *, active_test=True, bypass_access=False):
         # Re-applied on every search (including after company switch), unlike a
         # one-shot act_window domain that the web client can keep stale.
         if self.env.context.get('aciu_filter_current_branch'):
             domain = expression.AND([
                 list(domain or []),
-                [('aciu_branch_id', '=', self._aciu_active_company_id())],
+                self._aciu_member_branch_domain(),
             ])
         return super()._search(
             domain, offset=offset, limit=limit, order=order,
@@ -73,7 +82,7 @@ class ResPartner(models.Model):
 
     @api.model
     def action_aciu_open_members(self):
-        """Open ACIU members for the switcher's current company only."""
+        """Open ACIU members for the switcher company (branch or whole Germany)."""
         company_id = self._aciu_active_company_id()
         return {
             'type': 'ir.actions.act_window',
@@ -84,10 +93,10 @@ class ResPartner(models.Model):
                 (self.env.ref('aciu_membership.view_partner_tree_aciu_members').id, 'list'),
                 (False, 'form'),
             ],
-            'domain': [
-                ('is_aciu_member', '=', True),
-                ('aciu_branch_id', '=', company_id),
-            ],
+            'domain': expression.AND([
+                [('is_aciu_member', '=', True)],
+                self._aciu_member_branch_domain(),
+            ]),
             'context': {
                 'default_is_aciu_member': True,
                 'default_aciu_membership_status': 'active',
