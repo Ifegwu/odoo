@@ -1,6 +1,6 @@
 # Part of ACIU Odoo customization.
 
-from odoo import fields, models
+from odoo import api, fields, models
 
 
 class ProductTemplate(models.Model):
@@ -16,8 +16,29 @@ class ProductTemplate(models.Model):
             ('event_fee', 'Event Fee'),
         ],
         string='ACIU Contribution Type',
-        help='Classifies products used for ACIU collections.',
+        help='Classifies products used for ACIU collections. These products are always tax-free.',
     )
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        for vals in vals_list:
+            if vals.get('aciu_contribution_type'):
+                vals['taxes_id'] = [(5,)]
+                vals['supplier_taxes_id'] = [(5,)]
+        return super().create(vals_list)
+
+    def write(self, vals):
+        res = super().write(vals)
+        if self.env.context.get('skip_aciu_tax_clear'):
+            return res
+        aciu = self.filtered('aciu_contribution_type')
+        dirty = aciu.filtered(lambda p: p.taxes_id or p.supplier_taxes_id)
+        if dirty:
+            dirty.with_context(skip_aciu_tax_clear=True).write({
+                'taxes_id': [(5,)],
+                'supplier_taxes_id': [(5,)],
+            })
+        return res
 
 
 class ProductProduct(models.Model):

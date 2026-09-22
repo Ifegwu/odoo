@@ -1,6 +1,6 @@
 # Part of ACIU Odoo customization.
 
-from odoo import api, fields, models
+from odoo import _, api, fields, models
 
 
 class ResPartner(models.Model):
@@ -47,6 +47,30 @@ class ResPartner(models.Model):
         string='Has Open Debt',
         compute='_compute_aciu_open_debt',
     )
+
+    @api.model
+    def action_aciu_open_members(self):
+        """Members list limited to companies selected in the company switcher."""
+        companies = self.env.companies
+        action = {
+            'type': 'ir.actions.act_window',
+            'name': _('Members'),
+            'res_model': 'res.partner',
+            'view_mode': 'list,form',
+            'domain': [
+                ('is_aciu_member', '=', True),
+                ('aciu_branch_id', 'in', companies.ids),
+            ],
+            'context': {
+                'default_is_aciu_member': True,
+                'default_aciu_membership_status': 'active',
+                'default_aciu_branch_id': self.env.company.id,
+            },
+        }
+        search = self.env.ref('aciu_membership.view_aciu_members_search', raise_if_not_found=False)
+        if search:
+            action['search_view_id'] = search.id
+        return action
 
     @api.depends('invoice_ids.amount_residual', 'invoice_ids.payment_state', 'invoice_ids.state', 'is_aciu_member')
     def _compute_aciu_open_debt(self):

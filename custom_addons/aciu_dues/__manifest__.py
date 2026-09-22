@@ -18,6 +18,7 @@ ACIU Dues
     'data': [
         'security/ir.model.access.csv',
         'data/aciu_product_data.xml',
+        'data/aciu_product_tax_free.xml',
         'views/aciu_levy_campaign_views.xml',
         'wizard/aciu_generate_dues_views.xml',
         'views/aciu_dues_menus.xml',

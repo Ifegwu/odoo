@@ -28,6 +28,12 @@
                     <field name="state" widget="statusbar" statusbar_visible="draft,open,closed"/>
                 </header>
                 <sheet>
+                    <div class="alert alert-info" role="alert">
+                        For <strong>Annual Membership Due (€20)</strong> and
+                        <strong>Monthly Roll-Call Fee</strong>, use
+                        <em>ACIU → Dues &amp; Collections → Generate Dues Invoices</em>.
+                        This form is only for branch/central projects and burial levies.
+                    </div>
                     <group>
                         <group>
                             <field name="name"/>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <!-- All ACIU roles + Settings Admin (Phase 0 setup) -->
     <menuitem id="menu_aciu_members"
               name="Members"
               parent="aciu_base.menu_aciu_root"
-              action="action_aciu_members"
+              action="action_aciu_members_server"
               sequence="20"
-              groups="aciu_base.group_aciu_member"/>
+              groups="aciu_base.group_aciu_member,aciu_base.group_aciu_branch_treasurer,aciu_base.group_aciu_branch_leader,aciu_base.group_aciu_central_treasurer,aciu_base.group_aciu_central_executive,base.group_system"/>
 </odoo>

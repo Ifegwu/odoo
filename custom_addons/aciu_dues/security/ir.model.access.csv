@@ -8,3 +8,5 @@ access_aciu_generate_dues_treasurer,aciu.generate.dues.wizard branch treasurer,m
 access_aciu_generate_dues_central_treasurer,aciu.generate.dues.wizard central treasurer,model_aciu_generate_dues_wizard,aciu_base.group_aciu_central_treasurer,1,1,1,1
 access_aciu_generate_dues_central_exec,aciu.generate.dues.wizard central executive,model_aciu_generate_dues_wizard,aciu_base.group_aciu_central_executive,1,1,1,1
 access_aciu_generate_dues_branch_leader,aciu.generate.dues.wizard branch leader,model_aciu_generate_dues_wizard,aciu_base.group_aciu_branch_leader,1,1,1,1
+access_aciu_levy_system,aciu.levy.campaign system admin,model_aciu_levy_campaign,base.group_system,1,1,1,1
+access_aciu_generate_dues_system,aciu.generate.dues.wizard system admin,model_aciu_generate_dues_wizard,base.group_system,1,1,1,1
