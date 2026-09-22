@@ -1,6 +1,7 @@
 # Part of ACIU Odoo customization.
 
 from odoo import _, api, fields, models
+from odoo.osv import expression
 
 
 class ResPartner(models.Model):
@@ -49,27 +50,49 @@ class ResPartner(models.Model):
     )
 
     @api.model
-    def action_aciu_open_members(self):
-        """Members whose Home Branch is the current company (switcher selection).
+    def _aciu_active_company_id(self):
+        """Current company from the web switcher (first allowed_company_ids)."""
+        cids = self.env.context.get('allowed_company_ids') or []
+        if cids:
+            return cids[0]
+        return self.env.company.id
 
-        Uses env.company (the active company), not env.companies (all checked
-        companies). Otherwise Admin with every branch ticked still sees Berlin
-        members while 'looking at' Bayern.
-        """
-        company = self.env.company
+    @api.model
+    def _search(self, domain, offset=0, limit=None, order=None, *, active_test=True, bypass_access=False):
+        # Re-applied on every search (including after company switch), unlike a
+        # one-shot act_window domain that the web client can keep stale.
+        if self.env.context.get('aciu_filter_current_branch'):
+            domain = expression.AND([
+                list(domain or []),
+                [('aciu_branch_id', '=', self._aciu_active_company_id())],
+            ])
+        return super()._search(
+            domain, offset=offset, limit=limit, order=order,
+            active_test=active_test, bypass_access=bypass_access,
+        )
+
+    @api.model
+    def action_aciu_open_members(self):
+        """Open ACIU members for the switcher's current company only."""
+        company_id = self._aciu_active_company_id()
         return {
             'type': 'ir.actions.act_window',
             'name': _('Members'),
             'res_model': 'res.partner',
             'view_mode': 'list,form',
+            'views': [
+                (self.env.ref('aciu_membership.view_partner_tree_aciu_members').id, 'list'),
+                (False, 'form'),
+            ],
             'domain': [
                 ('is_aciu_member', '=', True),
-                ('aciu_branch_id', '=', company.id),
+                ('aciu_branch_id', '=', company_id),
             ],
             'context': {
                 'default_is_aciu_member': True,
                 'default_aciu_membership_status': 'active',
-                'default_aciu_branch_id': company.id,
+                'default_aciu_branch_id': company_id,
+                'aciu_filter_current_branch': True,
             },
         }
 
