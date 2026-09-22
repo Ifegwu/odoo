@@ -142,14 +142,23 @@ jobs:
       - name: Upload deploy scripts
         run: |
           chmod +x deploy/bootstrap.sh deploy/deploy.sh
-          scp -i "$HOME/.odoo_deploy/ssh_key" -o IdentitiesOnly=yes \
+          scp -i "$HOME/.odoo_deploy/ssh_key" \
+            -o IdentitiesOnly=yes \
+            -o ServerAliveInterval=30 \
+            -o ServerAliveCountMax=120 \
+            -o TCPKeepAlive=yes \
             deploy/bootstrap.sh deploy/deploy.sh \
             "${SSH_USER}@${HOST}:/tmp/"
 
       - name: Bootstrap droplet
         if: startsWith(steps.mode.outputs.value, 'bootstrap')
         run: |
-          ssh -i "$HOME/.odoo_deploy/ssh_key" -o IdentitiesOnly=yes "${SSH_USER}@${HOST}" \
+          ssh -i "$HOME/.odoo_deploy/ssh_key" \
+            -o IdentitiesOnly=yes \
+            -o ServerAliveInterval=30 \
+            -o ServerAliveCountMax=120 \
+            -o TCPKeepAlive=yes \
+            "${SSH_USER}@${HOST}" \
             ODOO_DEPLOY_PATH="${DEPLOY_PATH}" \
             ODOO_SERVICE="${SERVICE}" \
             ODOO_DB_NAME="${DB_NAME}" \
@@ -166,7 +175,12 @@ jobs:
         env:
           UPDATE_MODULES: ${{ steps.mode.outputs.update_modules }}
         run: |
-          ssh -i "$HOME/.odoo_deploy/ssh_key" -o IdentitiesOnly=yes "${SSH_USER}@${HOST}" \
+          ssh -i "$HOME/.odoo_deploy/ssh_key" \
+            -o IdentitiesOnly=yes \
+            -o ServerAliveInterval=30 \
+            -o ServerAliveCountMax=120 \
+            -o TCPKeepAlive=yes \
+            "${SSH_USER}@${HOST}" \
             ODOO_DEPLOY_PATH="${DEPLOY_PATH}" \
             ODOO_SERVICE="${SERVICE}" \
             ODOO_DB_NAME="${DB_NAME}" \

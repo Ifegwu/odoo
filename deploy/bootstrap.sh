@@ -19,6 +19,17 @@ export DEBIAN_FRONTEND=noninteractive
 
 echo "==> Bootstrap host=$(hostname) path=${DEPLOY_PATH} db=${DB_NAME}"
 
+echo "==> Ensure swap (1GB droplets often OOM during pip/odoo install)"
+if ! swapon --show | grep -q .; then
+  if [ ! -f /swapfile ]; then
+    fallocate -l 2G /swapfile || dd if=/dev/zero of=/swapfile bs=1M count=2048
+    chmod 600 /swapfile
+    mkswap /swapfile
+  fi
+  swapon /swapfile || true
+  grep -q '/swapfile' /etc/fstab || echo '/swapfile none swap sw 0 0' >> /etc/fstab
+fi
+
 echo "==> Apt packages"
 apt-get update -y
 apt-get install -y \
@@ -49,30 +60,45 @@ sudo -u postgres psql -tAc "SELECT 1 FROM pg_roles WHERE rolname='${DB_USER}'" |
 sudo -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname='${DB_NAME}'" | grep -q 1 \
   || sudo -u postgres createdb -O "${DB_USER}" "${DB_NAME}"
 
-echo "==> Clone / update repository"
+echo "==> Clone / update repository (shallow — full Odoo history is too large for small droplets)"
 AUTH_URL="${REPO_URL}"
 if [ -n "${CLONE_TOKEN}" ]; then
   # https://github.com/org/repo.git → https://x-access-token:TOKEN@github.com/org/repo.git
   AUTH_URL="$(echo "${REPO_URL}" | sed -E "s#https://#https://x-access-token:${CLONE_TOKEN}@#")"
 fi
 
+export GIT_TERMINAL_PROMPT=0
+
+# Remove incomplete clone from a previous interrupted run
+if [ -d "${DEPLOY_PATH}" ] && [ ! -d "${DEPLOY_PATH}/.git" ]; then
+  echo "==> Removing incomplete checkout at ${DEPLOY_PATH}"
+  rm -rf "${DEPLOY_PATH}"
+fi
+
+clone_repo() {
+  local url="$1"
+  # depth=1 + single-branch keeps clone small/fast enough for CI SSH sessions
+  sudo -u odoo git clone --depth 1 --branch "${GIT_BRANCH}" --single-branch "${url}" "${DEPLOY_PATH}"
+}
+
 if [ ! -d "${DEPLOY_PATH}/.git" ]; then
-  sudo -u odoo git clone --branch "${GIT_BRANCH}" --single-branch "${AUTH_URL}" "${DEPLOY_PATH}" \
-    || {
-      # Branch may not exist yet — clone default then checkout later
-      sudo -u odoo git clone "${AUTH_URL}" "${DEPLOY_PATH}"
-      cd "${DEPLOY_PATH}"
+  if ! clone_repo "${AUTH_URL}"; then
+    echo "==> Clone of ${GIT_BRANCH} failed; trying default branch then checkout"
+    rm -rf "${DEPLOY_PATH}"
+    sudo -u odoo git clone --depth 1 --single-branch "${AUTH_URL}" "${DEPLOY_PATH}"
+    cd "${DEPLOY_PATH}"
+    sudo -u odoo git fetch --depth 1 origin "${GIT_BRANCH}:${GIT_BRANCH}" || \
       sudo -u odoo git fetch origin "${GIT_BRANCH}:${GIT_BRANCH}" || true
-      sudo -u odoo git checkout "${GIT_BRANCH}" || sudo -u odoo git checkout -b "${GIT_BRANCH}"
-    }
+    sudo -u odoo git checkout "${GIT_BRANCH}" || sudo -u odoo git checkout -b "${GIT_BRANCH}"
+  fi
 else
   cd "${DEPLOY_PATH}"
   if [ -n "${CLONE_TOKEN}" ]; then
     sudo -u odoo git remote set-url origin "${AUTH_URL}"
   fi
-  sudo -u odoo git fetch --prune origin
+  sudo -u odoo git fetch --depth 1 --prune origin "${GIT_BRANCH}" || sudo -u odoo git fetch --prune origin
   sudo -u odoo git checkout "${GIT_BRANCH}" || sudo -u odoo git checkout -b "${GIT_BRANCH}" "origin/${GIT_BRANCH}"
-  sudo -u odoo git reset --hard "origin/${GIT_BRANCH}" || true
+  sudo -u odoo git reset --hard "origin/${GIT_BRANCH}" || sudo -u odoo git reset --hard "FETCH_HEAD" || true
 fi
 
 # Avoid leaving token in remote URL
