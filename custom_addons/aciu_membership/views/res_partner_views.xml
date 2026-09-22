@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_aciu_membership" model="ir.ui.view">
+        <field name="name">res.partner.form.aciu.membership</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="ACIU Membership" name="aciu_membership"
+                      invisible="is_company">
+                    <group>
+                        <group string="Membership">
+                            <field name="is_aciu_member"/>
+                            <field name="aciu_member_id" invisible="not is_aciu_member"/>
+                            <field name="aciu_branch_id" invisible="not is_aciu_member"/>
+                            <field name="aciu_membership_status" invisible="not is_aciu_member"/>
+                            <field name="aciu_age_grade" invisible="not is_aciu_member"/>
+                            <field name="aciu_join_date" invisible="not is_aciu_member"/>
+                        </group>
+                        <group string="Soft debt (does not block membership)">
+                            <field name="aciu_open_debt" invisible="not is_aciu_member"/>
+                            <field name="aciu_has_open_debt" invisible="1"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_partner_tree_aciu_members" model="ir.ui.view">
+        <field name="name">res.partner.list.aciu.members</field>
+        <field name="model">res.partner</field>
+        <field name="arch" type="xml">
+            <list string="ACIU Members">
+                <field name="name"/>
+                <field name="aciu_member_id"/>
+                <field name="aciu_branch_id"/>
+                <field name="aciu_membership_status"/>
+                <field name="aciu_open_debt"/>
+                <field name="email"/>
+                <field name="phone"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_aciu_members" model="ir.actions.act_window">
+        <field name="name">Members</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('is_aciu_member', '=', True)]</field>
+        <field name="context">{
+            'default_is_aciu_member': True,
+            'default_aciu_membership_status': 'active',
+        }</field>
+    </record>
+</odoo>

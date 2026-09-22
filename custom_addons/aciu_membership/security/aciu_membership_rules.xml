@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Members: see/edit only themselves (soft R/W on own profile) -->
+    <record id="rule_aciu_member_own_partner" model="ir.rule">
+        <field name="name">ACIU Member: own partner only</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+        <field name="domain_force">[('id', '=', user.partner_id.id)]</field>
+        <field name="groups" eval="[(4, ref('aciu_base.group_aciu_member'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+    <!-- Branch officers: partners whose home branch is in allowed companies -->
+    <record id="rule_aciu_branch_officer_partners" model="ir.rule">
+        <field name="name">ACIU Branch officer: home branch in companies</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+        <field name="domain_force">['|', ('aciu_branch_id', '=', False), ('aciu_branch_id', 'in', company_ids)]</field>
+        <field name="groups" eval="[(4, ref('aciu_base.group_aciu_branch_leader')), (4, ref('aciu_base.group_aciu_branch_treasurer'))]"/>
+    </record>
+
+    <!-- Central roles: all ACIU members -->
+    <record id="rule_aciu_central_partners" model="ir.rule">
+        <field name="name">ACIU Central: all ACIU members</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+        <field name="domain_force">['|', ('is_aciu_member', '=', True), ('aciu_branch_id', '!=', False)]</field>
+        <field name="groups" eval="[(4, ref('aciu_base.group_aciu_central_executive')), (4, ref('aciu_base.group_aciu_central_treasurer'))]"/>
+    </record>
+</odoo>

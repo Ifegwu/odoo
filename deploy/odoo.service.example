@@ -1,0 +1,20 @@
+# Example systemd unit for Odoo on the DigitalOcean droplet.
+# Copy to: /etc/systemd/system/odoo.service
+# Then: sudo systemctl daemon-reload && sudo systemctl enable --now odoo
+
+[Unit]
+Description=ACIU Odoo 19
+After=network.target postgresql.service
+Requires=postgresql.service
+
+[Service]
+Type=simple
+User=odoo
+Group=odoo
+WorkingDirectory=/opt/odoo/odoo
+ExecStart=/opt/odoo/odoo/venv/bin/python /opt/odoo/odoo/odoo-bin -c /etc/odoo/odoo.conf
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

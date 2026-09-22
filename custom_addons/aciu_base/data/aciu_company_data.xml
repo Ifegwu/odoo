@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Currency / country refs: base.EUR, base.de -->
+
+        <!-- ACIU Germany (central e.V.) -->
+        <record id="partner_aciu_germany" model="res.partner">
+            <field name="name">ACIU Germany</field>
+            <field name="is_company" eval="True"/>
+            <field name="country_id" ref="base.de"/>
+            <field name="email">germany@aciu.example</field>
+        </record>
+        <record id="company_aciu_germany" model="res.company">
+            <field name="name">ACIU Germany</field>
+            <field name="partner_id" ref="partner_aciu_germany"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="is_aciu_company" eval="True"/>
+            <field name="is_registered_ev" eval="True"/>
+            <field name="aciu_branch_code">DE-CENTRAL</field>
+            <field name="roll_call_fee_amount">0</field>
+        </record>
+
+        <!-- 1 Bremen -->
+        <record id="partner_aciu_bremen" model="res.partner">
+            <field name="name">ACIU Bremen</field>
+            <field name="is_company" eval="True"/>
+            <field name="country_id" ref="base.de"/>
+        </record>
+        <record id="company_aciu_bremen" model="res.company">
+            <field name="name">ACIU Bremen</field>
+            <field name="partner_id" ref="partner_aciu_bremen"/>
+            <field name="parent_id" ref="company_aciu_germany"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="is_aciu_company" eval="True"/>
+            <field name="is_registered_ev" eval="False"/>
+            <field name="aciu_branch_code">DE-HB</field>
+        </record>
+
+        <!-- 2 Hamburg -->
+        <record id="partner_aciu_hamburg" model="res.partner">
+            <field name="name">ACIU Hamburg</field>
+            <field name="is_company" eval="True"/>
+            <field name="country_id" ref="base.de"/>
+        </record>
+        <record id="company_aciu_hamburg" model="res.company">
+            <field name="name">ACIU Hamburg</field>
+            <field name="partner_id" ref="partner_aciu_hamburg"/>
+            <field name="parent_id" ref="company_aciu_germany"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="is_aciu_company" eval="True"/>
+            <field name="is_registered_ev" eval="False"/>
+            <field name="aciu_branch_code">DE-HH</field>
+        </record>
+
+        <!-- 3 Bayern -->
+        <record id="partner_aciu_bayern" model="res.partner">
+            <field name="name">ACIU Bayern</field>
+            <field name="is_company" eval="True"/>
+            <field name="country_id" ref="base.de"/>
+        </record>
+        <record id="company_aciu_bayern" model="res.company">
+            <field name="name">ACIU Bayern</field>
+            <field name="partner_id" ref="partner_aciu_bayern"/>
+            <field name="parent_id" ref="company_aciu_germany"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="is_aciu_company" eval="True"/>
+            <field name="is_registered_ev" eval="False"/>
+            <field name="aciu_branch_code">DE-BY</field>
+        </record>
+
+        <!-- 4 Baden-Württemberg -->
+        <record id="partner_aciu_bw" model="res.partner">
+            <field name="name">ACIU Baden-Württemberg</field>
+            <field name="is_company" eval="True"/>
+            <field name="country_id" ref="base.de"/>
+        </record>
+        <record id="company_aciu_bw" model="res.company">
+            <field name="name">ACIU Baden-Württemberg</field>
+            <field name="partner_id" ref="partner_aciu_bw"/>
+            <field name="parent_id" ref="company_aciu_germany"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="is_aciu_company" eval="True"/>
+            <field name="is_registered_ev" eval="False"/>
+            <field name="aciu_branch_code">DE-BW</field>
+        </record>
+
+        <!-- 5 NRW -->
+        <record id="partner_aciu_nrw" model="res.partner">
+            <field name="name">ACIU NRW</field>
+            <field name="is_company" eval="True"/>
+            <field name="country_id" ref="base.de"/>
+        </record>
+        <record id="company_aciu_nrw" model="res.company">
+            <field name="name">ACIU NRW</field>
+            <field name="partner_id" ref="partner_aciu_nrw"/>
+            <field name="parent_id" ref="company_aciu_germany"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="is_aciu_company" eval="True"/>
+            <field name="is_registered_ev" eval="False"/>
+            <field name="aciu_branch_code">DE-NW</field>
+        </record>
+
+        <!-- 6 Duisburg (peer of NRW) -->
+        <record id="partner_aciu_duisburg" model="res.partner">
+            <field name="name">ACIU Duisburg</field>
+            <field name="is_company" eval="True"/>
+            <field name="country_id" ref="base.de"/>
+        </record>
+        <record id="company_aciu_duisburg" model="res.company">
+            <field name="name">ACIU Duisburg</field>
+            <field name="partner_id" ref="partner_aciu_duisburg"/>
+            <field name="parent_id" ref="company_aciu_germany"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="is_aciu_company" eval="True"/>
+            <field name="is_registered_ev" eval="False"/>
+            <field name="aciu_branch_code">DE-DU</field>
+        </record>
+
+        <!-- 7 Halle/Saale -->
+        <record id="partner_aciu_halle" model="res.partner">
+            <field name="name">ACIU Halle/Saale</field>
+            <field name="is_company" eval="True"/>
+            <field name="country_id" ref="base.de"/>
+        </record>
+        <record id="company_aciu_halle" model="res.company">
+            <field name="name">ACIU Halle/Saale</field>
+            <field name="partner_id" ref="partner_aciu_halle"/>
+            <field name="parent_id" ref="company_aciu_germany"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="is_aciu_company" eval="True"/>
+            <field name="is_registered_ev" eval="False"/>
+            <field name="aciu_branch_code">DE-HAL</field>
+        </record>
+
+        <!-- 8 Osnabrück -->
+        <record id="partner_aciu_osnabruck" model="res.partner">
+            <field name="name">ACIU Osnabrück</field>
+            <field name="is_company" eval="True"/>
+            <field name="country_id" ref="base.de"/>
+        </record>
+        <record id="company_aciu_osnabruck" model="res.company">
+            <field name="name">ACIU Osnabrück</field>
+            <field name="partner_id" ref="partner_aciu_osnabruck"/>
+            <field name="parent_id" ref="company_aciu_germany"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="is_aciu_company" eval="True"/>
+            <field name="is_registered_ev" eval="False"/>
+            <field name="aciu_branch_code">DE-OS</field>
+        </record>
+
+        <!-- 9 Berlin/Brandenburg — roll-call fee €5 -->
+        <record id="partner_aciu_berlin" model="res.partner">
+            <field name="name">ACIU Berlin-Brandenburg</field>
+            <field name="is_company" eval="True"/>
+            <field name="country_id" ref="base.de"/>
+        </record>
+        <record id="company_aciu_berlin" model="res.company">
+            <field name="name">ACIU Berlin-Brandenburg</field>
+            <field name="partner_id" ref="partner_aciu_berlin"/>
+            <field name="parent_id" ref="company_aciu_germany"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="is_aciu_company" eval="True"/>
+            <field name="is_registered_ev" eval="False"/>
+            <field name="aciu_branch_code">DE-BE</field>
+            <field name="roll_call_fee_amount">5.0</field>
+        </record>
+
+        <!-- 10 Frankfurt/Mainz -->
+        <record id="partner_aciu_frankfurt" model="res.partner">
+            <field name="name">ACIU Frankfurt-Mainz</field>
+            <field name="is_company" eval="True"/>
+            <field name="country_id" ref="base.de"/>
+        </record>
+        <record id="company_aciu_frankfurt" model="res.company">
+            <field name="name">ACIU Frankfurt-Mainz</field>
+            <field name="partner_id" ref="partner_aciu_frankfurt"/>
+            <field name="parent_id" ref="company_aciu_germany"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="is_aciu_company" eval="True"/>
+            <field name="is_registered_ev" eval="False"/>
+            <field name="aciu_branch_code">DE-FFM</field>
+        </record>
+
+        <!-- 11 Hannover -->
+        <record id="partner_aciu_hannover" model="res.partner">
+            <field name="name">ACIU Hannover</field>
+            <field name="is_company" eval="True"/>
+            <field name="country_id" ref="base.de"/>
+        </record>
+        <record id="company_aciu_hannover" model="res.company">
+            <field name="name">ACIU Hannover</field>
+            <field name="partner_id" ref="partner_aciu_hannover"/>
+            <field name="parent_id" ref="company_aciu_germany"/>
+            <field name="currency_id" ref="base.EUR"/>
+            <field name="is_aciu_company" eval="True"/>
+            <field name="is_registered_ev" eval="False"/>
+            <field name="aciu_branch_code">DE-H</field>
+        </record>
+
+        <!-- Give admin access to all ACIU companies -->
+        <function model="res.users" name="write">
+            <value eval="[ref('base.user_admin')]"/>
+            <value eval="{
+                'company_ids': [
+                    (4, ref('company_aciu_germany')),
+                    (4, ref('company_aciu_bremen')),
+                    (4, ref('company_aciu_hamburg')),
+                    (4, ref('company_aciu_bayern')),
+                    (4, ref('company_aciu_bw')),
+                    (4, ref('company_aciu_nrw')),
+                    (4, ref('company_aciu_duisburg')),
+                    (4, ref('company_aciu_halle')),
+                    (4, ref('company_aciu_osnabruck')),
+                    (4, ref('company_aciu_berlin')),
+                    (4, ref('company_aciu_frankfurt')),
+                    (4, ref('company_aciu_hannover')),
+                ],
+            }"/>
+        </function>
+    </data>
+</odoo>

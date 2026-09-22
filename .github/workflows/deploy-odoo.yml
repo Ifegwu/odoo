@@ -1,0 +1,191 @@
+# Automates docs/aciu/DEPLOY.md against the DigitalOcean droplet.
+#
+# Uses GitHub Environment: production
+#
+# Required environment secrets:
+#   DROPLET_HOST, DROPLET_USER, DROPLET_SSH_KEY
+#   ODOO_DB_PASSWORD (or ODOO_POSTGRES_PASSWORD)
+#   ODOO_ADMIN_PASSWD (or ODOO_ADMIN_PASSWORD)   — for bootstrap
+# Optional:
+#   ODOO_DEPLOY_PATH (default /opt/odoo/odoo)
+#   ODOO_SERVICE (default odoo)
+#   ODOO_DB_NAME (or ODOO_POSTGRES_DB, default aciu)
+#   ODOO_DB_USER (or ODOO_POSTGRES_USER, default odoo)
+#   GH_CLONE_TOKEN, REPO_URL
+
+name: Deploy Odoo to DigitalOcean
+
+on:
+  push:
+    branches:
+      - production
+    paths:
+      - 'custom_addons/**'
+      - 'deploy/**'
+      - '.github/workflows/deploy-odoo.yml'
+      - 'requirements.txt'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'bootstrap | deploy | bootstrap_and_deploy'
+        type: choice
+        options:
+          - deploy
+          - bootstrap
+          - bootstrap_and_deploy
+        default: deploy
+      update_modules:
+        description: 'On deploy: run odoo -u for ACIU modules'
+        type: boolean
+        default: true
+      ref_note:
+        description: 'Optional note'
+        type: string
+        required: false
+
+concurrency:
+  group: deploy-odoo-production
+  cancel-in-progress: false
+
+jobs:
+  provision_or_deploy:
+    name: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'deploy' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    environment: production
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Resolve mode
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "value=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
+            echo "update_modules=${{ inputs.update_modules }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=deploy" >> "$GITHUB_OUTPUT"
+            echo "update_modules=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Resolve secrets
+        id: cfg
+        env:
+          DROPLET_HOST: ${{ secrets.DROPLET_HOST }}
+          DROPLET_USER: ${{ secrets.DROPLET_USER }}
+          DROPLET_SSH_KEY: ${{ secrets.DROPLET_SSH_KEY }}
+          ODOO_DEPLOY_PATH: ${{ secrets.ODOO_DEPLOY_PATH }}
+          ODOO_SERVICE: ${{ secrets.ODOO_SERVICE }}
+          ODOO_DB_NAME: ${{ secrets.ODOO_DB_NAME }}
+          ODOO_POSTGRES_DB: ${{ secrets.ODOO_POSTGRES_DB }}
+          ODOO_DB_USER: ${{ secrets.ODOO_DB_USER }}
+          ODOO_POSTGRES_USER: ${{ secrets.ODOO_POSTGRES_USER }}
+          ODOO_DB_PASSWORD: ${{ secrets.ODOO_DB_PASSWORD }}
+          ODOO_POSTGRES_PASSWORD: ${{ secrets.ODOO_POSTGRES_PASSWORD }}
+          ODOO_ADMIN_PASSWD: ${{ secrets.ODOO_ADMIN_PASSWD }}
+          ODOO_ADMIN_PASSWORD: ${{ secrets.ODOO_ADMIN_PASSWORD }}
+          GH_CLONE_TOKEN: ${{ secrets.GH_CLONE_TOKEN }}
+          REPO_URL: ${{ secrets.REPO_URL }}
+          MODE: ${{ steps.mode.outputs.value }}
+        run: |
+          set -euo pipefail
+          HOST="${DROPLET_HOST:-}"
+          USER="${DROPLET_USER:-}"
+          SSH_KEY="${DROPLET_SSH_KEY:-}"
+          DEPLOY_PATH="${ODOO_DEPLOY_PATH:-/opt/odoo/odoo}"
+          SERVICE="${ODOO_SERVICE:-odoo}"
+          DB_NAME="${ODOO_DB_NAME:-${ODOO_POSTGRES_DB:-aciu}}"
+          DB_USER="${ODOO_DB_USER:-${ODOO_POSTGRES_USER:-odoo}}"
+          DB_PASSWORD="${ODOO_DB_PASSWORD:-${ODOO_POSTGRES_PASSWORD:-}}"
+          ADMIN_PASSWD="${ODOO_ADMIN_PASSWD:-${ODOO_ADMIN_PASSWORD:-}}"
+          REPO="${REPO_URL:-https://github.com/Ifegwu/odoo.git}"
+
+          missing=0
+          [ -n "$HOST" ] || { echo "::error::Missing secret DROPLET_HOST"; missing=1; }
+          [ -n "$USER" ] || { echo "::error::Missing secret DROPLET_USER"; missing=1; }
+          [ -n "$SSH_KEY" ] || { echo "::error::Missing secret DROPLET_SSH_KEY"; missing=1; }
+          if [[ "$MODE" == bootstrap* ]]; then
+            [ -n "$DB_PASSWORD" ] || { echo "::error::Missing ODOO_DB_PASSWORD or ODOO_POSTGRES_PASSWORD"; missing=1; }
+            [ -n "$ADMIN_PASSWD" ] || { echo "::error::Missing ODOO_ADMIN_PASSWD or ODOO_ADMIN_PASSWORD"; missing=1; }
+          fi
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
+
+          {
+            echo "HOST=$HOST"
+            echo "SSH_USER=$USER"
+            echo "DEPLOY_PATH=$DEPLOY_PATH"
+            echo "SERVICE=$SERVICE"
+            echo "DB_NAME=$DB_NAME"
+            echo "DB_USER=$DB_USER"
+            echo "REPO_URL=$REPO"
+          } >> "$GITHUB_ENV"
+
+          mkdir -p "$HOME/.odoo_deploy"
+          printf '%s\n' "$SSH_KEY" > "$HOME/.odoo_deploy/ssh_key"
+          chmod 600 "$HOME/.odoo_deploy/ssh_key"
+          printf '%s' "$DB_PASSWORD" > "$HOME/.odoo_deploy/db_password"
+          printf '%s' "$ADMIN_PASSWD" > "$HOME/.odoo_deploy/admin_passwd"
+          printf '%s' "${GH_CLONE_TOKEN:-}" > "$HOME/.odoo_deploy/clone_token"
+          chmod 600 "$HOME/.odoo_deploy/"*
+
+          echo "Resolved host=${HOST} user=${USER} path=${DEPLOY_PATH} db=${DB_NAME} service=${SERVICE}"
+
+      - name: Setup SSH known_hosts
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
+
+      - name: Upload deploy scripts
+        run: |
+          chmod +x deploy/bootstrap.sh deploy/deploy.sh
+          scp -i "$HOME/.odoo_deploy/ssh_key" -o IdentitiesOnly=yes \
+            deploy/bootstrap.sh deploy/deploy.sh \
+            "${SSH_USER}@${HOST}:/tmp/"
+
+      - name: Bootstrap droplet
+        if: startsWith(steps.mode.outputs.value, 'bootstrap')
+        run: |
+          ssh -i "$HOME/.odoo_deploy/ssh_key" -o IdentitiesOnly=yes "${SSH_USER}@${HOST}" \
+            ODOO_DEPLOY_PATH="${DEPLOY_PATH}" \
+            ODOO_SERVICE="${SERVICE}" \
+            ODOO_DB_NAME="${DB_NAME}" \
+            ODOO_DB_USER="${DB_USER}" \
+            ODOO_DB_PASSWORD="$(cat "$HOME/.odoo_deploy/db_password")" \
+            ODOO_ADMIN_PASSWD="$(cat "$HOME/.odoo_deploy/admin_passwd")" \
+            GH_CLONE_TOKEN="$(cat "$HOME/.odoo_deploy/clone_token")" \
+            REPO_URL="${REPO_URL}" \
+            GIT_BRANCH=production \
+            bash /tmp/bootstrap.sh
+
+      - name: Deploy application
+        if: steps.mode.outputs.value == 'deploy' || steps.mode.outputs.value == 'bootstrap_and_deploy'
+        env:
+          UPDATE_MODULES: ${{ steps.mode.outputs.update_modules }}
+        run: |
+          ssh -i "$HOME/.odoo_deploy/ssh_key" -o IdentitiesOnly=yes "${SSH_USER}@${HOST}" \
+            ODOO_DEPLOY_PATH="${DEPLOY_PATH}" \
+            ODOO_SERVICE="${SERVICE}" \
+            ODOO_DB_NAME="${DB_NAME}" \
+            GH_CLONE_TOKEN="$(cat "$HOME/.odoo_deploy/clone_token")" \
+            REPO_URL="${REPO_URL}" \
+            GIT_BRANCH=production \
+            UPDATE_MODULES="${UPDATE_MODULES}" \
+            GIT_SHA="${{ github.sha }}" \
+            bash /tmp/deploy.sh
+
+      - name: Health check
+        run: |
+          for i in 1 2 3 4 5 6 7 8 9 10; do
+            if curl -fsS -o /dev/null -m 15 "http://${HOST}:8069/web/login"; then
+              echo "OK: http://${HOST}:8069/web/login"
+              exit 0
+            fi
+            echo "Waiting for Odoo... ($i/10)"
+            sleep 6
+          done
+          echo "::warning::Login page not reachable yet — check ufw/DO firewall and systemctl status odoo"
+          exit 0

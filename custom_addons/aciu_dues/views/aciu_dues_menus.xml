@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_aciu_dues"
+              name="Dues &amp; Collections"
+              parent="aciu_base.menu_aciu_root"
+              sequence="30"
+              groups="aciu_base.group_aciu_branch_treasurer,aciu_base.group_aciu_branch_leader,aciu_base.group_aciu_central_treasurer,aciu_base.group_aciu_central_executive"/>
+
+    <menuitem id="menu_aciu_generate_dues"
+              name="Generate Dues Invoices"
+              parent="menu_aciu_dues"
+              action="action_aciu_generate_dues"
+              sequence="10"/>
+
+    <menuitem id="menu_aciu_levy_campaign"
+              name="Projects &amp; Burial Levies"
+              parent="menu_aciu_dues"
+              action="action_aciu_levy_campaign"
+              sequence="20"/>
+</odoo>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_aciu_members"
+              name="Members"
+              parent="aciu_base.menu_aciu_root"
+              action="action_aciu_members"
+              sequence="20"
+              groups="aciu_base.group_aciu_member"/>
+</odoo>

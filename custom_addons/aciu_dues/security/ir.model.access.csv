@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_aciu_levy_member,aciu.levy.campaign member,model_aciu_levy_campaign,aciu_base.group_aciu_member,1,0,0,0
+access_aciu_levy_branch_treasurer,aciu.levy.campaign branch treasurer,model_aciu_levy_campaign,aciu_base.group_aciu_branch_treasurer,1,1,1,0
+access_aciu_levy_branch_leader,aciu.levy.campaign branch leader,model_aciu_levy_campaign,aciu_base.group_aciu_branch_leader,1,1,1,0
+access_aciu_levy_central_treasurer,aciu.levy.campaign central treasurer,model_aciu_levy_campaign,aciu_base.group_aciu_central_treasurer,1,1,1,1
+access_aciu_levy_central_exec,aciu.levy.campaign central executive,model_aciu_levy_campaign,aciu_base.group_aciu_central_executive,1,1,1,1
+access_aciu_generate_dues_treasurer,aciu.generate.dues.wizard branch treasurer,model_aciu_generate_dues_wizard,aciu_base.group_aciu_branch_treasurer,1,1,1,1
+access_aciu_generate_dues_central_treasurer,aciu.generate.dues.wizard central treasurer,model_aciu_generate_dues_wizard,aciu_base.group_aciu_central_treasurer,1,1,1,1
+access_aciu_generate_dues_central_exec,aciu.generate.dues.wizard central executive,model_aciu_generate_dues_wizard,aciu_base.group_aciu_central_executive,1,1,1,1
+access_aciu_generate_dues_branch_leader,aciu.generate.dues.wizard branch leader,model_aciu_generate_dues_wizard,aciu_base.group_aciu_branch_leader,1,1,1,1

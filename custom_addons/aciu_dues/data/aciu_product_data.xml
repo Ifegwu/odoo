@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="product_aciu_annual_due" model="product.product">
+            <field name="name">ACIU Annual Membership Due</field>
+            <field name="type">service</field>
+            <field name="list_price">20.0</field>
+            <field name="standard_price">0.0</field>
+            <field name="aciu_contribution_type">annual_due</field>
+            <field name="taxes_id" eval="[(5,)]"/>
+            <field name="supplier_taxes_id" eval="[(5,)]"/>
+        </record>
+
+        <record id="product_aciu_roll_call_fee" model="product.product">
+            <field name="name">ACIU Monthly Roll-Call Fee</field>
+            <field name="type">service</field>
+            <field name="list_price">5.0</field>
+            <field name="standard_price">0.0</field>
+            <field name="aciu_contribution_type">roll_call_fee</field>
+            <field name="taxes_id" eval="[(5,)]"/>
+            <field name="supplier_taxes_id" eval="[(5,)]"/>
+        </record>
+
+        <record id="product_aciu_burial_levy" model="product.product">
+            <field name="name">ACIU Burial Levy</field>
+            <field name="type">service</field>
+            <field name="list_price">0.0</field>
+            <field name="aciu_contribution_type">burial_levy</field>
+            <field name="taxes_id" eval="[(5,)]"/>
+            <field name="supplier_taxes_id" eval="[(5,)]"/>
+        </record>
+
+        <record id="product_aciu_branch_project" model="product.product">
+            <field name="name">ACIU Branch Project Contribution</field>
+            <field name="type">service</field>
+            <field name="list_price">0.0</field>
+            <field name="aciu_contribution_type">branch_project</field>
+            <field name="taxes_id" eval="[(5,)]"/>
+            <field name="supplier_taxes_id" eval="[(5,)]"/>
+        </record>
+
+        <record id="product_aciu_central_project" model="product.product">
+            <field name="name">ACIU Central Project Contribution</field>
+            <field name="type">service</field>
+            <field name="list_price">0.0</field>
+            <field name="aciu_contribution_type">central_project</field>
+            <field name="taxes_id" eval="[(5,)]"/>
+            <field name="supplier_taxes_id" eval="[(5,)]"/>
+        </record>
+    </data>
+</odoo>

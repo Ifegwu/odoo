@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_aciu_root"
+              name="ACIU"
+              sequence="25"
+              groups="aciu_base.group_aciu_member,base.group_system"/>
+
+    <menuitem id="menu_aciu_organization"
+              name="Organization"
+              parent="menu_aciu_root"
+              sequence="10"
+              groups="aciu_base.group_aciu_branch_leader,aciu_base.group_aciu_central_executive,aciu_base.group_aciu_branch_treasurer,aciu_base.group_aciu_central_treasurer,base.group_system"/>
+
+    <menuitem id="menu_aciu_companies"
+              name="Branches &amp; Central"
+              parent="menu_aciu_organization"
+              action="action_aciu_companies"
+              sequence="10"/>
+</odoo>

@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_res_partner_aciu_member,res.partner aciu member,base.model_res_partner,aciu_base.group_aciu_member,1,1,0,0
+access_res_partner_aciu_branch_leader,res.partner aciu branch leader,base.model_res_partner,aciu_base.group_aciu_branch_leader,1,1,1,0
+access_res_partner_aciu_central_exec,res.partner aciu central executive,base.model_res_partner,aciu_base.group_aciu_central_executive,1,1,1,0
+access_res_partner_aciu_branch_treasurer,res.partner aciu branch treasurer,base.model_res_partner,aciu_base.group_aciu_branch_treasurer,1,1,1,0
+access_res_partner_aciu_central_treasurer,res.partner aciu central treasurer,base.model_res_partner,aciu_base.group_aciu_central_treasurer,1,1,1,0

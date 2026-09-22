@@ -1,0 +1,18 @@
+; Example Odoo config for DigitalOcean.
+; Copy to /etc/odoo/odoo.conf and adjust paths/passwords.
+; NEVER commit real passwords.
+
+[options]
+admin_passwd = CHANGE_ME_MASTER_PASSWORD
+db_host = False
+db_port = False
+db_user = odoo
+db_password = CHANGE_ME_DB_PASSWORD
+db_name = aciu
+addons_path = /opt/odoo/odoo/addons,/opt/odoo/odoo/odoo/addons,/opt/odoo/odoo/custom_addons
+data_dir = /var/lib/odoo
+logfile = /var/log/odoo/odoo.log
+http_port = 8069
+proxy_mode = True
+without_demo = all
+list_db = False
