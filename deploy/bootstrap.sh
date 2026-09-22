@@ -63,43 +63,46 @@ sudo -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname='${DB_NAME}'
 echo "==> Clone / update repository (shallow — full Odoo history is too large for small droplets)"
 AUTH_URL="${REPO_URL}"
 if [ -n "${CLONE_TOKEN}" ]; then
-  # https://github.com/org/repo.git → https://x-access-token:TOKEN@github.com/org/repo.git
   AUTH_URL="$(echo "${REPO_URL}" | sed -E "s#https://#https://x-access-token:${CLONE_TOKEN}@#")"
 fi
-
 export GIT_TERMINAL_PROMPT=0
 
-# Remove incomplete clone from a previous interrupted run
-if [ -d "${DEPLOY_PATH}" ] && [ ! -d "${DEPLOY_PATH}/.git" ]; then
-  echo "==> Removing incomplete checkout at ${DEPLOY_PATH}"
-  rm -rf "${DEPLOY_PATH}"
-fi
-
-clone_repo() {
+force_shallow_clone() {
   local url="$1"
-  # depth=1 + single-branch keeps clone small/fast enough for CI SSH sessions
+  echo "==> Shallow clone ${GIT_BRANCH} → ${DEPLOY_PATH}"
+  rm -rf "${DEPLOY_PATH}"
   sudo -u odoo git clone --depth 1 --branch "${GIT_BRANCH}" --single-branch "${url}" "${DEPLOY_PATH}"
 }
 
-if [ ! -d "${DEPLOY_PATH}/.git" ]; then
-  if ! clone_repo "${AUTH_URL}"; then
-    echo "==> Clone of ${GIT_BRANCH} failed; trying default branch then checkout"
+sync_checkout() {
+  local url="$1"
+  # Incomplete or dirty tree from interrupted clones → wipe
+  if [ -d "${DEPLOY_PATH}" ] && [ ! -d "${DEPLOY_PATH}/.git" ]; then
+    echo "==> Removing incomplete checkout (no .git)"
     rm -rf "${DEPLOY_PATH}"
-    sudo -u odoo git clone --depth 1 --single-branch "${AUTH_URL}" "${DEPLOY_PATH}"
-    cd "${DEPLOY_PATH}"
-    sudo -u odoo git fetch --depth 1 origin "${GIT_BRANCH}:${GIT_BRANCH}" || \
-      sudo -u odoo git fetch origin "${GIT_BRANCH}:${GIT_BRANCH}" || true
-    sudo -u odoo git checkout "${GIT_BRANCH}" || sudo -u odoo git checkout -b "${GIT_BRANCH}"
   fi
-else
+
+  if [ ! -d "${DEPLOY_PATH}/.git" ]; then
+    force_shallow_clone "${url}"
+    return
+  fi
+
   cd "${DEPLOY_PATH}"
-  if [ -n "${CLONE_TOKEN}" ]; then
-    sudo -u odoo git remote set-url origin "${AUTH_URL}"
-  fi
+  sudo -u odoo git remote set-url origin "${url}"
   sudo -u odoo git fetch --depth 1 --prune origin "${GIT_BRANCH}" || sudo -u odoo git fetch --prune origin
-  sudo -u odoo git checkout "${GIT_BRANCH}" || sudo -u odoo git checkout -b "${GIT_BRANCH}" "origin/${GIT_BRANCH}"
-  sudo -u odoo git reset --hard "origin/${GIT_BRANCH}" || sudo -u odoo git reset --hard "FETCH_HEAD" || true
-fi
+  sudo -u odoo git clean -fd -e venv -e .venv || true
+
+  if sudo -u odoo git checkout -f "${GIT_BRANCH}" 2>/dev/null \
+    || sudo -u odoo git checkout -f -B "${GIT_BRANCH}" "origin/${GIT_BRANCH}" 2>/dev/null; then
+    sudo -u odoo git reset --hard "origin/${GIT_BRANCH}" || sudo -u odoo git reset --hard "FETCH_HEAD"
+  else
+    echo "==> Dirty/broken git tree — wiping and re-cloning"
+    cd /
+    force_shallow_clone "${url}"
+  fi
+}
+
+sync_checkout "${AUTH_URL}"
 
 # Avoid leaving token in remote URL
 cd "${DEPLOY_PATH}"
