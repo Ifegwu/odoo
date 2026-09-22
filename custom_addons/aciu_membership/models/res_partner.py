@@ -21,7 +21,8 @@ class ResPartner(models.Model):
         'res.company',
         string='Home Branch',
         domain="[('is_aciu_company', '=', True)]",
-        help='Member home branch / company. Dues are posted on this company.',
+        help='Member home branch / company. Dues are posted on this company. '
+             'Also nests the contact under that branch in Contacts.',
     )
     aciu_membership_status = fields.Selection(
         [
@@ -49,6 +50,55 @@ class ResPartner(models.Model):
         compute='_compute_aciu_open_debt',
     )
 
+    def _aciu_branch_partner(self):
+        self.ensure_one()
+        return self.aciu_branch_id.partner_id if self.aciu_branch_id else self.env['res.partner']
+
+    def _aciu_sync_parent_from_branch(self):
+        """Nest individual members under their branch company contact."""
+        for partner in self:
+            if partner.is_company or not partner.is_aciu_member:
+                continue
+            branch_partner = partner._aciu_branch_partner()
+            if not branch_partner:
+                continue
+            # Only rewrite when missing or still pointing at another ACIU company contact
+            other_aciu_parents = self.env['res.company'].sudo().search([
+                ('is_aciu_company', '=', True),
+            ]).mapped('partner_id')
+            if partner.parent_id == branch_partner:
+                continue
+            if partner.parent_id and partner.parent_id not in other_aciu_parents:
+                # Respect a manually set non-ACIU employer/parent
+                continue
+            partner.with_context(aciu_skip_parent_sync=True).write({
+                'parent_id': branch_partner.id,
+                'type': 'contact',
+            })
+
+    @api.onchange('aciu_branch_id', 'is_aciu_member')
+    def _onchange_aciu_branch_hierarchy(self):
+        for partner in self:
+            if partner.is_company or not partner.is_aciu_member:
+                continue
+            branch_partner = partner._aciu_branch_partner()
+            if branch_partner:
+                partner.parent_id = branch_partner
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        partners = super().create(vals_list)
+        partners._aciu_sync_parent_from_branch()
+        return partners
+
+    def write(self, vals):
+        res = super().write(vals)
+        if self.env.context.get('aciu_skip_parent_sync'):
+            return res
+        if 'aciu_branch_id' in vals or 'is_aciu_member' in vals or 'parent_id' in vals:
+            self._aciu_sync_parent_from_branch()
+        return res
+
     @api.model
     def _aciu_active_company_id(self):
         """Current company from the web switcher (first allowed_company_ids)."""
@@ -62,14 +112,11 @@ class ResPartner(models.Model):
         """Branch members for a leaf company; all descendant members for central."""
         company = self.env['res.company'].browse(self._aciu_active_company_id())
         if company.child_ids:
-            # ACIU Germany (or any parent): include every branch under it
             return [('aciu_branch_id', 'child_of', company.id)]
         return [('aciu_branch_id', '=', company.id)]
 
     @api.model
     def _search(self, domain, offset=0, limit=None, order=None, *, active_test=True, bypass_access=False):
-        # Re-applied on every search (including after company switch), unlike a
-        # one-shot act_window domain that the web client can keep stale.
         if self.env.context.get('aciu_filter_current_branch'):
             domain = expression.AND([
                 list(domain or []),
@@ -84,6 +131,15 @@ class ResPartner(models.Model):
     def action_aciu_open_members(self):
         """Open ACIU members for the switcher company (branch or whole Germany)."""
         company_id = self._aciu_active_company_id()
+        company = self.env['res.company'].browse(company_id)
+        ctx = {
+            'default_is_aciu_member': True,
+            'default_aciu_membership_status': 'active',
+            'default_aciu_branch_id': company_id,
+            'aciu_filter_current_branch': True,
+        }
+        if company.child_ids:
+            ctx['group_by'] = 'aciu_branch_id'
         return {
             'type': 'ir.actions.act_window',
             'name': _('Members'),
@@ -97,12 +153,7 @@ class ResPartner(models.Model):
                 [('is_aciu_member', '=', True)],
                 self._aciu_member_branch_domain(),
             ]),
-            'context': {
-                'default_is_aciu_member': True,
-                'default_aciu_membership_status': 'active',
-                'default_aciu_branch_id': company_id,
-                'aciu_filter_current_branch': True,
-            },
+            'context': ctx,
         }
 
     @api.depends('invoice_ids.amount_residual', 'invoice_ids.payment_state', 'invoice_ids.state', 'is_aciu_member')

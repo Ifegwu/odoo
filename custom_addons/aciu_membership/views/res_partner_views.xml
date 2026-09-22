@@ -33,6 +33,7 @@
         <field name="arch" type="xml">
             <list string="ACIU Members">
                 <field name="name"/>
+                <field name="parent_id" string="Branch contact"/>
                 <field name="aciu_member_id"/>
                 <field name="aciu_branch_id"/>
                 <field name="aciu_membership_status"/>
