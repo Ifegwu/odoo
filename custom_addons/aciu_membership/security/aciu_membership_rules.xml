@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!--
-        Group-specific ir.rules are OR'd. Settings Admin must have a full
-        bypass: assigning ACIU Member/Treasurer to admin otherwise locks
-        Settings (cannot read company partners like "ACIU Germany").
+        Group-specific ir.rules are OR'd together.
+        Settings Admin must bypass ACIU member restrictions.
     -->
     <record id="rule_aciu_system_all_partners" model="ir.rule">
         <field name="name">ACIU System Admin: all partners</field>
@@ -12,11 +11,11 @@
         <field name="groups" eval="[(4, ref('base.group_system'))]"/>
     </record>
 
-    <!-- Pure members: own partner only (officers get broader rules below via OR) -->
+    <!-- Own contact + parent branch company contact (Contacts hierarchy) -->
     <record id="rule_aciu_member_own_partner" model="ir.rule">
-        <field name="name">ACIU Member: own partner only</field>
+        <field name="name">ACIU Member: own partner and branch contact</field>
         <field name="model_id" ref="base.model_res_partner"/>
-        <field name="domain_force">[('id', '=', user.partner_id.id)]</field>
+        <field name="domain_force">['|', ('id', '=', user.partner_id.id), ('id', 'parent_of', user.partner_id.id)]</field>
         <field name="groups" eval="[(4, ref('aciu_base.group_aciu_member'))]"/>
         <field name="perm_read" eval="True"/>
         <field name="perm_write" eval="True"/>
@@ -24,7 +23,7 @@
         <field name="perm_unlink" eval="False"/>
     </record>
 
-    <!-- Branch officers: home branch in allowed companies + company contacts -->
+    <!-- Branch officers: members of allowed companies + company contacts -->
     <record id="rule_aciu_branch_officer_partners" model="ir.rule">
         <field name="name">ACIU Branch officer: home branch in companies</field>
         <field name="model_id" ref="base.model_res_partner"/>
@@ -32,7 +31,7 @@
         <field name="groups" eval="[(4, ref('aciu_base.group_aciu_branch_leader')), (4, ref('aciu_base.group_aciu_branch_treasurer'))]"/>
     </record>
 
-    <!-- Central roles: ACIU members + company contacts -->
+    <!-- Central roles: all ACIU members + company contacts -->
     <record id="rule_aciu_central_partners" model="ir.rule">
         <field name="name">ACIU Central: all ACIU members</field>
         <field name="model_id" ref="base.model_res_partner"/>
