@@ -6,12 +6,9 @@ $aciu-primary-soft: #E6F8F3;
 $aciu-ink: #313131;
 $aciu-muted: #737373;
 $aciu-surface: #F5F5F5;
-// Rich dark ERP header (site CTAs stay primary green)
-$aciu-header: #0B0B0B;
-$aciu-header-border: #1F1F1F;
-$aciu-header-text: #FFFFFF;
-$aciu-header-muted: rgba(255, 255, 255, 0.78);
-$aciu-header-hover-bg: rgba(0, 182, 134, 0.18);
+// Solid green ERP header (as before dark/light experiments)
+$aciu-header: $aciu-primary;
+$aciu-header-border: darken($aciu-primary, 8%);
 
 // Override Odoo CE defaults (loaded after web/primary_variables.scss).
 $o-community-color: $aciu-primary;
@@ -20,12 +17,12 @@ $o-brand-primary: $aciu-primary;
 $o-action: $aciu-primary;
 $o-main-link-color: darken($aciu-primary, 8%);
 
-// Dark ERP top bar; green only for active/hover accents and buttons.
+// Green top bar with white text (Odoo navbar defaults on brand color).
 $o-navbar-background: $aciu-header;
 $o-navbar-border-bottom: 1px solid $aciu-header-border;
-$o-navbar-entry-color: $aciu-header-muted;
-$o-navbar-entry-color--hover: $aciu-primary;
-$o-navbar-entry-bg--hover: $aciu-header-hover-bg;
-$o-navbar-entry-color--active: $aciu-primary;
-$o-navbar-entry-bg--active: $aciu-header-hover-bg;
-$o-navbar-brand-color: $aciu-header-text;
+$o-navbar-entry-color: rgba(255, 255, 255, 0.9);
+$o-navbar-entry-color--hover: #FFFFFF;
+$o-navbar-entry-bg--hover: rgba(0, 0, 0, 0.08);
+$o-navbar-entry-color--active: #FFFFFF;
+$o-navbar-entry-bg--active: rgba(0, 0, 0, 0.12);
+$o-navbar-brand-color: #FFFFFF;

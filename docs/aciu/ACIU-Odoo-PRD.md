@@ -157,7 +157,7 @@ Public site reference: https://www.aciuworldwide.com/
 | Token | Hex | Use |
 |-------|-----|-----|
 | Primary | `#00B686` | Buttons, active nav, accents, email CTA background |
-| Header | `#0B0B0B` | ERP top bar (rich dark; white text) |
+| Header | `#00B686` | ERP top bar (solid brand green; white text) |
 | Primary soft | `#E6F8F3` | Soft surfaces / mint fills |
 | Ink | `#313131` | Content headings |
 | Muted | `#737373` | Content secondary text |

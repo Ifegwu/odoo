@@ -1,15 +1,13 @@
-/* ACIU UI — dark ERP header, bright white text, light-green accents/buttons */
+/* ACIU UI — solid green ERP header, white text, green buttons */
 
 :root {
     --aciu-primary: #00B686;
     --aciu-primary-soft: #E6F8F3;
     --aciu-ink: #313131;
     --aciu-muted: #737373;
-    --aciu-header: #0B0B0B;
-    --aciu-header-border: #1F1F1F;
+    --aciu-header: #00B686;
+    --aciu-header-border: #009e74;
     --aciu-header-text: #FFFFFF;
-    --aciu-header-muted: rgba(255, 255, 255, 0.78);
-    --aciu-header-hover-bg: rgba(0, 182, 134, 0.18);
 }
 
 a,
@@ -33,18 +31,19 @@ a,
     border-color: var(--aciu-primary) !important;
 }
 
-/* Rich dark top bar; white text; green for highlight only */
+/* Solid green top bar with bright white text/icons */
 .o_main_navbar {
     --o-navbar-background: var(--aciu-header);
-    --NavBar-entry-color: var(--aciu-header-muted);
-    --NavBar-entry-color--hover: var(--aciu-primary);
-    --NavBar-entry-color--active: var(--aciu-primary);
+    --NavBar-entry-color: rgba(255, 255, 255, 0.92);
+    --NavBar-entry-color--hover: #FFFFFF;
+    --NavBar-entry-color--active: #FFFFFF;
     --NavBar-entry-backgroundColor: transparent;
-    --NavBar-entry-backgroundColor--hover: var(--aciu-header-hover-bg);
-    --NavBar-entry-backgroundColor--focus: var(--aciu-header-hover-bg);
-    --NavBar-entry-backgroundColor--active: var(--aciu-header-hover-bg);
-    --NavBar-brand-color: var(--aciu-header-text);
-    --o-navbar-badge-bg: var(--aciu-primary);
+    --NavBar-entry-backgroundColor--hover: rgba(0, 0, 0, 0.08);
+    --NavBar-entry-backgroundColor--focus: rgba(0, 0, 0, 0.08);
+    --NavBar-entry-backgroundColor--active: rgba(0, 0, 0, 0.12);
+    --NavBar-brand-color: #FFFFFF;
+    --o-navbar-badge-bg: #FFFFFF;
+    --o-navbar-badge-color: var(--aciu-primary);
 
     background: var(--aciu-header) !important;
     border-bottom: 1px solid var(--aciu-header-border) !important;
@@ -66,22 +65,18 @@ a,
     color: var(--aciu-header-text);
 }
 
-.o_main_navbar .o_menu_sections .o_nav_entry,
-.o_main_navbar .o_menu_sections .dropdown-toggle {
-    color: var(--aciu-header-muted);
-}
-
 .o_main_navbar .o_menu_brand:hover,
 .o_main_navbar .o_nav_entry:hover,
 .o_main_navbar .dropdown-toggle:hover,
 .o_main_navbar .o_menu_toggle:hover,
 .o_main_navbar .o_navbar_apps_menu button:hover {
-    color: var(--aciu-primary);
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.08);
 }
 
 .o_main_navbar .o_menu_brand.active,
 .o_main_navbar .o_nav_entry.active,
 .o_main_navbar .dropdown-toggle.show {
-    color: var(--aciu-primary) !important;
-    background-color: var(--aciu-header-hover-bg);
+    color: #FFFFFF !important;
+    background-color: rgba(0, 0, 0, 0.12);
 }

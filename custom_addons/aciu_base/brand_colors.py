@@ -7,8 +7,8 @@ and https://www.aciuworldwide.com/ (editable later).
 ACIU_PRIMARY = '#00B686'
 # Soft green wash (site light surfaces / soft fills)
 ACIU_PRIMARY_SOFT = '#E6F8F3'
-# Rich dark ERP header bar
-ACIU_HEADER = '#0B0B0B'
+# Solid green ERP header bar
+ACIU_HEADER = '#00B686'
 # Body / headline ink (content areas)
 ACIU_INK = '#313131'
 # Secondary muted text (content areas)
