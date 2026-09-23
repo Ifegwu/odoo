@@ -134,8 +134,30 @@ class ResPartner(models.Model):
         return [('aciu_branch_id', '=', company.id)]
 
     @api.model
+    def _aciu_domain_is_id_fetch(self, domain):
+        """True for ORM fetch/check_access queries that load records by id only.
+
+        Members list context must not rewrite those queries — otherwise related
+        company contacts (e.g. ACIU Germany) are filtered out and surface as
+        AccessError on form open.
+        """
+        dom = list(domain or [])
+        if len(dom) != 1:
+            return False
+        leaf = dom[0]
+        return (
+            isinstance(leaf, (list, tuple))
+            and len(leaf) >= 3
+            and leaf[0] == 'id'
+            and leaf[1] in ('in', '=', 'child_of')
+        )
+
+    @api.model
     def _search(self, domain, offset=0, limit=None, order=None, *, active_test=True, bypass_access=False):
-        if self.env.context.get('aciu_filter_current_branch'):
+        if (
+            self.env.context.get('aciu_filter_current_branch')
+            and not self._aciu_domain_is_id_fetch(domain)
+        ):
             domain = expression.AND([
                 list(domain or []),
                 self._aciu_member_branch_domain(),

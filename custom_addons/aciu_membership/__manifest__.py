@@ -1,7 +1,7 @@
 # Part of ACIU Odoo customization.
 {
     'name': 'ACIU Membership',
-    'version': '19.0.1.1.6',
+    'version': '19.0.1.1.7',
     'category': 'ACIU',
     'summary': 'ACIU member profiles and soft open-debt tracking',
     'description': """
