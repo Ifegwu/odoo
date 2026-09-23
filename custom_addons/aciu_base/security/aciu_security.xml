@@ -51,4 +51,31 @@
         <field name="privilege_id" ref="res_groups_privilege_aciu"/>
         <field name="implied_ids" eval="[(4, ref('group_aciu_member'))]"/>
     </record>
+
+    <!--
+      base.res_company_rule_employee limits employees to company_ids.
+      Branch forms/lists still need to display parent_id (ACIU Germany).
+      Group rules OR together, so this only widens read access.
+    -->
+    <record id="res_company_rule_aciu_read_parents" model="ir.rule">
+        <field name="name">ACIU member: read parent companies</field>
+        <field name="model_id" ref="base.model_res_company"/>
+        <field name="groups" eval="[(4, ref('group_aciu_member'))]"/>
+        <field name="domain_force">[('id', 'parent_of', company_ids)]</field>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+    <record id="res_company_rule_aciu_central_read_all" model="ir.rule">
+        <field name="name">ACIU central: read all ACIU companies</field>
+        <field name="model_id" ref="base.model_res_company"/>
+        <field name="groups" eval="[(4, ref('group_aciu_central_executive')), (4, ref('group_aciu_central_treasurer'))]"/>
+        <field name="domain_force">[('is_aciu_company', '=', True)]</field>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
 </odoo>

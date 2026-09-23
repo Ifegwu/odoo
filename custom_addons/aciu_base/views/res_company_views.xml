@@ -49,5 +49,8 @@
         <field name="view_mode">list,form</field>
         <field name="domain">[('is_aciu_company', '=', True)]</field>
         <field name="context">{'default_is_aciu_company': True}</field>
+        <field name="view_ids" eval="[(5, 0, 0),
+            (0, 0, {'view_mode': 'list', 'view_id': ref('view_company_tree_aciu')}),
+            (0, 0, {'view_mode': 'form', 'view_id': ref('base.view_company_form')})]"/>
     </record>
 </odoo>
