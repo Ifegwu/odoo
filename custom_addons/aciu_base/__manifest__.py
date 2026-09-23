@@ -1,7 +1,7 @@
 # Part of ACIU Odoo customization.
 {
     'name': 'ACIU Base',
-    'version': '19.0.1.0.0',
+    'version': '19.0.1.1.0',
     'category': 'ACIU',
     'summary': 'ACIU organization: Germany central + branches, security groups',
     'description': """
@@ -11,6 +11,7 @@ ACIU Base
 * is_registered_ev and branch codes on companies
 * Per-branch monthly roll-call fee amount (Berlin-Brandenburg = 5 EUR)
 * Security groups: Member, Branch Treasurer/Leader, Central Treasurer/Executive
+* Login branding: ACIU logo on companies (platform login logo)
     """,
     'author': 'ACIU',
     'license': 'LGPL-3',
@@ -21,6 +22,7 @@ ACIU Base
         'views/res_company_views.xml',
         'views/aciu_menus.xml',
     ],
+    'post_init_hook': 'post_init_hook',
     'application': True,
     'installable': True,
 }
