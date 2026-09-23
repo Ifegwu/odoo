@@ -23,11 +23,11 @@
         <field name="perm_unlink" eval="False"/>
     </record>
 
-    <!-- Branch officers: members of allowed companies + company contacts -->
+    <!-- Branch officers: only own-branch members + that branch's contact tree -->
     <record id="rule_aciu_branch_officer_partners" model="ir.rule">
-        <field name="name">ACIU Branch officer: home branch in companies</field>
+        <field name="name">ACIU Branch officer: own branch contacts only</field>
         <field name="model_id" ref="base.model_res_partner"/>
-        <field name="domain_force">['|', '|', ('is_company', '=', True), ('aciu_branch_id', '=', False), ('aciu_branch_id', 'in', company_ids)]</field>
+        <field name="domain_force">['|', ('aciu_branch_id', 'in', company_ids), ('id', 'child_of', user.company_ids.filtered(lambda c: c.id in company_ids).partner_id.ids)]</field>
         <field name="groups" eval="[
             (4, ref('aciu_base.group_aciu_branch_treasurer')),
             (4, ref('aciu_base.group_aciu_branch_financial_secretary')),
@@ -42,7 +42,7 @@
     <record id="rule_aciu_central_partners" model="ir.rule">
         <field name="name">ACIU Central: all ACIU members</field>
         <field name="model_id" ref="base.model_res_partner"/>
-        <field name="domain_force">['|', '|', ('is_company', '=', True), ('is_aciu_member', '=', True), ('aciu_branch_id', '!=', False)]</field>
+        <field name="domain_force">['|', '|', ('is_aciu_member', '=', True), ('aciu_branch_id', '!=', False), ('id', 'child_of', user.company_ids.partner_id.ids)]</field>
         <field name="groups" eval="[(4, ref('aciu_base.group_aciu_central_executive')), (4, ref('aciu_base.group_aciu_central_treasurer'))]"/>
     </record>
 </odoo>

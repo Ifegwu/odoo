@@ -87,28 +87,9 @@
     </record>
 
     <!--
-      base.res_company_rule_employee limits employees to company_ids.
-      Officers need parent (ACIU Germany) for hierarchy labels on Branches & Central.
-      Group rules OR together; read-only here.
+      Branch officers stay on company_ids only (no parent Germany read).
+      Avoid parent_id in branch lists/forms so the UI does not fetch Central.
     -->
-    <record id="res_company_rule_aciu_read_parents" model="ir.rule">
-        <field name="name">ACIU branch officer: read own branch and parents</field>
-        <field name="model_id" ref="base.model_res_company"/>
-        <field name="groups" eval="[
-            (4, ref('group_aciu_branch_treasurer')),
-            (4, ref('group_aciu_branch_financial_secretary')),
-            (4, ref('group_aciu_branch_secretary')),
-            (4, ref('group_aciu_branch_speaker')),
-            (4, ref('group_aciu_branch_vice_president')),
-            (4, ref('group_aciu_branch_leader')),
-        ]"/>
-        <field name="domain_force">[('id', 'parent_of', company_ids)]</field>
-        <field name="perm_read" eval="True"/>
-        <field name="perm_write" eval="False"/>
-        <field name="perm_create" eval="False"/>
-        <field name="perm_unlink" eval="False"/>
-    </record>
-
     <record id="res_company_rule_aciu_president_write" model="ir.rule">
         <field name="name">ACIU president: write own branch company</field>
         <field name="model_id" ref="base.model_res_company"/>

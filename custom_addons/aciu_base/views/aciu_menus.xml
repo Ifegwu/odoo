@@ -12,7 +12,7 @@
               groups="aciu_base.group_aciu_branch_treasurer,aciu_base.group_aciu_branch_financial_secretary,aciu_base.group_aciu_branch_secretary,aciu_base.group_aciu_branch_speaker,aciu_base.group_aciu_branch_vice_president,aciu_base.group_aciu_branch_leader,aciu_base.group_aciu_central_executive,aciu_base.group_aciu_central_treasurer,base.group_system"/>
 
     <menuitem id="menu_aciu_companies"
-              name="Branches &amp; Central"
+              name="Branch"
               parent="menu_aciu_organization"
               action="action_aciu_companies"
               sequence="10"/>

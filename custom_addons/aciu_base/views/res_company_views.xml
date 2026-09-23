@@ -5,6 +5,13 @@
         <field name="model">res.company</field>
         <field name="inherit_id" ref="base.view_company_form"/>
         <field name="arch" type="xml">
+            <!-- Branch officers must not load parent/Central via hierarchy widgets -->
+            <xpath expr="//button[@name='action_all_company_branches']" position="attributes">
+                <attribute name="groups">aciu_base.group_aciu_central_executive,aciu_base.group_aciu_central_treasurer,base.group_system</attribute>
+            </xpath>
+            <xpath expr="//page[@name='branches']" position="attributes">
+                <attribute name="groups">aciu_base.group_aciu_central_executive,aciu_base.group_aciu_central_treasurer,base.group_system</attribute>
+            </xpath>
             <xpath expr="//notebook" position="inside">
                 <page string="ACIU" name="aciu" invisible="not is_aciu_company">
                     <group>
@@ -35,7 +42,6 @@
             <list string="ACIU Companies">
                 <field name="name"/>
                 <field name="aciu_branch_code"/>
-                <field name="parent_id"/>
                 <field name="is_registered_ev"/>
                 <field name="roll_call_fee_amount"/>
                 <field name="currency_id" column_invisible="True"/>
@@ -44,7 +50,7 @@
     </record>
 
     <record id="action_aciu_companies" model="ir.actions.act_window">
-        <field name="name">Branches &amp; Central</field>
+        <field name="name">Branch</field>
         <field name="res_model">res.company</field>
         <field name="view_mode">list,form</field>
         <field name="domain">[('is_aciu_company', '=', True)]</field>
