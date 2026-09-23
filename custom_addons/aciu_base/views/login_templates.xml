@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Frosted card + body class for full-bleed bg-login.jpeg -->
+    <!-- Body class for full-bleed bg-login.jpeg; card glass styling is CSS-only -->
     <template id="login_layout_aciu" inherit_id="web.login_layout" name="ACIU Login Layout" priority="99">
         <xpath expr="//t[@t-set='body_classname']" position="replace">
             <t t-set="body_classname" t-value="'aciu_login_body'"/>
         </xpath>
-        <xpath expr="//div[hasclass('container')]" position="attributes">
-            <attribute name="class">container aciu_login_container py-4 py-md-5</attribute>
-        </xpath>
-        <xpath expr="//div[hasclass('o_database_list')]" position="attributes">
-            <attribute name="class">card border-0 mx-auto aciu_login_card o_database_list</attribute>
+        <xpath expr="//div[contains(@class, 'o_database_list')]" position="attributes">
+            <attribute name="class" add="aciu_login_card" remove="bg-100" separator=" "/>
             <attribute name="style">max-width: 360px;</attribute>
+        </xpath>
+        <xpath expr="//div[contains(@class, 'container')]" position="attributes">
+            <attribute name="class" add="aciu_login_container" separator=" "/>
         </xpath>
     </template>
 </odoo>
