@@ -1,8 +1,12 @@
-/* ACIU login / frontend accents (aciuworldwide.com primary #00B686) */
+/* ACIU UI accents — aciuworldwide.com header pattern on ERP navbar */
+
 :root {
     --aciu-primary: #00B686;
     --aciu-primary-soft: #E6F8F3;
     --aciu-ink: #313131;
+    --aciu-muted: #737373;
+    --aciu-header: #EEEEEE;
+    --aciu-header-border: #E5E5E5;
 }
 
 a,
@@ -20,14 +24,52 @@ a,
     --btn-active-border-color: #008a65;
 }
 
-/* Login card / leftover Odoo purple hardcodes */
 .oe_login_form .btn-primary,
 .o_database_list .btn-primary {
     background-color: var(--aciu-primary) !important;
     border-color: var(--aciu-primary) !important;
 }
 
-.o_home_menu_background,
+/* Light header like aciuworldwide.com (not solid green bar) */
 .o_main_navbar {
-    --o-navbar-background: var(--aciu-primary);
+    --o-navbar-background: var(--aciu-header);
+    --NavBar-entry-color: var(--aciu-muted);
+    --NavBar-entry-color--hover: var(--aciu-primary);
+    --NavBar-entry-color--active: var(--aciu-primary);
+    --NavBar-entry-backgroundColor: transparent;
+    --NavBar-entry-backgroundColor--hover: var(--aciu-primary-soft);
+    --NavBar-entry-backgroundColor--focus: var(--aciu-primary-soft);
+    --NavBar-entry-backgroundColor--active: var(--aciu-primary-soft);
+    --NavBar-brand-color: var(--aciu-ink);
+    --o-navbar-badge-bg: var(--aciu-primary);
+
+    background: var(--aciu-header) !important;
+    border-bottom: 1px solid var(--aciu-header-border) !important;
+    color: var(--aciu-muted);
+}
+
+.o_main_navbar .o_menu_toggle,
+.o_main_navbar .o_menu_brand,
+.o_main_navbar .o_navbar_apps_menu button,
+.o_main_navbar .o_nav_entry,
+.o_main_navbar .dropdown-toggle,
+.o_main_navbar .o_menu_sections .dropdown-toggle,
+.o_main_navbar .o_menu_systray i,
+.o_main_navbar .o_nav_entry i,
+.o_main_navbar .oi,
+.o_main_navbar .fa {
+    color: inherit;
+}
+
+.o_main_navbar .o_menu_brand:hover,
+.o_main_navbar .o_nav_entry:hover,
+.o_main_navbar .dropdown-toggle:hover {
+    color: var(--aciu-primary);
+}
+
+.o_main_navbar .o_menu_brand.active,
+.o_main_navbar .o_nav_entry.active,
+.o_main_navbar .dropdown-toggle.show {
+    color: var(--aciu-primary);
+    background-color: var(--aciu-primary-soft);
 }

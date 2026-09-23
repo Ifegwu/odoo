@@ -156,10 +156,11 @@ Public site reference: https://www.aciuworldwide.com/
 
 | Token | Hex | Use |
 |-------|-----|-----|
-| Primary | `#00B686` | Buttons, links, navbar accents, email CTA background |
-| Primary soft | `#E6F8F3` | Soft surfaces / washes |
-| Ink | `#313131` | Headings / secondary document color |
-| Muted | `#737373` | Secondary text |
+| Primary | `#00B686` | Buttons, active nav, accents, email CTA background |
+| Primary soft | `#E6F8F3` | Soft surfaces / nav hover / mint CTA fill |
+| Header | `#EEEEEE` | ERP top bar (matches site header — not solid green) |
+| Ink | `#313131` | Headings / brand text |
+| Muted | `#737373` | Inactive nav / secondary text |
 | Surface | `#F5F5F5` | Page background |
 
 Implementation: `aciu_base/brand_colors.py` + `static/src/scss/primary_variables.scss` (override `$o-brand-primary`). Company `primary_color` / `secondary_color` / email button colors set on upgrade. **Editable later** by changing those two files and re-upgrading `aciu_base`.

@@ -6,6 +6,8 @@ $aciu-primary-soft: #E6F8F3;
 $aciu-ink: #313131;
 $aciu-muted: #737373;
 $aciu-surface: #F5F5F5;
+$aciu-header: #EEEEEE;
+$aciu-header-border: #E5E5E5;
 
 // Override Odoo CE defaults (loaded after web/primary_variables.scss).
 $o-community-color: $aciu-primary;
@@ -13,3 +15,14 @@ $o-brand-odoo: $aciu-primary;
 $o-brand-primary: $aciu-primary;
 $o-action: $aciu-primary;
 $o-main-link-color: darken($aciu-primary, 8%);
+
+// ERP header matches aciuworldwide.com nav (light bar, green accents — not solid green).
+// Set before web/**/*.variables.scss so !default navbar vars keep these.
+$o-navbar-background: $aciu-header;
+$o-navbar-border-bottom: 1px solid $aciu-header-border;
+$o-navbar-entry-color: $aciu-muted;
+$o-navbar-entry-color--hover: $aciu-primary;
+$o-navbar-entry-bg--hover: $aciu-primary-soft;
+$o-navbar-entry-color--active: $aciu-primary;
+$o-navbar-entry-bg--active: $aciu-primary-soft;
+$o-navbar-brand-color: $aciu-ink;
