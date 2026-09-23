@@ -1,12 +1,12 @@
 /* ACIU login — full-bleed bg-login.jpeg, frosted card, mobile-safe cropping.
- * CSS-only (no QWeb inherit) so it works with web.login_layout as-is.
+ * Plain CSS (not SCSS) so CSS min()/max()/dvh are not parsed as Sass.
  */
 
 body.bg-100:has(.o_database_list),
 body:has(.oe_website_login_container) {
     --aciu-login-bg: url("/aciu_base/static/img/bg-login.jpeg");
     min-height: 100%;
-    min-height: 100dvh;
+    min-height: 100vh;
     margin: 0;
     background-color: #0a4a6e !important;
     background-image: var(--aciu-login-bg) !important;
@@ -28,25 +28,25 @@ body.bg-100:has(.o_database_list) main,
 body:has(.oe_website_login_container) #wrapwrap,
 body:has(.oe_website_login_container) main {
     background: transparent !important;
-    min-height: 100dvh;
+    min-height: 100vh;
 }
 
 body.bg-100:has(.o_database_list) > #wrapwrap > main > .container,
 body.bg-100:has(.o_database_list) .container:has(.o_database_list) {
-    min-height: calc(100dvh - 2rem);
+    min-height: calc(100vh - 2rem);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     max-width: 100%;
-    padding-left: max(1rem, env(safe-area-inset-left));
-    padding-right: max(1rem, env(safe-area-inset-right));
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 body.bg-100:has(.o_database_list) .o_database_list,
 body:has(.oe_website_login_container) .oe_website_login_container {
     width: 100%;
-    max-width: min(360px, 100%);
+    max-width: 360px;
     margin-left: auto;
     margin-right: auto;
     background: rgba(255, 255, 255, 0.78) !important;
@@ -72,10 +72,10 @@ body.bg-100:has(.o_database_list) .o_database_list .border-top {
 
     body.bg-100:has(.o_database_list) > #wrapwrap > main > .container,
     body.bg-100:has(.o_database_list) .container:has(.o_database_list) {
-        min-height: 100dvh;
+        min-height: 100vh;
         align-items: flex-start;
-        padding-top: max(2rem, env(safe-area-inset-top));
-        padding-bottom: max(2rem, env(safe-area-inset-bottom));
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     body.bg-100:has(.o_database_list) .o_database_list {
