@@ -6,8 +6,8 @@ Custom Odoo 19 modules for Abiriba Communal Union (ACIU). Do **not** modify Odoo
 
 | Module | Purpose |
 |--------|---------|
-| `aciu_base` | Companies (central + 11 DE branches), `is_registered_ev`, security groups |
-| `aciu_membership` | Member profile on contacts, soft open-debt display |
+| `aciu_base` | Companies (central + 11 DE branches), `is_registered_ev`, officer/central security groups, Branch menu, branding (logo + aciuworldwide.com `#00B686` theme) |
+| `aciu_membership` | Member profile on contacts, soft open-debt display, branch-scoped Contacts rules |
 | `aciu_dues` | €20 annual due product, per-branch roll-call fee, contribution helpers |
 
 ## Addons path
@@ -34,10 +34,11 @@ Depends on: `base`, `contacts`, `account`, `product` (and transitively `l10n_de`
 
 ## After install
 
-1. Assign users to ACIU security groups (Member, Branch Leader, …) — not Settings / Admin.
+1. Assign users to ACIU security groups (Member; Treasurer / Financial Secretary / Secretary / Speaker / VP / President; Central Treasurer / Executive) — not Settings / Admin. Central Executive may also keep a branch title.
 2. Confirm Berlin-Brandenburg roll-call fee is €5; set other branches when known.
 3. Load `l10n_de` chart on ACIU Germany and each branch company as needed.
 4. Create bank journals per company for real accounts.
+5. Branch officers: allowed companies = home branch only. Central roles: include ACIU Germany (+ branches as needed).
 
 See `docs/aciu/ACIU-Odoo-PRD.md` for full requirements.
 

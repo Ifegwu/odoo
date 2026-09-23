@@ -1,0 +1,33 @@
+/* ACIU login / frontend accents (aciuworldwide.com primary #00B686) */
+:root {
+    --aciu-primary: #00B686;
+    --aciu-primary-soft: #E6F8F3;
+    --aciu-ink: #313131;
+}
+
+a,
+.btn-link {
+    --o-btn-link-color: var(--aciu-primary);
+}
+
+.btn-primary,
+.btn-fill-primary {
+    --btn-bg: var(--aciu-primary);
+    --btn-border-color: var(--aciu-primary);
+    --btn-hover-bg: #009e74;
+    --btn-hover-border-color: #009e74;
+    --btn-active-bg: #008a65;
+    --btn-active-border-color: #008a65;
+}
+
+/* Login card / leftover Odoo purple hardcodes */
+.oe_login_form .btn-primary,
+.o_database_list .btn-primary {
+    background-color: var(--aciu-primary) !important;
+    border-color: var(--aciu-primary) !important;
+}
+
+.o_home_menu_background,
+.o_main_navbar {
+    --o-navbar-background: var(--aciu-primary);
+}

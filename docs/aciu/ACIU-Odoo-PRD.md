@@ -7,9 +7,9 @@
 | **Product** | ACIU Odoo (Abiriba Communal Union / Improvement Union) |
 | **Platform** | Odoo 19.0 Community Edition |
 | **Primary market** | ACIU Germany (central e.V. + 11 branches), extensible worldwide |
-| **Status** | Requirements locked from officer workshops (Sep 2026) |
+| **Status** | Requirements locked from officer workshops (Sep 2026); ACL refined in implementation |
 | **Related blueprint** | Cursor canvas: `ACIU-odoo-tailoring.canvas.tsx` |
-| **Version** | 1.2 |
+| **Version** | 1.4 |
 
 ---
 
@@ -49,42 +49,52 @@ Stock Odoo 19 CE is a strong foundation (Contacts, multi-company, Accounting, Po
 
 Privilege principle (locked):
 
-- **Branch leaders** and **central executives** get **elevated operational rights** (manage members, dues, roll call, projects in their scope).
+- **Branch officers** (see ladder) and **central executives** get **elevated operational rights** in their scope.
 - They are **not Settings / Admin** users (no install apps, no edit security groups, no technical settings, no create companies).
 - **Members** get **read + limited write** on their own data and selected shared areas (not full backend admin).
+- **Branch officers are restricted to their home branch** for Branch company records and Contacts (no sibling branches, no Central/Germany hierarchy read).
+- **Central Executive** users remain branch members and **keep any branch title** (Treasurer, President, VP, etc.); they **perform both** central and branch functions. Combined groups apply; Germany-wide rights come from Central Executive.
 
 ### 3.1 Role ladder
 
-| Role | Typical people | Company scope | Privilege level |
-|------|----------------|---------------|-----------------|
-| **Member** | Ordinary members | Own branch (portal + limited backend if needed) | Read + write on **allowed** personal / participation areas only |
-| **Branch Treasurer** | Branch financial secretary / treasurer | Own branch company only | Elevated finance on own branch; not admin |
-| **Branch Leader** | Branch president / chair / secretary | Own branch company only | Elevated ops on own branch; not admin |
-| **Central Treasurer** | Central e.V. treasurer | Central + consolidated DE view | Elevated finance Germany-wide; not admin |
-| **Central Executive** | Central executives / national officers | All DE companies (operational) | Elevated ops Germany-wide; not admin |
+| Role (Odoo group) | Typical people | Company / Contacts scope | Privilege level |
+|------|----------------|--------------------------|-----------------|
+| **Member** | Ordinary members | Own contact (+ limited) | Read + write on **allowed** personal / participation areas only |
+| **Treasurer** | Branch treasurer | Own branch only | Elevated finance on own branch; not admin |
+| **Financial Secretary** | Branch financial secretary | Own branch only | Read own branch; not admin |
+| **Secretary** | Branch secretary | Own branch only | Read own branch; not admin |
+| **Speaker** | Branch speaker | Own branch only | Read own branch; not admin |
+| **Vice President** | Branch VP | Own branch only | Read own branch; not admin |
+| **President** | Branch president (xml id still `group_aciu_branch_leader`) | Own branch only | **Read/write** own branch ops + own branch company; not admin |
+| **Central Treasurer** | Central e.V. treasurer | All ACIU DE companies | Elevated finance Germany-wide; not admin |
+| **Central Executive** | Central / national officers | All ACIU DE companies (+ retained branch title) | Elevated ops Germany-wide **and** branch title duties; not admin |
 | **System Admin** | IT / technical custodian | All | Full Settings (rare; 1–2 people) |
 
 ### 3.2 Privilege matrix (what each role can do)
 
-Legend: **R** = read · **W** = write/create/edit · **—** = no access · **Own** = only own record / own branch
+Legend: **R** = read · **W** = write/create/edit · **—** = no access · **Own** = only own record / own branch  
+**Officers (R)** = Treasurer, Financial Secretary, Secretary, Speaker, Vice President (read own branch unless noted).
 
-| Area | Member | Branch Treasurer | Branch Leader | Central Treasurer | Central Executive | Admin |
-|------|--------|------------------|---------------|-------------------|-------------------|-------|
-| Own profile (contact, family) | R/W Own | R/W Own | R/W Own | R/W Own | R/W Own | R/W |
-| Own open debts & payments | R/W Own (pay) | R | R | R | R | R/W |
-| Own roll-call attendance history | R Own | R branch | R/W branch | R | R | R/W |
-| Branch member directory | R Own branch (limited) | R/W Own branch | R/W Own branch | R all DE | R/W all DE | R/W |
-| Annual dues / roll-call fees (post & reconcile) | Pay own | R/W Own branch | R Own branch (approve/view) | R/W central + DE view | R all DE | R/W |
-| Burial levy / project campaigns | Pay own | R/W Own branch | R/W Own branch | R/W central + DE | R/W all DE | R/W |
-| Branch bank journal / reconciliation | — | R/W Own branch | R Own branch | R/W central; R DE | R DE | R/W |
-| Central bank / transfers | — | — | — | R/W | R | R/W |
-| Monthly roll call (take attendance) | — (self check-in optional later) | R Own branch | R/W Own branch | R | R/W all DE | R/W |
-| Branch projects | R Own branch | R/W Own branch | R/W Own branch | R | R/W | R/W |
-| Central projects | R (contribute) | R | R | R/W | R/W | R/W |
-| Reports (collections, attendance, debts) | R Own | R Own branch | R Own branch | R DE | R DE | R/W |
-| Configure roll-call fee amount | — | — | R Own branch (propose) / Central Exec W | — | W all branches | W |
-| Users, groups, Settings, apps | — | — | — | — | — | **Only Admin** |
-| Create companies / chart of accounts setup | — | — | — | — | — | **Only Admin** |
+| Area | Member | Officers (R) | Treasurer | President | Central Treasurer | Central Executive | Admin |
+|------|--------|--------------|-----------|-----------|-------------------|-------------------|-------|
+| Own profile (contact, family) | R/W Own | R/W Own | R/W Own | R/W Own | R/W Own | R/W Own | R/W |
+| Own open debts & payments | R/W Own (pay) | R | R | R | R | R | R/W |
+| Own roll-call attendance history | R Own | R branch | R branch | R/W branch | R | R | R/W |
+| Branch member directory / Contacts | R Own (limited) | R Own branch | R/W Own branch | R/W Own branch | R all DE | R/W all DE | R/W |
+| Branch menu (own company) | — | R Own branch | R Own branch | R/W Own branch | R all ACIU | R/W all ACIU | R/W |
+| Central / parent company (Germany) | — | — | — | — | R | R/W | R/W |
+| Sibling branches | — | — | — | — | R | R/W | R/W |
+| Annual dues / roll-call fees (post & reconcile) | Pay own | R Own branch | R/W Own branch | R Own branch (approve/view) | R/W central + DE view | R all DE | R/W |
+| Burial levy / project campaigns | Pay own | R Own branch | R/W Own branch | R/W Own branch | R/W central + DE | R/W all DE | R/W |
+| Branch bank journal / reconciliation | — | — / R | R/W Own branch | R Own branch | R/W central; R DE | R DE | R/W |
+| Central bank / transfers | — | — | — | — | R/W | R | R/W |
+| Monthly roll call (take attendance) | — (self check-in optional later) | R Own branch | R Own branch | R/W Own branch | R | R/W all DE | R/W |
+| Branch projects | R Own branch | R Own branch | R/W Own branch | R/W Own branch | R | R/W | R/W |
+| Central projects | R (contribute) | R | R | R | R/W | R/W | R/W |
+| Reports (collections, attendance, debts) | R Own | R Own branch | R Own branch | R Own branch | R DE | R DE | R/W |
+| Configure roll-call fee amount | — | — | — | R Own branch (propose) | — | W all branches | W |
+| Users, groups, Settings, apps | — | — | — | — | — | — | **Only Admin** |
+| Create companies / chart of accounts setup | — | — | — | — | — | — | **Only Admin** |
 
 ### 3.3 Member read/write scope (explicit)
 
@@ -101,20 +111,58 @@ Members **may not**:
 - Post accounting entries or reconcile banks
 - Open/close burial levies or change fee schedules
 - Access Settings, users, or other branches’ books
+- Browse Central or sibling branch companies / contact trees
 
-### 3.4 Branch Leader & Central Executive (elevated, not admin)
+### 3.4 Branch officers, President & Central Executive (elevated, not admin)
 
-**Branch Leader** (own branch only):
+**Branch officers** (Treasurer, Financial Secretary, Secretary, Speaker, Vice President) — **own branch only**:
 
-- Manage branch member records, roll call, branch projects, view branch collections
-- Work with Branch Treasurer (leader focuses on people/ops; treasurer on bank)
-- **Cannot:** Settings, install modules, manage security groups, see other branches’ banks
+- Open **Branch** (own company) without Access Error; UI must **not** require reading ACIU Germany / parent company
+- **Contacts** / Members: only home-branch contact tree (`aciu_branch_id` in allowed companies, or nested under that branch’s company partner)
+- **Cannot:** see Central, sibling branches, Settings, or other branches’ banks
 
-**Central Executive** (Germany-wide ops):
+**Treasurer** (additional): finance write on own-branch dues/bank (as in matrix).
 
-- View/manage members across branches, central projects, DE-wide reports
-- Support / oversee branch leaders; configure DE-wide policies (e.g. €20 due)
+**President** (own branch only):
+
+- Read/write own branch members, roll call, branch projects; write own branch company record
+- Work with Treasurer (president focuses on people/ops; treasurer on bank)
+- **Cannot:** Settings, install modules, manage security groups, see other branches’ banks or Central company
+
+**Central Executive** (Germany-wide ops + optional branch title):
+
+- Remains a member of a home branch; **retains** Treasurer / President / VP / etc. when assigned
+- Performs **both** central functions and the branch title functions
+- View/manage members across branches, central projects, DE-wide reports; write all ACIU companies as needed for DE policy
 - **Cannot:** Settings / technical admin (unless separately given Admin — discouraged)
+
+**Central Treasurer:** central bank + consolidated DE finance view; read all ACIU companies; not Settings/Admin.
+
+### 3.5 Implemented ACL notes (`aciu_base` / `aciu_membership`)
+
+| Mechanism | Behaviour |
+|-----------|-----------|
+| `company rule employee` | Employees only see `res.company` in `company_ids` |
+| Branch officers | No extra parent-company read — Germany is not readable unless Central role (or Germany in `company_ids`) |
+| President | Model write + record rule write on own branch company (`id in company_ids`) |
+| Central Executive / Treasurer | Read all `is_aciu_company`; Central Executive also write all ACIU companies |
+| Branch officer Contacts rule | `aciu_branch_id in company_ids` **or** `id child_of` activated companies’ partners |
+| Central Contacts rule | All ACIU members / branch-assigned contacts + company partner trees |
+| ACIU → Branch menu | List/form avoids parent / child hierarchy widgets for non-central users |
+
+### 3.6 Brand / theme (aciuworldwide.com)
+
+Public site reference: https://www.aciuworldwide.com/
+
+| Token | Hex | Use |
+|-------|-----|-----|
+| Primary | `#00B686` | Buttons, links, navbar accents, email CTA background |
+| Primary soft | `#E6F8F3` | Soft surfaces / washes |
+| Ink | `#313131` | Headings / secondary document color |
+| Muted | `#737373` | Secondary text |
+| Surface | `#F5F5F5` | Page background |
+
+Implementation: `aciu_base/brand_colors.py` + `static/src/scss/primary_variables.scss` (override `$o-brand-primary`). Company `primary_color` / `secondary_color` / email button colors set on upgrade. **Editable later** by changing those two files and re-upgrading `aciu_base`.
 
 ---
 
@@ -213,18 +261,20 @@ Later siblings under Worldwide: ACIU UK, North America, Nigeria, etc.
 | W-02 | Join / branch selection flows | Should |
 | W-03 | Optional NIN / ID verification hooks | Could |
 
-### 5.6 Security and access (`aciu_base`)
+### 5.6 Security and access (`aciu_base` / `aciu_membership`)
 
 | ID | Requirement | Priority |
 |----|-------------|----------|
-| S-01 | Security groups: Member, Branch Treasurer, Branch Leader, Central Treasurer, Central Executive, System Admin | Must |
-| S-02 | Branch Leader & Central Executive = **elevated ops, never Settings/Admin** by default | Must |
+| S-01 | Security groups: Member; branch officers Treasurer, Financial Secretary, Secretary, Speaker, Vice President, President; Central Treasurer; Central Executive; System Admin | Must |
+| S-02 | President & Central Executive = **elevated ops, never Settings/Admin** by default | Must |
 | S-03 | Members = **read + limited write** on own profile, own payments, own attendance; no other members’ edit | Must |
-| S-04 | Branch Treasurer / Branch Leader limited to **own company** (+ own bank for treasurer) | Must |
-| S-05 | Central Treasurer: central bank + consolidated DE finance view | Must |
-| S-06 | Central Executive: all DE companies operational access; no technical Settings | Must |
-| S-07 | Record rules enforce company/branch isolation for non-central roles | Must |
+| S-04 | Branch officers limited to **own company** for Branch + Contacts; Treasurer also own bank | Must |
+| S-05 | Central Treasurer: central bank + consolidated DE finance view; read all ACIU companies | Must |
+| S-06 | Central Executive: all DE companies operational access; **retains branch title** and performs both roles; no technical Settings | Must |
+| S-07 | Record rules enforce company/branch isolation for non-central roles (no Germany parent read for branch-only officers) | Must |
 | S-08 | Only System Admin may manage users/groups, apps, and technical configuration | Must |
+| S-09 | Branch menu / company forms must not force branch officers to read Central (no parent hierarchy widgets) | Must |
+| S-10 | Contacts for branch officers: home-branch members and that branch’s partner tree only | Must |
 
 ---
 
@@ -283,7 +333,7 @@ Later siblings under Worldwide: ACIU UK, North America, Nigeria, etc.
 
 | Module | Phase | Scope |
 |--------|-------|--------|
-| `aciu_base` | 1 | Company hierarchy helpers, `is_registered_ev`, security groups, menus, branding |
+| `aciu_base` | 1 | Company hierarchy helpers, `is_registered_ev`, security groups, menus, branding (logo + aciuworldwide.com colors) |
 | `aciu_membership` | 1 | Member profile on partner, age grade, status, family, transfers |
 | `aciu_dues` | 1 | €20 annual, per-branch roll-call fee, project & burial campaigns, soft debt |
 | `aciu_governance` | 2 | Roll-call attendance UX, elections, committees |
@@ -369,8 +419,9 @@ Later siblings under Worldwide: ACIU UK, North America, Nigeria, etc.
 - [ ] Berlin-Brandenburg roll-call fee €5 configurable; other pilot branches set or left TBD
 - [ ] Member form / portal shows open debts without blocking access
 - [ ] Branch treasurer cannot see another branch’s bank
+- [ ] Branch treasurer can open Branch + Contacts for **own branch only** (no Central Access Error; no sibling contacts)
 - [ ] Burial levy campaign can be created and closed for a pilot branch
-- [ ] Custom security groups match §3 privilege matrix (leaders/execs ≠ Admin)
+- [ ] Custom security groups match §3 privilege matrix (officers/execs ≠ Admin; Central Executive may keep branch title)
 - [ ] Custom code lives only under `custom_addons/`
 
 ---
@@ -379,6 +430,8 @@ Later siblings under Worldwide: ACIU UK, North America, Nigeria, etc.
 
 | Version | Date | Notes |
 |---------|------|--------|
+| 1.4 | 2026-09-23 | Theme: aciuworldwide.com palette (primary `#00B686`) on Odoo UI + company colors |
+| 1.3 | 2026-09-23 | ACL: named branch officers; President R/W own branch; branch-only Branch/Contacts; Central Executive keeps branch titles (dual role) |
 | 1.2 | 2026-09-22 | Phase 0–1 scaffold: custom_addons/aciu_base, aciu_membership, aciu_dues |
 | 1.1 | 2026-09-21 | Privilege model: Branch Leader & Central Executive elevated (not admin); Member R/W limited areas |
 | 1.0 | 2026-09-21 | Initial PRD from ACIU Odoo Tailoring workshops (branches, banks, €20, roll call, soft debt, projects, burial levy) |
