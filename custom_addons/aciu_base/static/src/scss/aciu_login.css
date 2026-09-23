@@ -60,6 +60,17 @@ body.bg-100:has(.o_database_list) .o_database_list .card-body {
     background: transparent;
 }
 
+/* Circular seal — hide JPEG/PNG square white corners */
+body.bg-100:has(.o_database_list) .o_database_list .text-center.pb-3.border-bottom img,
+body.bg-100:has(.o_database_list) .o_database_list img[alt="Logo"] {
+    border-radius: 50%;
+    background: transparent !important;
+    object-fit: cover;
+    max-height: 120px;
+    width: auto;
+    aspect-ratio: 1 / 1;
+}
+
 body.bg-100:has(.o_database_list) .o_database_list .border-bottom,
 body.bg-100:has(.o_database_list) .o_database_list .border-top {
     border-color: rgba(49, 49, 49, 0.12) !important;

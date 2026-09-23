@@ -14,7 +14,7 @@ from .brand_colors import (
 
 _logger = logging.getLogger(__name__)
 
-_LOGO_RELPATH = 'aciu_base/static/img/aciu_logo.jpeg'
+_LOGO_RELPATH = 'aciu_base/static/img/aciu_logo.png'
 
 
 def _load_aciu_logo_b64():
