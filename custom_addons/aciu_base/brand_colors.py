@@ -5,13 +5,13 @@ and https://www.aciuworldwide.com/ (editable later).
 
 # Primary CTA / brand green (site buttons, active nav)
 ACIU_PRIMARY = '#00B686'
-# Soft green wash (site light surfaces / nav hover)
+# Soft green wash (site light surfaces / soft fills)
 ACIU_PRIMARY_SOFT = '#E6F8F3'
-# Site / ERP header bar (not solid primary)
-ACIU_HEADER = '#EEEEEE'
-# Body / headline ink
+# Rich dark ERP header bar
+ACIU_HEADER = '#0B0B0B'
+# Body / headline ink (content areas)
 ACIU_INK = '#313131'
-# Secondary muted text / inactive nav
+# Secondary muted text (content areas)
 ACIU_MUTED = '#737373'
 # Page surface
 ACIU_SURFACE = '#F5F5F5'
