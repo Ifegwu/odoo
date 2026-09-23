@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_res_company_aciu_president,res.company ACIU president,base.model_res_company,group_aciu_branch_leader,1,1,0,0
+access_res_company_aciu_central_exec,res.company ACIU central executive,base.model_res_company,group_aciu_central_executive,1,1,0,0
