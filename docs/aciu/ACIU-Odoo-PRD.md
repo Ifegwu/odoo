@@ -164,6 +164,8 @@ Public site reference: https://www.aciuworldwide.com/
 
 Implementation: `aciu_base/brand_colors.py` + `static/src/scss/primary_variables.scss` (override `$o-brand-primary`). Company `primary_color` / `secondary_color` / email button colors set on upgrade. **Editable later** by changing those two files and re-upgrading `aciu_base`.
 
+Login page uses full-bleed `aciu_base/static/img/bg-login.jpeg` (`background-size: cover`, centered; mobile shifts position slightly) with a frosted glass card (`aciu_login.scss` + `views/login_templates.xml`).
+
 ---
 
 ## 4. Organization and legal model

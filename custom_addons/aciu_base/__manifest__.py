@@ -1,7 +1,7 @@
 # Part of ACIU Odoo customization.
 {
     'name': 'ACIU Base',
-    'version': '19.0.1.1.6',
+    'version': '19.0.1.1.7',
     'category': 'ACIU',
     'summary': 'ACIU organization: Germany central + branches, security groups',
     'description': """
@@ -12,7 +12,7 @@ ACIU Base
 * Per-branch monthly roll-call fee amount (Berlin-Brandenburg = 5 EUR)
 * Branch officers: Treasurer, Financial Secretary, Secretary, Speaker, VP, President
 * Central Executive keeps branch titles and performs both central and branch functions
-* Branding: ACIU logo + aciuworldwide.com color scheme (primary #00B686)
+* Branding: ACIU logo, aciuworldwide.com colors, login background (bg-login.jpeg)
     """,
     'author': 'ACIU',
     'license': 'LGPL-3',
@@ -23,6 +23,7 @@ ACIU Base
         'data/aciu_company_data.xml',
         'views/res_company_views.xml',
         'views/aciu_menus.xml',
+        'views/login_templates.xml',
     ],
     'assets': {
         'web._assets_primary_variables': [
@@ -37,6 +38,7 @@ ACIU Base
         ],
         'web.assets_frontend': [
             'aciu_base/static/src/scss/aciu_theme.scss',
+            'aciu_base/static/src/scss/aciu_login.scss',
         ],
     },
     'post_init_hook': 'post_init_hook',
