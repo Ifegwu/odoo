@@ -18,6 +18,7 @@ ACIU Base
     'depends': ['base', 'mail'],
     'data': [
         'security/aciu_security.xml',
+        'security/ir.model.access.csv',
         'data/aciu_company_data.xml',
         'views/res_company_views.xml',
         'views/aciu_menus.xml',
