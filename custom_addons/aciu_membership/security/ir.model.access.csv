@@ -4,3 +4,4 @@ access_res_partner_aciu_branch_leader,res.partner aciu branch leader,base.model_
 access_res_partner_aciu_central_exec,res.partner aciu central executive,base.model_res_partner,aciu_base.group_aciu_central_executive,1,1,1,0
 access_res_partner_aciu_branch_treasurer,res.partner aciu branch treasurer,base.model_res_partner,aciu_base.group_aciu_branch_treasurer,1,1,1,0
 access_res_partner_aciu_central_treasurer,res.partner aciu central treasurer,base.model_res_partner,aciu_base.group_aciu_central_treasurer,1,1,1,0
+access_res_partner_aciu_system,res.partner aciu system admin,base.model_res_partner,base.group_system,1,1,1,1

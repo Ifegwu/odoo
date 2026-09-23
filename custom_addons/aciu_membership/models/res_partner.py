@@ -1,11 +1,29 @@
 # Part of ACIU Odoo customization.
 
+import functools
+
 from odoo import _, api, fields, models
 from odoo.osv import expression
 
 
 class ResPartner(models.Model):
     _inherit = 'res.partner'
+
+    def _check_access(self, operation: str):
+        """Settings Admin bypasses ACIU partner record rules.
+
+        Admin must correct member profiles Germany-wide. Group-specific ACIU
+        ir.rules (OR'd) still interact badly with company contacts such as
+        ACIU Germany (res.partner of the central company) during form loads.
+        """
+        if not self.env.su and self.env.user.has_group('base.group_system'):
+            Access = self.env['ir.model.access']
+            if not Access.check(self._name, operation, raise_exception=False):
+                return self, functools.partial(
+                    Access._make_access_error, self._name, operation,
+                )
+            return None
+        return super()._check_access(operation)
 
     is_aciu_member = fields.Boolean(
         string='ACIU Member',

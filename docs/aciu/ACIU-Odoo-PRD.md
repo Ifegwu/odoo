@@ -68,7 +68,7 @@ Privilege principle (locked):
 | **President** | Branch president (xml id still `group_aciu_branch_leader`) | Own branch only | **Read/write** own branch ops + own branch company; not admin |
 | **Central Treasurer** | Central e.V. treasurer | All ACIU DE companies | Elevated finance Germany-wide; not admin |
 | **Central Executive** | Central / national officers | All ACIU DE companies (+ retained branch title) | Elevated ops Germany-wide **and** branch title duties; not admin |
-| **System Admin** | IT / technical custodian | All | Full Settings (rare; 1–2 people) |
+| **System Admin** | IT / technical custodian | All | Full Settings + full Members/Contacts R/W for profile corrections (rare; 1–2 people) |
 
 ### 3.2 Privilege matrix (what each role can do)
 
@@ -275,7 +275,7 @@ Later siblings under Worldwide: ACIU UK, North America, Nigeria, etc.
 | S-05 | Central Treasurer: central bank + consolidated DE finance view; read all ACIU companies | Must |
 | S-06 | Central Executive: all DE companies operational access; **retains branch title** and performs both roles; no technical Settings | Must |
 | S-07 | Record rules enforce company/branch isolation for non-central roles (no Germany parent read for branch-only officers) | Must |
-| S-08 | Only System Admin may manage users/groups, apps, and technical configuration | Must |
+| S-08 | Only System Admin may manage users/groups, apps, and technical configuration; also full read/write on Members/Contacts to correct profiles | Must |
 | S-09 | Branch menu / company forms must not force branch officers to read Central (no parent hierarchy widgets) | Must |
 | S-10 | Contacts for branch officers: home-branch members and that branch’s partner tree only | Must |
 
