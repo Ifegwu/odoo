@@ -1,7 +1,7 @@
 # Part of ACIU Odoo customization.
 {
     'name': 'ACIU Base',
-    'version': '19.0.1.1.7',
+    'version': '19.0.1.1.8',
     'category': 'ACIU',
     'summary': 'ACIU organization: Germany central + branches, security groups',
     'description': """
@@ -23,7 +23,6 @@ ACIU Base
         'data/aciu_company_data.xml',
         'views/res_company_views.xml',
         'views/aciu_menus.xml',
-        'views/login_templates.xml',
     ],
     'assets': {
         'web._assets_primary_variables': [

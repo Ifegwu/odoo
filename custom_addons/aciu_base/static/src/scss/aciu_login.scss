@@ -1,37 +1,38 @@
-/* ACIU login page — full-bleed bg-login.jpeg, frosted card, mobile-safe */
+/* ACIU login — full-bleed bg-login.jpeg, frosted card, mobile-safe cropping.
+ * CSS-only (no QWeb inherit) so it works with web.login_layout as-is.
+ */
 
-body.aciu_login_body,
 body.bg-100:has(.o_database_list),
-body:has(.oe_website_login_container .oe_login_form) {
+body:has(.oe_website_login_container) {
     --aciu-login-bg: url("/aciu_base/static/img/bg-login.jpeg");
     min-height: 100%;
     min-height: 100dvh;
     margin: 0;
-    background-color: #0a4a6e;
-    background-image: var(--aciu-login-bg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    /* fixed looks nice on desktop; iOS Safari struggles — scroll on small screens */
-    background-attachment: scroll;
+    background-color: #0a4a6e !important;
+    background-image: var(--aciu-login-bg) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
 }
 
 @media (min-width: 992px) {
-    body.aciu_login_body,
-    body.bg-100:has(.o_database_list) {
-        background-attachment: fixed;
+    body.bg-100:has(.o_database_list),
+    body:has(.oe_website_login_container) {
+        background-attachment: fixed !important;
     }
 }
 
-body.aciu_login_body #wrapwrap,
-body.aciu_login_body main,
 body.bg-100:has(.o_database_list) #wrapwrap,
-body.bg-100:has(.o_database_list) main {
+body.bg-100:has(.o_database_list) main,
+body:has(.oe_website_login_container) #wrapwrap,
+body:has(.oe_website_login_container) main {
     background: transparent !important;
     min-height: 100dvh;
 }
 
-.aciu_login_container {
+body.bg-100:has(.o_database_list) > #wrapwrap > main > .container,
+body.bg-100:has(.o_database_list) .container:has(.o_database_list) {
     min-height: calc(100dvh - 2rem);
     display: flex;
     align-items: center;
@@ -42,11 +43,12 @@ body.bg-100:has(.o_database_list) main {
     padding-right: max(1rem, env(safe-area-inset-right));
 }
 
-.aciu_login_card,
-body.aciu_login_body .o_database_list,
-body.bg-100:has(.o_database_list) .o_database_list {
+body.bg-100:has(.o_database_list) .o_database_list,
+body:has(.oe_website_login_container) .oe_website_login_container {
     width: 100%;
     max-width: min(360px, 100%);
+    margin-left: auto;
+    margin-right: auto;
     background: rgba(255, 255, 255, 0.78) !important;
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
@@ -54,34 +56,30 @@ body.bg-100:has(.o_database_list) .o_database_list {
     box-shadow: 0 12px 40px rgba(10, 40, 70, 0.22);
 }
 
-.aciu_login_card .card-body,
-body.aciu_login_body .o_database_list .card-body {
+body.bg-100:has(.o_database_list) .o_database_list .card-body {
     background: transparent;
 }
 
-.aciu_login_card .border-bottom,
-.aciu_login_card .border-top,
-body.aciu_login_body .o_database_list .border-bottom,
-body.aciu_login_body .o_database_list .border-top {
+body.bg-100:has(.o_database_list) .o_database_list .border-bottom,
+body.bg-100:has(.o_database_list) .o_database_list .border-top {
     border-color: rgba(49, 49, 49, 0.12) !important;
 }
 
 @media (max-width: 575.98px) {
-    .aciu_login_container {
+    body.bg-100:has(.o_database_list) {
+        background-position: center 35% !important;
+    }
+
+    body.bg-100:has(.o_database_list) > #wrapwrap > main > .container,
+    body.bg-100:has(.o_database_list) .container:has(.o_database_list) {
         min-height: 100dvh;
         align-items: flex-start;
         padding-top: max(2rem, env(safe-area-inset-top));
         padding-bottom: max(2rem, env(safe-area-inset-bottom));
     }
 
-    .aciu_login_card,
-    body.aciu_login_body .o_database_list {
+    body.bg-100:has(.o_database_list) .o_database_list {
         max-width: 100%;
         border-radius: 0.75rem !important;
-    }
-
-    body.aciu_login_body {
-        /* Keep canoe/figures centered when cropping on narrow screens */
-        background-position: center 35%;
     }
 }

@@ -71,10 +71,13 @@ if [ "${UPDATE_MODULES}" = "true" ]; then
   echo "==> Odoo -u aciu modules on ${DB_NAME}"
   systemctl stop "${SERVICE}" || true
   # Odoo 19: run as server command; conf supplies addons_path (incl. custom_addons)
-  sudo -u odoo "${DEPLOY_PATH}/venv/bin/python" "${DEPLOY_PATH}/odoo-bin" server \
+  if ! sudo -u odoo "${DEPLOY_PATH}/venv/bin/python" "${DEPLOY_PATH}/odoo-bin" server \
     -c /etc/odoo/odoo.conf -d "${DB_NAME}" \
     -u aciu_base,aciu_membership,aciu_dues \
-    --stop-after-init --http-port=8070
+    --stop-after-init --http-port=8070 2>&1; then
+    echo "==> Odoo module upgrade failed (see output above)" >&2
+    exit 1
+  fi
 fi
 
 echo "==> Restart ${SERVICE}"
