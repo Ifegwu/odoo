@@ -81,7 +81,7 @@
     <record id="group_aciu_central_executive" model="res.groups">
         <field name="name">Central Executive</field>
         <field name="sequence">50</field>
-        <field name="comment">Germany-wide operational access. Central executives are also branch members via their home company; this role overrides any branch officer title (Treasurer, President, etc.). Not Settings/Admin.</field>
+        <field name="comment">Germany-wide operational access. Central executives remain branch members and keep any branch title (Treasurer, President, VP, etc.); they perform both central and branch functions. Not Settings/Admin.</field>
         <field name="privilege_id" ref="res_groups_privilege_aciu"/>
         <field name="implied_ids" eval="[(4, ref('group_aciu_member'))]"/>
     </record>
