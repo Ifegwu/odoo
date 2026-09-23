@@ -28,7 +28,14 @@
         <field name="name">ACIU Branch officer: home branch in companies</field>
         <field name="model_id" ref="base.model_res_partner"/>
         <field name="domain_force">['|', '|', ('is_company', '=', True), ('aciu_branch_id', '=', False), ('aciu_branch_id', 'in', company_ids)]</field>
-        <field name="groups" eval="[(4, ref('aciu_base.group_aciu_branch_leader')), (4, ref('aciu_base.group_aciu_branch_treasurer'))]"/>
+        <field name="groups" eval="[
+            (4, ref('aciu_base.group_aciu_branch_treasurer')),
+            (4, ref('aciu_base.group_aciu_branch_financial_secretary')),
+            (4, ref('aciu_base.group_aciu_branch_secretary')),
+            (4, ref('aciu_base.group_aciu_branch_speaker')),
+            (4, ref('aciu_base.group_aciu_branch_vice_president')),
+            (4, ref('aciu_base.group_aciu_branch_leader')),
+        ]"/>
     </record>
 
     <!-- Central roles: all ACIU members + company contacts -->

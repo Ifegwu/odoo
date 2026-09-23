@@ -6,5 +6,5 @@
               parent="aciu_base.menu_aciu_root"
               action="action_aciu_members_server"
               sequence="20"
-              groups="aciu_base.group_aciu_member,aciu_base.group_aciu_branch_treasurer,aciu_base.group_aciu_branch_leader,aciu_base.group_aciu_central_treasurer,aciu_base.group_aciu_central_executive,base.group_system"/>
+              groups="aciu_base.group_aciu_member,aciu_base.group_aciu_branch_treasurer,aciu_base.group_aciu_branch_financial_secretary,aciu_base.group_aciu_branch_secretary,aciu_base.group_aciu_branch_speaker,aciu_base.group_aciu_branch_vice_president,aciu_base.group_aciu_branch_leader,aciu_base.group_aciu_central_treasurer,aciu_base.group_aciu_central_executive,base.group_system"/>
 </odoo>

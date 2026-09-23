@@ -1,7 +1,7 @@
 # Part of ACIU Odoo customization.
 {
     'name': 'ACIU Dues',
-    'version': '19.0.1.0.0',
+    'version': '19.0.1.0.1',
     'category': 'ACIU',
     'summary': 'ACIU annual dues, roll-call fees, projects and burial levies',
     'description': """
