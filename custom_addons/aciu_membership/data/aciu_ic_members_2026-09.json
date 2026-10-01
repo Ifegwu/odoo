@@ -1,0 +1,2094 @@
+{
+  "HAMBURG": [
+    {
+      "num": 1,
+      "name_raw": "CHIEF PAUL OKORIE (RETIRED)",
+      "name": "CHIEF PAUL OKORIE",
+      "retired": true,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "PAUL OKORIE"
+    },
+    {
+      "num": 2,
+      "name_raw": "CHIEF UDE UWAH (RETIRED)",
+      "name": "CHIEF UDE UWAH",
+      "retired": true,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "UDE UWAH"
+    },
+    {
+      "num": 3,
+      "name_raw": "CHIEF FRANCIS EMOLE (RETIRED)",
+      "name": "CHIEF FRANCIS EMOLE",
+      "retired": true,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "FRANCIS EMOLE"
+    },
+    {
+      "num": 4,
+      "name_raw": "CHIEF EKPUAGHA NWOJO (RETIRED)",
+      "name": "CHIEF EKPUAGHA NWOJO",
+      "retired": true,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "EKPUAGHA NWOJO"
+    },
+    {
+      "num": 5,
+      "name_raw": "CHIEF UGORJI OKENWA",
+      "name": "CHIEF UGORJI OKENWA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "UGORJI OKENWA"
+    },
+    {
+      "num": 6,
+      "name_raw": "CHIEF ARISA ONWUKA",
+      "name": "CHIEF ARISA ONWUKA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "ARISA ONWUKA"
+    },
+    {
+      "num": 7,
+      "name_raw": "CHIEF AGWU EMOLE",
+      "name": "CHIEF AGWU EMOLE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "AGWU EMOLE"
+    },
+    {
+      "num": 8,
+      "name_raw": "CHIEF ISAAC OKORIE",
+      "name": "CHIEF ISAAC OKORIE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "ISAAC OKORIE"
+    },
+    {
+      "num": 9,
+      "name_raw": "EVANG. ORJI ASO",
+      "name": "EVANG. ORJI ASO",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "ORJI ASO"
+    },
+    {
+      "num": 10,
+      "name_raw": "CHIEF JONAS EZIKPE",
+      "name": "CHIEF JONAS EZIKPE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "JONAS EZIKPE"
+    },
+    {
+      "num": 11,
+      "name_raw": "MAZI EMEKA JOHNSON",
+      "name": "MAZI EMEKA JOHNSON",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "EMEKA JOHNSON"
+    },
+    {
+      "num": 12,
+      "name_raw": "MAZI AKAROUN OKALI UKA",
+      "name": "MAZI AKAROUN OKALI UKA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "AKAROUN OKALI UKA"
+    },
+    {
+      "num": 13,
+      "name_raw": "PRINCE IGWO .O. ACHI",
+      "name": "PRINCE IGWO .O. ACHI",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "IGWO O ACHI"
+    },
+    {
+      "num": 14,
+      "name_raw": "MR ISAAC EZE AZUH",
+      "name": "MR ISAAC EZE AZUH",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "ISAAC EZE AZUH"
+    },
+    {
+      "num": 15,
+      "name_raw": "CHIEF LAWRENCE .O. ONYUKU",
+      "name": "CHIEF LAWRENCE .O. ONYUKU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "LAWRENCE O ONYUKU"
+    },
+    {
+      "num": 16,
+      "name_raw": "PRINCE KALU OGBUWA",
+      "name": "PRINCE KALU OGBUWA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "KALU OGBUWA"
+    },
+    {
+      "num": 17,
+      "name_raw": "MR IKECHUKWU NKPA",
+      "name": "MR IKECHUKWU NKPA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "IKECHUKWU NKPA"
+    },
+    {
+      "num": 18,
+      "name_raw": "ELDER OLERE OGBU KALU",
+      "name": "ELDER OLERE OGBU KALU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "OLERE OGBU KALU"
+    },
+    {
+      "num": 19,
+      "name_raw": "MR EMEH OKAFOR",
+      "name": "MR EMEH OKAFOR",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "EMEH OKAFOR"
+    },
+    {
+      "num": 20,
+      "name_raw": "PRINCE UCHE .N. NNANNA",
+      "name": "PRINCE UCHE .N. NNANNA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "UCHE N NNANNA"
+    },
+    {
+      "num": 21,
+      "name_raw": "MR ONUOHA AGO CHUKWU",
+      "name": "MR ONUOHA AGO CHUKWU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "ONUOHA AGO CHUKWU"
+    },
+    {
+      "num": 22,
+      "name_raw": "PASTOR UKONU .O. NDUKA",
+      "name": "PASTOR UKONU .O. NDUKA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "UKONU O NDUKA"
+    },
+    {
+      "num": 23,
+      "name_raw": "MR JOHN IREKE",
+      "name": "MR JOHN IREKE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "JOHN IREKE"
+    },
+    {
+      "num": 24,
+      "name_raw": "MR OKPAN NWANKWO",
+      "name": "MR OKPAN NWANKWO",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "OKPAN NWANKWO"
+    },
+    {
+      "num": 25,
+      "name_raw": "MR KALU UCHE EMEH",
+      "name": "MR KALU UCHE EMEH",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "KALU UCHE EMEH"
+    },
+    {
+      "num": 26,
+      "name_raw": "EZE ODEGHE GODWILL",
+      "name": "EZE ODEGHE GODWILL",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "ODEGHE GODWILL"
+    },
+    {
+      "num": 27,
+      "name_raw": "MR ODEGHE UKOHA",
+      "name": "MR ODEGHE UKOHA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "ODEGHE UKOHA"
+    },
+    {
+      "num": 28,
+      "name_raw": "MRS CHIKA UGWUNWA",
+      "name": "MRS CHIKA UGWUNWA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "CHIKA UGWUNWA"
+    },
+    {
+      "num": 29,
+      "name_raw": "MRS LINDA MENNIG",
+      "name": "MRS LINDA MENNIG",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "LINDA MENNIG"
+    },
+    {
+      "num": 30,
+      "name_raw": "DEAC. HELEN IDABUO",
+      "name": "DEAC. HELEN IDABUO",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "HELEN IDABUO"
+    },
+    {
+      "num": 31,
+      "name_raw": "MR OGBAUTA .A. CHUKWU",
+      "name": "MR OGBAUTA .A. CHUKWU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "OGBAUTA A CHUKWU"
+    },
+    {
+      "num": 32,
+      "name_raw": "MR OKAFOR AGWU",
+      "name": "MR OKAFOR AGWU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "OKAFOR AGWU"
+    },
+    {
+      "num": 33,
+      "name_raw": "MR AGBAEZE OKOH",
+      "name": "MR AGBAEZE OKOH",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "AGBAEZE OKOH"
+    },
+    {
+      "num": 34,
+      "name_raw": "PASTOR KALU EZIKPE",
+      "name": "PASTOR KALU EZIKPE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "KALU EZIKPE"
+    },
+    {
+      "num": 35,
+      "name_raw": "MR EKE AGU",
+      "name": "MR EKE AGU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "EKE AGU"
+    },
+    {
+      "num": 36,
+      "name_raw": "MR STEVE .O. KALU",
+      "name": "MR STEVE .O. KALU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "STEVE O KALU"
+    },
+    {
+      "num": 37,
+      "name_raw": "MR UKAEGBU OCHO",
+      "name": "MR UKAEGBU OCHO",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "UKAEGBU OCHO"
+    },
+    {
+      "num": 38,
+      "name_raw": "MAZI ANDY ONOH OKOROEZI",
+      "name": "MAZI ANDY ONOH OKOROEZI",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "ANDY ONOH OKOROEZI"
+    },
+    {
+      "num": 39,
+      "name_raw": "MR OKIKE .A. EMEKA",
+      "name": "MR OKIKE .A. EMEKA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "OKIKE A EMEKA"
+    },
+    {
+      "num": 40,
+      "name_raw": "MR CHUKWUMA .O. AMUTA",
+      "name": "MR CHUKWUMA .O. AMUTA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "CHUKWUMA O AMUTA"
+    },
+    {
+      "num": 41,
+      "name_raw": "MR EKE ELENDU",
+      "name": "MR EKE ELENDU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "EKE ELENDU"
+    },
+    {
+      "num": 42,
+      "name_raw": "MR OKOGBUE AWARA",
+      "name": "MR OKOGBUE AWARA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "OKOGBUE AWARA"
+    },
+    {
+      "num": 43,
+      "name_raw": "MR DANIEL OGBUWA KALU",
+      "name": "MR DANIEL OGBUWA KALU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "DANIEL OGBUWA KALU"
+    },
+    {
+      "num": 44,
+      "name_raw": "MR ANYANSO IKWUAGWU",
+      "name": "MR ANYANSO IKWUAGWU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "ANYANSO IKWUAGWU"
+    },
+    {
+      "num": 45,
+      "name_raw": "MR UDEH MGBOJI",
+      "name": "MR UDEH MGBOJI",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "UDEH MGBOJI"
+    },
+    {
+      "num": 46,
+      "name_raw": "MR NDUKWO OGBONNAYA",
+      "name": "MR NDUKWO OGBONNAYA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "NDUKWO OGBONNAYA"
+    },
+    {
+      "num": 47,
+      "name_raw": "MR OKPAN ONUMA",
+      "name": "MR OKPAN ONUMA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "OKPAN ONUMA"
+    },
+    {
+      "num": 48,
+      "name_raw": "MR SAMUEL EJIEKE",
+      "name": "MR SAMUEL EJIEKE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "SAMUEL EJIEKE"
+    },
+    {
+      "num": 49,
+      "name_raw": "MR DEDE EZEMA",
+      "name": "MR DEDE EZEMA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "DEDE EZEMA"
+    },
+    {
+      "num": 50,
+      "name_raw": "MR BENNY DIKE",
+      "name": "MR BENNY DIKE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "BENNY DIKE"
+    },
+    {
+      "num": 51,
+      "name_raw": "MR NWOJO ANAMA",
+      "name": "MR NWOJO ANAMA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "NWOJO ANAMA"
+    },
+    {
+      "num": 52,
+      "name_raw": "MR KALU OLEH",
+      "name": "MR KALU OLEH",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "KALU OLEH"
+    },
+    {
+      "num": 53,
+      "name_raw": "MR JAMES OGUGUA",
+      "name": "MR JAMES OGUGUA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "JAMES OGUGUA"
+    },
+    {
+      "num": 54,
+      "name_raw": "MR ELEANYA ANYA EMEH",
+      "name": "MR ELEANYA ANYA EMEH",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "ELEANYA ANYA EMEH"
+    },
+    {
+      "num": 55,
+      "name_raw": "MR EJINDU UKAEGBU",
+      "name": "MR EJINDU UKAEGBU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "EJINDU UKAEGBU"
+    },
+    {
+      "num": 56,
+      "name_raw": "MR ENYINNAYA ONUMA MGBACHI",
+      "name": "MR ENYINNAYA ONUMA MGBACHI",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "ENYINNAYA ONUMA MGBACHI"
+    },
+    {
+      "num": 57,
+      "name_raw": "MR ONUOHA KALU EMOLE",
+      "name": "MR ONUOHA KALU EMOLE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "ONUOHA KALU EMOLE"
+    },
+    {
+      "num": 58,
+      "name_raw": "MR INNOCENT KALU EKEH",
+      "name": "MR INNOCENT KALU EKEH",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "INNOCENT KALU EKEH"
+    },
+    {
+      "num": 59,
+      "name_raw": "ENG. PAUL NDUKWE ARUIKE",
+      "name": "ENG. PAUL NDUKWE ARUIKE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "PAUL NDUKWE ARUIKE"
+    },
+    {
+      "num": 60,
+      "name_raw": "MR KALU OBASI",
+      "name": "MR KALU OBASI",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "KALU OBASI"
+    },
+    {
+      "num": 61,
+      "name_raw": "MR ABBOTT EJINDU OKORIE",
+      "name": "MR ABBOTT EJINDU OKORIE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "ABBOTT EJINDU OKORIE"
+    },
+    {
+      "num": 62,
+      "name_raw": "MR KALU ARU KALU",
+      "name": "MR KALU ARU KALU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "KALU ARU KALU"
+    },
+    {
+      "num": 63,
+      "name_raw": "MR AMEY NWOJO EZEIKPE",
+      "name": "MR AMEY NWOJO EZEIKPE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "AMEY NWOJO EZEIKPE"
+    },
+    {
+      "num": 64,
+      "name_raw": "MR OKPARA KALU ODEGHE",
+      "name": "MR OKPARA KALU ODEGHE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "OKPARA KALU ODEGHE"
+    },
+    {
+      "num": 65,
+      "name_raw": "MR IHEME ELIJAH",
+      "name": "MR IHEME ELIJAH",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "IHEME ELIJAH"
+    },
+    {
+      "num": 66,
+      "name_raw": "MR MIKE .N. UMEZURUIKE",
+      "name": "MR MIKE .N. UMEZURUIKE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "MIKE N UMEZURUIKE"
+    },
+    {
+      "num": 67,
+      "name_raw": "MR KALU MANG EBE",
+      "name": "MR KALU MANG EBE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "KALU MANG EBE"
+    },
+    {
+      "num": 68,
+      "name_raw": "CHIEF JONAH JOHN OSIRI",
+      "name": "CHIEF JONAH JOHN OSIRI",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "JONAH JOHN OSIRI"
+    },
+    {
+      "num": 69,
+      "name_raw": "MR UMAZI UCHE AJIKE",
+      "name": "MR UMAZI UCHE AJIKE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "UMAZI UCHE AJIKE"
+    },
+    {
+      "num": 70,
+      "name_raw": "MR EGBU KALU OKARAZU",
+      "name": "MR EGBU KALU OKARAZU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "EGBU KALU OKARAZU"
+    },
+    {
+      "num": 71,
+      "name_raw": "MAZI NNANNA J. UWAKA",
+      "name": "MAZI NNANNA J. UWAKA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "branch_key": "HAMBURG",
+      "name_key": "NNANNA J UWAKA"
+    }
+  ],
+  "STUTTGART": [
+    {
+      "num": 1,
+      "name_raw": "MR ASIEGBU EBI UGBO",
+      "name": "MR ASIEGBU EBI UGBO",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "ASIEGBU EBI UGBO"
+    },
+    {
+      "num": 2,
+      "name_raw": "MR ELVIS ELEANYA OKWA",
+      "name": "MR ELVIS ELEANYA OKWA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "ELVIS ELEANYA OKWA"
+    },
+    {
+      "num": 3,
+      "name_raw": "MR ANAGHA ONWUKA",
+      "name": "MR ANAGHA ONWUKA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "ANAGHA ONWUKA"
+    },
+    {
+      "num": 4,
+      "name_raw": "MR CHIGBO KALU UKOSO",
+      "name": "MR CHIGBO KALU UKOSO",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "CHIGBO KALU UKOSO"
+    },
+    {
+      "num": 5,
+      "name_raw": "MR DEDE OPAGU KALU",
+      "name": "MR DEDE OPAGU KALU",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "DEDE OPAGU KALU"
+    },
+    {
+      "num": 6,
+      "name_raw": "MR DAVID KALU ABAH",
+      "name": "MR DAVID KALU ABAH",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "DAVID KALU ABAH"
+    },
+    {
+      "num": 7,
+      "name_raw": "MR EKE EBE ECHEME",
+      "name": "MR EKE EBE ECHEME",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "EKE EBE ECHEME"
+    },
+    {
+      "num": 8,
+      "name_raw": "MR EME KALU ONUMA",
+      "name": "MR EME KALU ONUMA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "EME KALU ONUMA"
+    },
+    {
+      "num": 9,
+      "name_raw": "MR EBE IROHA ECHEME",
+      "name": "MR EBE IROHA ECHEME",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "EBE IROHA ECHEME"
+    },
+    {
+      "num": 10,
+      "name_raw": "MR EME KALU NKUGBA",
+      "name": "MR EME KALU NKUGBA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "EME KALU NKUGBA"
+    },
+    {
+      "num": 11,
+      "name_raw": "MR EDDY OKENWA",
+      "name": "MR EDDY OKENWA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "EDDY OKENWA"
+    },
+    {
+      "num": 12,
+      "name_raw": "MR JONAH ORJI LEKWAUWA",
+      "name": "MR JONAH ORJI LEKWAUWA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "JONAH ORJI LEKWAUWA"
+    },
+    {
+      "num": 13,
+      "name_raw": "MR NDUKWO KALU OGWO",
+      "name": "MR NDUKWO KALU OGWO",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "NDUKWO KALU OGWO"
+    },
+    {
+      "num": 14,
+      "name_raw": "MR KALU OKENWA",
+      "name": "MR KALU OKENWA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "KALU OKENWA"
+    },
+    {
+      "num": 15,
+      "name_raw": "MR KALU OLE",
+      "name": "MR KALU OLE",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "KALU OLE"
+    },
+    {
+      "num": 16,
+      "name_raw": "MR KALU ODIM",
+      "name": "MR KALU ODIM",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "KALU ODIM"
+    },
+    {
+      "num": 17,
+      "name_raw": "MR NKUMA AGBAI IGBOKO",
+      "name": "MR NKUMA AGBAI IGBOKO",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "NKUMA AGBAI IGBOKO"
+    },
+    {
+      "num": 18,
+      "name_raw": "MR NNANNA ODIKE",
+      "name": "MR NNANNA ODIKE",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "NNANNA ODIKE"
+    },
+    {
+      "num": 19,
+      "name_raw": "MR lROHA EBE ECHEME",
+      "name": "MR lROHA EBE ECHEME",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "LROHA EBE ECHEME"
+    },
+    {
+      "num": 20,
+      "name_raw": "MR MBA KALU UKE",
+      "name": "MR MBA KALU UKE",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "MBA KALU UKE"
+    },
+    {
+      "num": 21,
+      "name_raw": "MR OLU DIKE KALU",
+      "name": "MR OLU DIKE KALU",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "OLU DIKE KALU"
+    },
+    {
+      "num": 22,
+      "name_raw": "MR OKIYI OGBURUBI",
+      "name": "MR OKIYI OGBURUBI",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "OKIYI OGBURUBI"
+    },
+    {
+      "num": 23,
+      "name_raw": "MR RICHARD OJAH NDUKWO",
+      "name": "MR RICHARD OJAH NDUKWO",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "RICHARD OJAH NDUKWO"
+    },
+    {
+      "num": 24,
+      "name_raw": "MR OGBA KALU ONUMA",
+      "name": "MR OGBA KALU ONUMA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "OGBA KALU ONUMA"
+    },
+    {
+      "num": 25,
+      "name_raw": "MR OKORIE UKE lKWUAGWU",
+      "name": "MR OKORIE UKE lKWUAGWU",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "OKORIE UKE LKWUAGWU"
+    },
+    {
+      "num": 26,
+      "name_raw": "MR SAM OKUWA",
+      "name": "MR SAM OKUWA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "SAM OKUWA"
+    },
+    {
+      "num": 27,
+      "name_raw": "MR JOHN MARK",
+      "name": "MR JOHN MARK",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "JOHN MARK"
+    },
+    {
+      "num": 28,
+      "name_raw": "MR KALU URUM AGWU",
+      "name": "MR KALU URUM AGWU",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "KALU URUM AGWU"
+    },
+    {
+      "num": 29,
+      "name_raw": "MR SAM MGBACHI",
+      "name": "MR SAM MGBACHI",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "SAM MGBACHI"
+    },
+    {
+      "num": 30,
+      "name_raw": "MR ONYEKACHI EZEMA",
+      "name": "MR ONYEKACHI EZEMA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "ONYEKACHI EZEMA"
+    },
+    {
+      "num": 31,
+      "name_raw": "MR KALU OGBOGU OKORIE",
+      "name": "MR KALU OGBOGU OKORIE",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "KALU OGBOGU OKORIE"
+    },
+    {
+      "num": 32,
+      "name_raw": "MR AKUMA AGWU",
+      "name": "MR AKUMA AGWU",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "AKUMA AGWU"
+    },
+    {
+      "num": 33,
+      "name_raw": "MR JOE DIMGBA NDUKA",
+      "name": "MR JOE DIMGBA NDUKA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "JOE DIMGBA NDUKA"
+    },
+    {
+      "num": 34,
+      "name_raw": "MR J J lSSAC EBE",
+      "name": "MR J J lSSAC EBE",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "J J LSSAC EBE"
+    },
+    {
+      "num": 35,
+      "name_raw": "MR lFEANYI CHUKWUMA",
+      "name": "MR lFEANYI CHUKWUMA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "LFEANYI CHUKWUMA"
+    },
+    {
+      "num": 36,
+      "name_raw": "MR BAMA ONYIJA",
+      "name": "MR BAMA ONYIJA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-Württemberg",
+      "branch_key": "STUTTGART",
+      "name_key": "BAMA ONYIJA"
+    }
+  ],
+  "HALLE": [
+    {
+      "num": 1,
+      "name_raw": "MR. ONYEIJE IGBANI OZOMO",
+      "name": "MR. ONYEIJE IGBANI OZOMO",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "ONYEIJE IGBANI OZOMO"
+    },
+    {
+      "num": 2,
+      "name_raw": "MR. EMMANUEL NMAJU",
+      "name": "MR. EMMANUEL NMAJU",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "EMMANUEL NMAJU"
+    },
+    {
+      "num": 3,
+      "name_raw": "MR. ANYA AGWU",
+      "name": "MR. ANYA AGWU",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "ANYA AGWU"
+    },
+    {
+      "num": 4,
+      "name_raw": "MR. CHIJIOKE OKORO",
+      "name": "MR. CHIJIOKE OKORO",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "CHIJIOKE OKORO"
+    },
+    {
+      "num": 5,
+      "name_raw": "MR. DIKE IFENDU",
+      "name": "MR. DIKE IFENDU",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "DIKE IFENDU"
+    },
+    {
+      "num": 6,
+      "name_raw": "MR. OTEH KALU",
+      "name": "MR. OTEH KALU",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "OTEH KALU"
+    },
+    {
+      "num": 7,
+      "name_raw": "MR. NDUKWO OKE",
+      "name": "MR. NDUKWO OKE",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "NDUKWO OKE"
+    },
+    {
+      "num": 8,
+      "name_raw": "MR. ONWUKA NDUKWO",
+      "name": "MR. ONWUKA NDUKWO",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "ONWUKA NDUKWO"
+    },
+    {
+      "num": 9,
+      "name_raw": "MR. ANYA AZU EMEABA",
+      "name": "MR. ANYA AZU EMEABA",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "ANYA AZU EMEABA"
+    },
+    {
+      "num": 10,
+      "name_raw": "MR. ENYINNAYA NMAJU",
+      "name": "MR. ENYINNAYA NMAJU",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "ENYINNAYA NMAJU"
+    },
+    {
+      "num": 11,
+      "name_raw": "MR. MR. DIKE AZU DIKE",
+      "name": "MR. MR. DIKE AZU DIKE",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "MR DIKE AZU DIKE"
+    },
+    {
+      "num": 12,
+      "name_raw": "MR. OGBU OTEH",
+      "name": "MR. OGBU OTEH",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "OGBU OTEH"
+    },
+    {
+      "num": 13,
+      "name_raw": "MR. EMMANUEL EGBE",
+      "name": "MR. EMMANUEL EGBE",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "EMMANUEL EGBE"
+    },
+    {
+      "num": 14,
+      "name_raw": "MR. KALU UDEAGHA",
+      "name": "MR. KALU UDEAGHA",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "KALU UDEAGHA"
+    },
+    {
+      "num": 15,
+      "name_raw": "MR. SILAS AGU UKAH",
+      "name": "MR. SILAS AGU UKAH",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "SILAS AGU UKAH"
+    },
+    {
+      "num": 16,
+      "name_raw": "MR. KALU ANAGHA",
+      "name": "MR. KALU ANAGHA",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "KALU ANAGHA"
+    },
+    {
+      "num": 17,
+      "name_raw": "MR. EGBURONU IGBE",
+      "name": "MR. EGBURONU IGBE",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "EGBURONU IGBE"
+    },
+    {
+      "num": 18,
+      "name_raw": "MR. KALU AGWU UJAH",
+      "name": "MR. KALU AGWU UJAH",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "KALU AGWU UJAH"
+    },
+    {
+      "num": 19,
+      "name_raw": "MR. UKAEGBU UKOHA NWOKE",
+      "name": "MR. UKAEGBU UKOHA NWOKE",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "UKAEGBU UKOHA NWOKE"
+    },
+    {
+      "num": 20,
+      "name_raw": "MR. JOHN AJAH",
+      "name": "MR. JOHN AJAH",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "branch_key": "HALLE",
+      "name_key": "JOHN AJAH"
+    }
+  ],
+  "BAYERN": [
+    {
+      "num": 1,
+      "name_raw": "CHIEF MANG OBASI",
+      "name": "CHIEF MANG OBASI",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "branch_key": "BAYERN",
+      "name_key": "MANG OBASI"
+    },
+    {
+      "num": 2,
+      "name_raw": "MR STEPHEN KALU",
+      "name": "MR STEPHEN KALU",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "branch_key": "BAYERN",
+      "name_key": "STEPHEN KALU"
+    },
+    {
+      "num": 3,
+      "name_raw": "MR ONYEANI EKE",
+      "name": "MR ONYEANI EKE",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "branch_key": "BAYERN",
+      "name_key": "ONYEANI EKE"
+    },
+    {
+      "num": 4,
+      "name_raw": "MR JOHN AGBARA OKON",
+      "name": "MR JOHN AGBARA OKON",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "branch_key": "BAYERN",
+      "name_key": "JOHN AGBARA OKON"
+    },
+    {
+      "num": 5,
+      "name_raw": "MR UCHE NDUKWO",
+      "name": "MR UCHE NDUKWO",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "branch_key": "BAYERN",
+      "name_key": "UCHE NDUKWO"
+    },
+    {
+      "num": 6,
+      "name_raw": "MR GEORGE KALU EZIKPE",
+      "name": "MR GEORGE KALU EZIKPE",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "branch_key": "BAYERN",
+      "name_key": "GEORGE KALU EZIKPE"
+    },
+    {
+      "num": 7,
+      "name_raw": "MR ORJI ANYANSO",
+      "name": "MR ORJI ANYANSO",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "branch_key": "BAYERN",
+      "name_key": "ORJI ANYANSO"
+    },
+    {
+      "num": 8,
+      "name_raw": "MR EREM AMAGHIONWU",
+      "name": "MR EREM AMAGHIONWU",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "branch_key": "BAYERN",
+      "name_key": "EREM AMAGHIONWU"
+    },
+    {
+      "num": 9,
+      "name_raw": "MR UKARIWO ONU",
+      "name": "MR UKARIWO ONU",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "branch_key": "BAYERN",
+      "name_key": "UKARIWO ONU"
+    }
+  ],
+  "FRANKFURT": [
+    {
+      "num": 1,
+      "name_raw": "MR MBA AGBA",
+      "name": "MR MBA AGBA",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "branch_key": "FRANKFURT",
+      "name_key": "MBA AGBA"
+    },
+    {
+      "num": 2,
+      "name_raw": "MR ONYEANI KALU",
+      "name": "MR ONYEANI KALU",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "branch_key": "FRANKFURT",
+      "name_key": "ONYEANI KALU"
+    },
+    {
+      "num": 3,
+      "name_raw": "MR CHIDI OKEKE-BRAMESFELD",
+      "name": "MR CHIDI OKEKE-BRAMESFELD",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "branch_key": "FRANKFURT",
+      "name_key": "CHIDI OKEKE-BRAMESFELD"
+    },
+    {
+      "num": 4,
+      "name_raw": "MR KALU EGBU ALUGWO",
+      "name": "MR KALU EGBU ALUGWO",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "branch_key": "FRANKFURT",
+      "name_key": "KALU EGBU ALUGWO"
+    },
+    {
+      "num": 5,
+      "name_raw": "MR ANAGHA OKAFOR",
+      "name": "MR ANAGHA OKAFOR",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "branch_key": "FRANKFURT",
+      "name_key": "ANAGHA OKAFOR"
+    },
+    {
+      "num": 6,
+      "name_raw": "MR IGWE KALU",
+      "name": "MR IGWE KALU",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "branch_key": "FRANKFURT",
+      "name_key": "IGWE KALU"
+    },
+    {
+      "num": 7,
+      "name_raw": "MR KALU ARU NGANWA",
+      "name": "MR KALU ARU NGANWA",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "branch_key": "FRANKFURT",
+      "name_key": "KALU ARU NGANWA"
+    },
+    {
+      "num": 8,
+      "name_raw": "MR ELEZUO BENJAMIN OBEWU",
+      "name": "MR ELEZUO BENJAMIN OBEWU",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "branch_key": "FRANKFURT",
+      "name_key": "ELEZUO BENJAMIN OBEWU"
+    }
+  ],
+  "BERLIN": [
+    {
+      "num": 1,
+      "name_raw": "CHIEF KALU JJ",
+      "name": "CHIEF KALU JJ",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "KALU JJ"
+    },
+    {
+      "num": 2,
+      "name_raw": "CHIEF OGE AGBAI",
+      "name": "CHIEF OGE AGBAI",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "OGE AGBAI"
+    },
+    {
+      "num": 3,
+      "name_raw": "CHIEF SMART OGBUAGWO",
+      "name": "CHIEF SMART OGBUAGWO",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "SMART OGBUAGWO"
+    },
+    {
+      "num": 4,
+      "name_raw": "PRINCE OBUJI OPAGU",
+      "name": "PRINCE OBUJI OPAGU",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "OBUJI OPAGU"
+    },
+    {
+      "num": 5,
+      "name_raw": "MR IFEGWU AJA",
+      "name": "MR IFEGWU AJA",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "IFEGWU AJA"
+    },
+    {
+      "num": 6,
+      "name_raw": "MR AZU IGBE",
+      "name": "MR AZU IGBE",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "AZU IGBE"
+    },
+    {
+      "num": 7,
+      "name_raw": "MR ODIM KALU",
+      "name": "MR ODIM KALU",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "ODIM KALU"
+    },
+    {
+      "num": 8,
+      "name_raw": "MR IFEGWU AGBANYIM",
+      "name": "MR IFEGWU AGBANYIM",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "IFEGWU AGBANYIM"
+    },
+    {
+      "num": 9,
+      "name_raw": "MR UGWA OPAGU",
+      "name": "MR UGWA OPAGU",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "UGWA OPAGU"
+    },
+    {
+      "num": 10,
+      "name_raw": "MR CHIZARAM OGWO",
+      "name": "MR CHIZARAM OGWO",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "CHIZARAM OGWO"
+    },
+    {
+      "num": 11,
+      "name_raw": "MR EME OKO",
+      "name": "MR EME OKO",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "EME OKO"
+    },
+    {
+      "num": 12,
+      "name_raw": "MR AGBAI UCHE",
+      "name": "MR AGBAI UCHE",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "AGBAI UCHE"
+    },
+    {
+      "num": 13,
+      "name_raw": "CHIEF ONWUKA HONOR",
+      "name": "CHIEF ONWUKA HONOR",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "ONWUKA HONOR"
+    },
+    {
+      "num": 14,
+      "name_raw": "MR FRANK UDUKA",
+      "name": "MR FRANK UDUKA",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "FRANK UDUKA"
+    },
+    {
+      "num": 15,
+      "name_raw": "MR MBA EKE KALU",
+      "name": "MR MBA EKE KALU",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "MBA EKE KALU"
+    },
+    {
+      "num": 16,
+      "name_raw": "MR ASIEGBU OKPAN",
+      "name": "MR ASIEGBU OKPAN",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "branch_key": "BERLIN",
+      "name_key": "ASIEGBU OKPAN"
+    }
+  ],
+  "DUISBURG": [
+    {
+      "num": 1,
+      "name_raw": "MR EMMNUEL AMUZIE",
+      "name": "MR EMMNUEL AMUZIE",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "branch_key": "DUISBURG",
+      "name_key": "EMMNUEL AMUZIE"
+    },
+    {
+      "num": 2,
+      "name_raw": "MR OSIRI PAUL",
+      "name": "MR OSIRI PAUL",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "branch_key": "DUISBURG",
+      "name_key": "OSIRI PAUL"
+    },
+    {
+      "num": 3,
+      "name_raw": "MR ORJI KALU",
+      "name": "MR ORJI KALU",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "branch_key": "DUISBURG",
+      "name_key": "ORJI KALU"
+    },
+    {
+      "num": 4,
+      "name_raw": "MR CHIKA OGWO",
+      "name": "MR CHIKA OGWO",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "branch_key": "DUISBURG",
+      "name_key": "CHIKA OGWO"
+    },
+    {
+      "num": 5,
+      "name_raw": "MR EMMANUEL OKPARA",
+      "name": "MR EMMANUEL OKPARA",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "branch_key": "DUISBURG",
+      "name_key": "EMMANUEL OKPARA"
+    },
+    {
+      "num": 6,
+      "name_raw": "MR MIKE OTISI",
+      "name": "MR MIKE OTISI",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "branch_key": "DUISBURG",
+      "name_key": "MIKE OTISI"
+    },
+    {
+      "num": 7,
+      "name_raw": "MR PETER UGBAJA",
+      "name": "MR PETER UGBAJA",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "branch_key": "DUISBURG",
+      "name_key": "PETER UGBAJA"
+    },
+    {
+      "num": 8,
+      "name_raw": "MR AGBAEZE NKATA",
+      "name": "MR AGBAEZE NKATA",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "branch_key": "DUISBURG",
+      "name_key": "AGBAEZE NKATA"
+    },
+    {
+      "num": 9,
+      "name_raw": "MR KALU NDUKWO",
+      "name": "MR KALU NDUKWO",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "branch_key": "DUISBURG",
+      "name_key": "KALU NDUKWO"
+    },
+    {
+      "num": 10,
+      "name_raw": "MR DANIEL AZU EMEABA",
+      "name": "MR DANIEL AZU EMEABA",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "branch_key": "DUISBURG",
+      "name_key": "DANIEL AZU EMEABA"
+    },
+    {
+      "num": 11,
+      "name_raw": "MR SAM OGBU OKPANI",
+      "name": "MR SAM OGBU OKPANI",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "branch_key": "DUISBURG",
+      "name_key": "SAM OGBU OKPANI"
+    },
+    {
+      "num": 12,
+      "name_raw": "MR AGBAI OTISI",
+      "name": "MR AGBAI OTISI",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "branch_key": "DUISBURG",
+      "name_key": "AGBAI OTISI"
+    },
+    {
+      "num": 13,
+      "name_raw": "MR STANLEY OTAH OKPAN",
+      "name": "MR STANLEY OTAH OKPAN",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "branch_key": "DUISBURG",
+      "name_key": "STANLEY OTAH OKPAN"
+    }
+  ],
+  "BREMEN": [
+    {
+      "num": 1,
+      "name_raw": "MR MILORD JOHNSON UDEAGHA",
+      "name": "MR MILORD JOHNSON UDEAGHA",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "branch_key": "BREMEN",
+      "name_key": "MILORD JOHNSON UDEAGHA"
+    },
+    {
+      "num": 2,
+      "name_raw": "CHIEF IYKE URUM",
+      "name": "CHIEF IYKE URUM",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "branch_key": "BREMEN",
+      "name_key": "IYKE URUM"
+    },
+    {
+      "num": 3,
+      "name_raw": "PRINCE OGBONNAYA INEM",
+      "name": "PRINCE OGBONNAYA INEM",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "branch_key": "BREMEN",
+      "name_key": "OGBONNAYA INEM"
+    },
+    {
+      "num": 4,
+      "name_raw": "MR STEVE OGBUGHA MANG",
+      "name": "MR STEVE OGBUGHA MANG",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "branch_key": "BREMEN",
+      "name_key": "STEVE OGBUGHA MANG"
+    },
+    {
+      "num": 5,
+      "name_raw": "MAZI IMO NNANNA",
+      "name": "MAZI IMO NNANNA",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "branch_key": "BREMEN",
+      "name_key": "IMO NNANNA"
+    },
+    {
+      "num": 6,
+      "name_raw": "PASTOR SAMUEL KALU",
+      "name": "PASTOR SAMUEL KALU",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "branch_key": "BREMEN",
+      "name_key": "SAMUEL KALU"
+    },
+    {
+      "num": 7,
+      "name_raw": "PRINCE IGWO UKONU",
+      "name": "PRINCE IGWO UKONU",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "branch_key": "BREMEN",
+      "name_key": "IGWO UKONU"
+    },
+    {
+      "num": 8,
+      "name_raw": "CHIEF UCHE UKEJE",
+      "name": "CHIEF UCHE UKEJE",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "branch_key": "BREMEN",
+      "name_key": "UCHE UKEJE"
+    },
+    {
+      "num": 9,
+      "name_raw": "PRINCE JAMES O. ETU",
+      "name": "PRINCE JAMES O. ETU",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "branch_key": "BREMEN",
+      "name_key": "JAMES O ETU"
+    },
+    {
+      "num": 10,
+      "name_raw": "MR OKENWA IWO",
+      "name": "MR OKENWA IWO",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "branch_key": "BREMEN",
+      "name_key": "OKENWA IWO"
+    },
+    {
+      "num": 11,
+      "name_raw": "MR AGBAEZE IWO",
+      "name": "MR AGBAEZE IWO",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "branch_key": "BREMEN",
+      "name_key": "AGBAEZE IWO"
+    },
+    {
+      "num": 12,
+      "name_raw": "CHIEF GEORGE O. ONWUKA (RETIRED)",
+      "name": "CHIEF GEORGE O. ONWUKA",
+      "retired": true,
+      "erp_branch": "ACIU Bremen",
+      "branch_key": "BREMEN",
+      "name_key": "GEORGE O ONWUKA"
+    },
+    {
+      "num": 13,
+      "name_raw": "MR RICHARD ARUM ONUMA",
+      "name": "MR RICHARD ARUM ONUMA",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "branch_key": "BREMEN",
+      "name_key": "RICHARD ARUM ONUMA"
+    }
+  ],
+  "OSNABR": [
+    {
+      "num": 1,
+      "name_raw": "MR CHINEDU DIKE AZU",
+      "name": "MR CHINEDU DIKE AZU",
+      "retired": false,
+      "erp_branch": "ACIU Osnabrück",
+      "branch_key": "OSNABR",
+      "name_key": "CHINEDU DIKE AZU"
+    },
+    {
+      "num": 2,
+      "name_raw": "MR OGWO KALU IJERE",
+      "name": "MR OGWO KALU IJERE",
+      "retired": false,
+      "erp_branch": "ACIU Osnabrück",
+      "branch_key": "OSNABR",
+      "name_key": "OGWO KALU IJERE"
+    },
+    {
+      "num": 3,
+      "name_raw": "MR JOHNSON KALU EME",
+      "name": "MR JOHNSON KALU EME",
+      "retired": false,
+      "erp_branch": "ACIU Osnabrück",
+      "branch_key": "OSNABR",
+      "name_key": "JOHNSON KALU EME"
+    },
+    {
+      "num": 4,
+      "name_raw": "MR ASHIAN KALU EME",
+      "name": "MR ASHIAN KALU EME",
+      "retired": false,
+      "erp_branch": "ACIU Osnabrück",
+      "branch_key": "OSNABR",
+      "name_key": "ASHIAN KALU EME"
+    },
+    {
+      "num": 5,
+      "name_raw": "MR COLLINS KALU DAVID",
+      "name": "MR COLLINS KALU DAVID",
+      "retired": false,
+      "erp_branch": "ACIU Osnabrück",
+      "branch_key": "OSNABR",
+      "name_key": "COLLINS KALU DAVID"
+    }
+  ],
+  "HANNOVER": [
+    {
+      "num": 1,
+      "name_raw": "MR UCHE THOMAS",
+      "name": "MR UCHE THOMAS",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "branch_key": "HANNOVER",
+      "name_key": "UCHE THOMAS"
+    },
+    {
+      "num": 2,
+      "name_raw": "MR AGWU OKEBE",
+      "name": "MR AGWU OKEBE",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "branch_key": "HANNOVER",
+      "name_key": "AGWU OKEBE"
+    },
+    {
+      "num": 3,
+      "name_raw": "MR AKUMA KALU",
+      "name": "MR AKUMA KALU",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "branch_key": "HANNOVER",
+      "name_key": "AKUMA KALU"
+    },
+    {
+      "num": 4,
+      "name_raw": "MR DIKE NDUKWO",
+      "name": "MR DIKE NDUKWO",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "branch_key": "HANNOVER",
+      "name_key": "DIKE NDUKWO"
+    },
+    {
+      "num": 5,
+      "name_raw": "MR ELEANYA IFEAGWU",
+      "name": "MR ELEANYA IFEAGWU",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "branch_key": "HANNOVER",
+      "name_key": "ELEANYA IFEAGWU"
+    },
+    {
+      "num": 6,
+      "name_raw": "MR ELEZUO AKUMA",
+      "name": "MR ELEZUO AKUMA",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "branch_key": "HANNOVER",
+      "name_key": "ELEZUO AKUMA"
+    },
+    {
+      "num": 7,
+      "name_raw": "MR IBE OKUWA",
+      "name": "MR IBE OKUWA",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "branch_key": "HANNOVER",
+      "name_key": "IBE OKUWA"
+    },
+    {
+      "num": 8,
+      "name_raw": "MR NDUKWO UMEH",
+      "name": "MR NDUKWO UMEH",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "branch_key": "HANNOVER",
+      "name_key": "NDUKWO UMEH"
+    },
+    {
+      "num": 9,
+      "name_raw": "MR OLU OLU",
+      "name": "MR OLU OLU",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "branch_key": "HANNOVER",
+      "name_key": "OLU OLU"
+    },
+    {
+      "num": 10,
+      "name_raw": "MR ONYEAMA ABRAM",
+      "name": "MR ONYEAMA ABRAM",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "branch_key": "HANNOVER",
+      "name_key": "ONYEAMA ABRAM"
+    },
+    {
+      "num": 11,
+      "name_raw": "MR OKEBE KALU",
+      "name": "MR OKEBE KALU",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "branch_key": "HANNOVER",
+      "name_key": "OKEBE KALU"
+    },
+    {
+      "num": 12,
+      "name_raw": "MR STEVE URUM",
+      "name": "MR STEVE URUM",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "branch_key": "HANNOVER",
+      "name_key": "STEVE URUM"
+    },
+    {
+      "num": 13,
+      "name_raw": "CHIEF UKO EKE (RETIRED)",
+      "name": "CHIEF UKO EKE",
+      "retired": true,
+      "erp_branch": "ACIU Hannover",
+      "branch_key": "HANNOVER",
+      "name_key": "UKO EKE"
+    },
+    {
+      "num": 14,
+      "name_raw": "MR AGBAI OKAFOR",
+      "name": "MR AGBAI OKAFOR",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "branch_key": "HANNOVER",
+      "name_key": "AGBAI OKAFOR"
+    }
+  ],
+  "NRW": [
+    {
+      "num": 1,
+      "name_raw": "MR KALU UKPABI",
+      "name": "MR KALU UKPABI",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "KALU UKPABI"
+    },
+    {
+      "num": 2,
+      "name_raw": "MR KALU ECHEME",
+      "name": "MR KALU ECHEME",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "KALU ECHEME"
+    },
+    {
+      "num": 3,
+      "name_raw": "MR UJAH AGWU",
+      "name": "MR UJAH AGWU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "UJAH AGWU"
+    },
+    {
+      "num": 4,
+      "name_raw": "MR JOHN OHALE",
+      "name": "MR JOHN OHALE",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "JOHN OHALE"
+    },
+    {
+      "num": 5,
+      "name_raw": "MR UDEAGHA OJU",
+      "name": "MR UDEAGHA OJU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "UDEAGHA OJU"
+    },
+    {
+      "num": 6,
+      "name_raw": "MR PHILIP OJIKE",
+      "name": "MR PHILIP OJIKE",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "PHILIP OJIKE"
+    },
+    {
+      "num": 7,
+      "name_raw": "MR MGBOJI UMEH",
+      "name": "MR MGBOJI UMEH",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "MGBOJI UMEH"
+    },
+    {
+      "num": 8,
+      "name_raw": "MR GEORGE UCHEOBI",
+      "name": "MR GEORGE UCHEOBI",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "GEORGE UCHEOBI"
+    },
+    {
+      "num": 9,
+      "name_raw": "MR CHARLS AGBARA",
+      "name": "MR CHARLS AGBARA",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "CHARLS AGBARA"
+    },
+    {
+      "num": 10,
+      "name_raw": "MR OKAFOR EKE",
+      "name": "MR OKAFOR EKE",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "OKAFOR EKE"
+    },
+    {
+      "num": 11,
+      "name_raw": "CHIEF KALU ISAAC ONWUCEKWA",
+      "name": "CHIEF KALU ISAAC ONWUCEKWA",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "KALU ISAAC ONWUCEKWA"
+    },
+    {
+      "num": 12,
+      "name_raw": "MR AGWU MARK ONUMA",
+      "name": "MR AGWU MARK ONUMA",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "AGWU MARK ONUMA"
+    },
+    {
+      "num": 13,
+      "name_raw": "MR OKPAN CHUKU",
+      "name": "MR OKPAN CHUKU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "OKPAN CHUKU"
+    },
+    {
+      "num": 14,
+      "name_raw": "MR NDUKWO IFEGWU",
+      "name": "MR NDUKWO IFEGWU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "NDUKWO IFEGWU"
+    },
+    {
+      "num": 15,
+      "name_raw": "MR DAVIDSON ONUOHA OSIRI",
+      "name": "MR DAVIDSON ONUOHA OSIRI",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "DAVIDSON ONUOHA OSIRI"
+    },
+    {
+      "num": 16,
+      "name_raw": "MR PRINCE ONUOHA ORJI",
+      "name": "MR PRINCE ONUOHA ORJI",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "PRINCE ONUOHA ORJI"
+    },
+    {
+      "num": 17,
+      "name_raw": "MR ONUOHA AMAOGU",
+      "name": "MR ONUOHA AMAOGU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "ONUOHA AMAOGU"
+    },
+    {
+      "num": 18,
+      "name_raw": "MR JOHNSON IJIOMA",
+      "name": "MR JOHNSON IJIOMA",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "JOHNSON IJIOMA"
+    },
+    {
+      "num": 19,
+      "name_raw": "MR ONUOHA AMUSIE",
+      "name": "MR ONUOHA AMUSIE",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "ONUOHA AMUSIE"
+    },
+    {
+      "num": 20,
+      "name_raw": "MR ONYEMA KALU",
+      "name": "MR ONYEMA KALU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "ONYEMA KALU"
+    },
+    {
+      "num": 21,
+      "name_raw": "MR DANIEL DIKE AGWU",
+      "name": "MR DANIEL DIKE AGWU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "DANIEL DIKE AGWU"
+    },
+    {
+      "num": 22,
+      "name_raw": "MR ONWUKA ELEANYA",
+      "name": "MR ONWUKA ELEANYA",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "ONWUKA ELEANYA"
+    },
+    {
+      "num": 23,
+      "name_raw": "MR OKEY OSIRI OGBUA",
+      "name": "MR OKEY OSIRI OGBUA",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "OKEY OSIRI OGBUA"
+    },
+    {
+      "num": 24,
+      "name_raw": "MR JOHN BASSEY IYIRI",
+      "name": "MR JOHN BASSEY IYIRI",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "JOHN BASSEY IYIRI"
+    },
+    {
+      "num": 25,
+      "name_raw": "MR AGWU AMOGU",
+      "name": "MR AGWU AMOGU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "branch_key": "NRW",
+      "name_key": "AGWU AMOGU"
+    }
+  ]
+}
