@@ -50,7 +50,7 @@
     </record>
 
     <record id="action_aciu_companies" model="ir.actions.act_window">
-        <field name="name">Branch</field>
+        <field name="name">Branches &amp; Central</field>
         <field name="res_model">res.company</field>
         <field name="view_mode">list,form</field>
         <field name="domain">[('is_aciu_company', '=', True)]</field>
