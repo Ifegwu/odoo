@@ -1,0 +1,7844 @@
+{
+  "ACIU Hamburg": [
+    {
+      "num": 1,
+      "name": "CHIEF PAUL OKORIE",
+      "retired": true,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 2,
+      "name": "CHIEF UDE UWAH",
+      "retired": true,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 3,
+      "name": "CHIEF FRANCIS EMOLE",
+      "retired": true,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "balance",
+        "balance": 150.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": 150,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 4,
+      "name": "CHIEF EKPUAGHA NWOJO",
+      "retired": true,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "balance",
+        "balance": 110.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": 110,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 5,
+      "name": "CHIEF UGORJI OKENWA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 6,
+      "name": "CHIEF ARISA ONWUKA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 7,
+      "name": "CHIEF AGWU EMOLE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 8,
+      "name": "CHIEF ISAAC OKORIE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 9,
+      "name": "EVANG. ORJI ASO",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 10,
+      "name": "CHIEF JONAS EZIKPE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 11,
+      "name": "MAZI EMEKA JOHNSON",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 12,
+      "name": "MAZI AKAROUN OKALI UKA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "partial",
+        "balance": 200.0,
+        "paid_amount": 100.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": 200,
+        "amb_paid": 100
+      }
+    },
+    {
+      "num": 13,
+      "name": "PRINCE IGWO .O. ACHI",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 100.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": 100
+      }
+    },
+    {
+      "num": 14,
+      "name": "MR ISAAC EZE AZUH",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 15,
+      "name": "CHIEF LAWRENCE .O. ONYUKU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 16,
+      "name": "PRINCE KALU OGBUWA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "balance",
+        "balance": 100.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": 100,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 17,
+      "name": "MR IKECHUKWU NKPA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 18,
+      "name": "ELDER OLERE OGBU KALU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 19,
+      "name": "MR EMEH OKAFOR",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 20,
+      "name": "PRINCE UCHE .N. NNANNA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 21,
+      "name": "MR ONUOHA AGO CHUKWU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 22,
+      "name": "PASTOR UKONU .O. NDUKA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 23,
+      "name": "MR JOHN IREKE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "partial",
+        "balance": 50.0,
+        "paid_amount": 50.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": 50,
+        "amb_paid": 50
+      }
+    },
+    {
+      "num": 24,
+      "name": "MR OKPAN NWANKWO",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 25,
+      "name": "MR KALU UCHE EMEH",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 26,
+      "name": "EZE ODEGHE GODWILL",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 27,
+      "name": "MR ODEGHE UKOHA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 28,
+      "name": "MRS CHIKA UGWUNWA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 29,
+      "name": "MRS LINDA MENNIG",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 30,
+      "name": "DEAC. HELEN IDABUO",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 31,
+      "name": "MR OGBAUTA .A. CHUKWU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 32,
+      "name": "MR OKAFOR AGWU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 33,
+      "name": "MR AGBAEZE OKOH",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 34,
+      "name": "PASTOR KALU EZIKPE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "balance",
+        "balance": 100.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": 100,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 35,
+      "name": "MR EKE AGU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 36,
+      "name": "MR STEVE .O. KALU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 37,
+      "name": "MR UKAEGBU OCHO",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 38,
+      "name": "MAZI ANDY ONOH OKOROEZI",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 39,
+      "name": "MR OKIKE .A. EMEKA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 40,
+      "name": "MR CHUKWUMA .O. AMUTA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 41,
+      "name": "MR EKE ELENDU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 42,
+      "name": "MR OKOGBUE AWARA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 43,
+      "name": "MR DANIEL OGBUWA KALU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 44,
+      "name": "MR ANYANSO IKWUAGWU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 45,
+      "name": "MR UDEH MGBOJI",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 46,
+      "name": "MR NDUKWO OGBONNAYA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 47,
+      "name": "MR OKPAN ONUMA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 48,
+      "name": "MR SAMUEL EJIEKE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 49,
+      "name": "MR DEDE EZEMA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 50,
+      "name": "MR BENNY DIKE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 100.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": 100
+      }
+    },
+    {
+      "num": 51,
+      "name": "MR NWOJO ANAMA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 52,
+      "name": "MR KALU OLEH",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "balance",
+        "balance": 100.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": 100,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 53,
+      "name": "MR JAMES OGUGUA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 54,
+      "name": "MR ELEANYA ANYA EMEH",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 55,
+      "name": "MR EJINDU UKAEGBU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 56,
+      "name": "MR ENYINNAYA ONUMA MGBACHI",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 57,
+      "name": "MR ONUOHA KALU EMOLE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 58,
+      "name": "MR INNOCENT KALU EKEH",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 59,
+      "name": "ENG. PAUL NDUKWE ARUIKE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 60,
+      "name": "MR KALU OBASI",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 61,
+      "name": "MR ABBOTT EJINDU OKORIE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 62,
+      "name": "MR KALU ARU KALU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 63,
+      "name": "MR AMEY NWOJO EZEIKPE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 64,
+      "name": "MR OKPARA KALU ODEGHE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 100.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": 100
+      }
+    },
+    {
+      "num": 65,
+      "name": "MR IHEME ELIJAH",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 66,
+      "name": "MR MIKE .N. UMEZURUIKE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 67,
+      "name": "MR KALU MANG EBE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 68,
+      "name": "CHIEF JONAH JOHN OSIRI",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 69,
+      "name": "MR UMAZI UCHE AJIKE",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 70,
+      "name": "MR EGBU KALU OKARAZU",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 71,
+      "name": "MAZI NNANNA J. UWAKA",
+      "retired": false,
+      "erp_branch": "ACIU Hamburg",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": null,
+        "d26_paid": "PAID",
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    }
+  ],
+  "ACIU Baden-W\u00fcrttemberg": [
+    {
+      "num": 1,
+      "name": "MR ASIEGBU EBI UGBO",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 2,
+      "name": "MR ELVIS ELEANYA OKWA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 3,
+      "name": "MR ANAGHA ONWUKA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 4,
+      "name": "MR CHIGBO KALU UKOSO",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 5,
+      "name": "MR DEDE OPAGU KALU",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 6,
+      "name": "MR DAVID KALU ABAH",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 7,
+      "name": "MR EKE EBE ECHEME",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 8,
+      "name": "MR EME KALU ONUMA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 9,
+      "name": "MR EBE IROHA ECHEME",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 10,
+      "name": "MR EME KALU NKUGBA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 11,
+      "name": "MR EDDY OKENWA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 12,
+      "name": "MR JONAH ORJI LEKWAUWA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 13,
+      "name": "MR NDUKWO KALU OGWO",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 14,
+      "name": "MR KALU OKENWA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 15,
+      "name": "MR KALU OLE",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 16,
+      "name": "MR KALU ODIM",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 17,
+      "name": "MR NKUMA AGBAI IGBOKO",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 18,
+      "name": "MR NNANNA ODIKE",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 19,
+      "name": "MR lROHA EBE ECHEME",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 20,
+      "name": "MR MBA KALU UKE",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 21,
+      "name": "MR OLU DIKE KALU",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 22,
+      "name": "MR OKIYI OGBURUBI",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 23,
+      "name": "MR RICHARD OJAH NDUKWO",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 24,
+      "name": "MR OGBA KALU ONUMA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 25,
+      "name": "MR OKORIE UKE lKWUAGWU",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 26,
+      "name": "MR SAM OKUWA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 27,
+      "name": "MR JOHN MARK",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 28,
+      "name": "MR KALU URUM AGWU",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 29,
+      "name": "MR SAM MGBACHI",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 30,
+      "name": "MR ONYEKACHI EZEMA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 31,
+      "name": "MR KALU OGBOGU OKORIE",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 32,
+      "name": "MR AKUMA AGWU",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 33,
+      "name": "MR JOE DIMGBA NDUKA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 34,
+      "name": "MR J J lSSAC EBE",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 35,
+      "name": "MR lFEANYI CHUKWUMA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 36,
+      "name": "MR BAMA ONYIJA",
+      "retired": false,
+      "erp_branch": "ACIU Baden-W\u00fcrttemberg",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    }
+  ],
+  "ACIU Halle/Saale": [
+    {
+      "num": 1,
+      "name": "MR. ONYEIJE IGBANI OZOMO",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 100.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": 100
+      }
+    },
+    {
+      "num": 2,
+      "name": "MR. EMMANUEL NMAJU",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 3,
+      "name": "MR. ANYA AGWU",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 4,
+      "name": "MR. CHIJIOKE OKORO",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 5,
+      "name": "MR. DIKE IFENDU",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 200.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": 200
+      }
+    },
+    {
+      "num": 6,
+      "name": "MR. OTEH KALU",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 7,
+      "name": "MR. NDUKWO OKE",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 8,
+      "name": "MR. ONWUKA NDUKWO",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 9,
+      "name": "MR. ANYA AZU EMEABA",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 10,
+      "name": "MR. ENYINNAYA NMAJU",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 11,
+      "name": "MR. MR. DIKE AZU DIKE",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 12,
+      "name": "MR. OGBU OTEH",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 13,
+      "name": "MR. EMMANUEL EGBE",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 14,
+      "name": "MR. KALU UDEAGHA",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 15,
+      "name": "MR. SILAS AGU UKAH",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 16,
+      "name": "MR. KALU ANAGHA",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 17,
+      "name": "MR. EGBURONU IGBE",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 200.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": 200
+      }
+    },
+    {
+      "num": 18,
+      "name": "MR. KALU AGWU UJAH",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 19,
+      "name": "MR. UKAEGBU UKOHA NWOKE",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 20,
+      "name": "MR. JOHN AJAH",
+      "retired": false,
+      "erp_branch": "ACIU Halle/Saale",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    }
+  ],
+  "ACIU Bayern": [
+    {
+      "num": 1,
+      "name": "CHIEF MANG OBASI",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 2,
+      "name": "MR STEPHEN KALU",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 3,
+      "name": "MR ONYEANI EKE",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 4,
+      "name": "MR JOHN AGBARA OKON",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 5,
+      "name": "MR UCHE NDUKWO",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 6,
+      "name": "MR GEORGE KALU EZIKPE",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 7,
+      "name": "MR ORJI ANYANSO",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 8,
+      "name": "MR EREM AMAGHIONWU",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 9,
+      "name": "MR UKARIWO ONU",
+      "retired": false,
+      "erp_branch": "ACIU Bayern",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    }
+  ],
+  "ACIU Frankfurt-Mainz": [
+    {
+      "num": 1,
+      "name": "MR MBA AGBA",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 2,
+      "name": "MR ONYEANI KALU",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 3,
+      "name": "MR CHIDI OKEKE-BRAMESFELD",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 4,
+      "name": "MR KALU EGBU ALUGWO",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 5,
+      "name": "MR ANAGHA OKAFOR",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 6,
+      "name": "MR IGWE KALU",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 7,
+      "name": "MR KALU ARU NGANWA",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 8,
+      "name": "MR ELEZUO BENJAMIN OBEWU",
+      "retired": false,
+      "erp_branch": "ACIU Frankfurt-Mainz",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    }
+  ],
+  "ACIU Berlin-Brandenburg": [
+    {
+      "num": 1,
+      "name": "CHIEF KALU JJ",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 2,
+      "name": "CHIEF OGE AGBAI",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 3,
+      "name": "CHIEF SMART OGBUAGWO",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 4,
+      "name": "PRINCE OBUJI OPAGU",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 5,
+      "name": "MR IFEGWU AJA",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 6,
+      "name": "MR AZU IGBE",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 7,
+      "name": "MR ODIM KALU",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 8,
+      "name": "MR IFEGWU AGBANYIM",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 9,
+      "name": "MR UGWA OPAGU",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 10,
+      "name": "MR CHIZARAM OGWO",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 11,
+      "name": "MR EME OKO",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 12,
+      "name": "MR AGBAI UCHE",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 13,
+      "name": "CHIEF ONWUKA HONOR",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 14,
+      "name": "MR FRANK UDUKA",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 15,
+      "name": "MR MBA EKE KALU",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 16,
+      "name": "MR ASIEGBU OKPAN",
+      "retired": false,
+      "erp_branch": "ACIU Berlin-Brandenburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    }
+  ],
+  "ACIU Duisburg": [
+    {
+      "num": 1,
+      "name": "MR EMMNUEL AMUZIE",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 2,
+      "name": "MR OSIRI PAUL",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 3,
+      "name": "MR ORJI KALU",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 100.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": 100
+      }
+    },
+    {
+      "num": 4,
+      "name": "MR CHIKA OGWO",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 5,
+      "name": "MR EMMANUEL OKPARA",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 6,
+      "name": "MR MIKE OTISI",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "balance",
+        "balance": 50.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": 50,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 7,
+      "name": "MR PETER UGBAJA",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 8,
+      "name": "MR AGBAEZE NKATA",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "balance",
+        "balance": 100.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": 100,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 9,
+      "name": "MR KALU NDUKWO",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 10,
+      "name": "MR DANIEL AZU EMEABA",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 11,
+      "name": "MR SAM OGBU OKPANI",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 12,
+      "name": "MR AGBAI OTISI",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 13,
+      "name": "MR STANLEY OTAH OKPAN",
+      "retired": false,
+      "erp_branch": "ACIU Duisburg",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": null,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    }
+  ],
+  "ACIU Bremen": [
+    {
+      "num": 1,
+      "name": "MR MILORD JOHNSON UDEAGHA",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 2,
+      "name": "CHIEF IYKE URUM",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 3,
+      "name": "PRINCE OGBONNAYA INEM",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 4,
+      "name": "MR STEVE OGBUGHA MANG",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 5,
+      "name": "MAZI IMO NNANNA",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 6,
+      "name": "PASTOR SAMUEL KALU",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 7,
+      "name": "PRINCE IGWO UKONU",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 8,
+      "name": "CHIEF UCHE UKEJE",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 9,
+      "name": "PRINCE JAMES O. ETU",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 10,
+      "name": "MR OKENWA IWO",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 11,
+      "name": "MR AGBAEZE IWO",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 12,
+      "name": "CHIEF GEORGE O. ONWUKA",
+      "retired": true,
+      "erp_branch": "ACIU Bremen",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 100.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": 100
+      }
+    },
+    {
+      "num": 13,
+      "name": "MR RICHARD ARUM ONUMA",
+      "retired": false,
+      "erp_branch": "ACIU Bremen",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    }
+  ],
+  "ACIU Osnabr\u00fcck": [
+    {
+      "num": 1,
+      "name": "MR CHINEDU DIKE AZU",
+      "retired": false,
+      "erp_branch": "ACIU Osnabr\u00fcck",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 100.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": 100
+      }
+    },
+    {
+      "num": 2,
+      "name": "MR OGWO KALU IJERE",
+      "retired": false,
+      "erp_branch": "ACIU Osnabr\u00fcck",
+      "dues_2025": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": 20,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 3,
+      "name": "MR JOHNSON KALU EME",
+      "retired": false,
+      "erp_branch": "ACIU Osnabr\u00fcck",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 150.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": 150
+      }
+    },
+    {
+      "num": 4,
+      "name": "MR ASHIAN KALU EME",
+      "retired": false,
+      "erp_branch": "ACIU Osnabr\u00fcck",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 5,
+      "name": "MR COLLINS KALU DAVID",
+      "retired": false,
+      "erp_branch": "ACIU Osnabr\u00fcck",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    }
+  ],
+  "ACIU Hannover": [
+    {
+      "num": 1,
+      "name": "MR UCHE THOMAS",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 2,
+      "name": "MR AGWU OKEBE",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "balance",
+        "balance": 150.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": 150,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 3,
+      "name": "MR AKUMA KALU",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 4,
+      "name": "MR DIKE NDUKWO",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 250.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": 250
+      }
+    },
+    {
+      "num": 5,
+      "name": "MR ELEANYA IFEAGWU",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 6,
+      "name": "MR ELEZUO AKUMA",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 7,
+      "name": "MR IBE OKUWA",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 500.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": 500
+      }
+    },
+    {
+      "num": 8,
+      "name": "MR NDUKWO UMEH",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 9,
+      "name": "MR OLU OLU",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 10,
+      "name": "MR ONYEAMA ABRAM",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 11,
+      "name": "MR OKEBE KALU",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 12,
+      "name": "MR STEVE URUM",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 13,
+      "name": "CHIEF UKO EKE",
+      "retired": true,
+      "erp_branch": "ACIU Hannover",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 200.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": 200
+      }
+    },
+    {
+      "num": 14,
+      "name": "MR AGBAI OKAFOR",
+      "retired": false,
+      "erp_branch": "ACIU Hannover",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    }
+  ],
+  "ACIU NRW": [
+    {
+      "num": 1,
+      "name": "MR KALU UKPABI",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 2,
+      "name": "MR KALU ECHEME",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 3,
+      "name": "MR UJAH AGWU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 4,
+      "name": "MR JOHN OHALE",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 5,
+      "name": "MR UDEAGHA OJU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 6,
+      "name": "MR PHILIP OJIKE",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 7,
+      "name": "MR MGBOJI UMEH",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 8,
+      "name": "MR GEORGE UCHEOBI",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 9,
+      "name": "MR CHARLS AGBARA",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 10,
+      "name": "MR OKAFOR EKE",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 11,
+      "name": "CHIEF KALU ISAAC ONWUCEKWA",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 12,
+      "name": "MR AGWU MARK ONUMA",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 13,
+      "name": "MR OKPAN CHUKU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 14,
+      "name": "MR NDUKWO IFEGWU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 15,
+      "name": "MR DAVIDSON ONUOHA OSIRI",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 16,
+      "name": "MR PRINCE ONUOHA ORJI",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 17,
+      "name": "MR ONUOHA AMAOGU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 18,
+      "name": "MR JOHNSON IJIOMA",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 19,
+      "name": "MR ONUOHA AMUSIE",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "balance",
+        "balance": 10.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": 10,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 20,
+      "name": "MR ONYEMA KALU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "paid",
+        "amount": 20.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": "PAID",
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 21,
+      "name": "MR DANIEL DIKE AGWU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 22,
+      "name": "MR ONWUKA ELEANYA",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "paid",
+        "balance": 0.0,
+        "paid_amount": 10.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": "PAID",
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 23,
+      "name": "MR OKEY OSIRI OGBUA",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 24,
+      "name": "MR JOHN BASSEY IYIRI",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    },
+    {
+      "num": 25,
+      "name": "MR AGWU AMOGU",
+      "retired": false,
+      "erp_branch": "ACIU NRW",
+      "dues_2025": {
+        "status": "none",
+        "amount": 0.0
+      },
+      "dues_2026": {
+        "status": "balance",
+        "amount": 20.0
+      },
+      "aru": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "ambulance": {
+        "status": "none",
+        "balance": 0.0,
+        "paid_amount": 0.0
+      },
+      "raw": {
+        "d25_bal": null,
+        "d25_paid": null,
+        "d26_bal": 20,
+        "d26_paid": null,
+        "aru_bal": null,
+        "aru_paid": null,
+        "amb_bal": null,
+        "amb_paid": null
+      }
+    }
+  ]
+}
