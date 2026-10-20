@@ -12,6 +12,8 @@
 #   ODOO_DB_NAME (or ODOO_POSTGRES_DB, default odoo_prod)
 #   ODOO_DB_USER (or ODOO_POSTGRES_USER, default odoo)
 #   GH_CLONE_TOKEN, REPO_URL
+#   ODOO_DOMAIN (default erp.aciugermany.online)
+#   ODOO_LETSENCRYPT_EMAIL (required for HTTPS / Certbot)
 
 name: Deploy Odoo to DigitalOcean
 
@@ -87,6 +89,8 @@ jobs:
           ODOO_ADMIN_PASSWORD: ${{ secrets.ODOO_ADMIN_PASSWORD }}
           GH_CLONE_TOKEN: ${{ secrets.GH_CLONE_TOKEN }}
           REPO_URL: ${{ secrets.REPO_URL }}
+          ODOO_DOMAIN: ${{ secrets.ODOO_DOMAIN }}
+          ODOO_LETSENCRYPT_EMAIL: ${{ secrets.ODOO_LETSENCRYPT_EMAIL }}
           MODE: ${{ steps.mode.outputs.value }}
         run: |
           set -euo pipefail
@@ -100,11 +104,14 @@ jobs:
           DB_PASSWORD="${ODOO_DB_PASSWORD:-${ODOO_POSTGRES_PASSWORD:-}}"
           ADMIN_PASSWD="${ODOO_ADMIN_PASSWD:-${ODOO_ADMIN_PASSWORD:-}}"
           REPO="${REPO_URL:-https://github.com/Ifegwu/odoo.git}"
+          DOMAIN="${ODOO_DOMAIN:-erp.aciugermany.online}"
+          LE_EMAIL="${ODOO_LETSENCRYPT_EMAIL:-}"
 
           missing=0
           [ -n "$HOST" ] || { echo "::error::Missing secret DROPLET_HOST"; missing=1; }
           [ -n "$USER" ] || { echo "::error::Missing secret DROPLET_USER"; missing=1; }
           [ -n "$SSH_KEY" ] || { echo "::error::Missing secret DROPLET_SSH_KEY"; missing=1; }
+          [ -n "$LE_EMAIL" ] || { echo "::error::Missing secret ODOO_LETSENCRYPT_EMAIL (Let's Encrypt contact)"; missing=1; }
           if [[ "$MODE" == bootstrap* ]]; then
             [ -n "$DB_PASSWORD" ] || { echo "::error::Missing ODOO_DB_PASSWORD or ODOO_POSTGRES_PASSWORD"; missing=1; }
             [ -n "$ADMIN_PASSWD" ] || { echo "::error::Missing ODOO_ADMIN_PASSWD or ODOO_ADMIN_PASSWORD"; missing=1; }
@@ -121,6 +128,8 @@ jobs:
             echo "DB_NAME=$DB_NAME"
             echo "DB_USER=$DB_USER"
             echo "REPO_URL=$REPO"
+            echo "ODOO_DOMAIN=$DOMAIN"
+            echo "ODOO_PUBLIC_URL=https://${DOMAIN}"
           } >> "$GITHUB_ENV"
 
           mkdir -p "$HOME/.odoo_deploy"
@@ -129,9 +138,10 @@ jobs:
           printf '%s' "$DB_PASSWORD" > "$HOME/.odoo_deploy/db_password"
           printf '%s' "$ADMIN_PASSWD" > "$HOME/.odoo_deploy/admin_passwd"
           printf '%s' "${GH_CLONE_TOKEN:-}" > "$HOME/.odoo_deploy/clone_token"
+          printf '%s' "$LE_EMAIL" > "$HOME/.odoo_deploy/letsencrypt_email"
           chmod 600 "$HOME/.odoo_deploy/"*
 
-          echo "Resolved host=${HOST} user=${USER} path=${DEPLOY_PATH} db=${DB_NAME} service=${SERVICE}"
+          echo "Resolved host=${HOST} user=${USER} path=${DEPLOY_PATH} db=${DB_NAME} service=${SERVICE} domain=${DOMAIN}"
 
       - name: Setup SSH known_hosts
         run: |
@@ -141,14 +151,23 @@ jobs:
 
       - name: Upload deploy scripts
         run: |
-          chmod +x deploy/bootstrap.sh deploy/deploy.sh
+          chmod +x deploy/bootstrap.sh deploy/deploy.sh deploy/configure_tls.sh
           scp -i "$HOME/.odoo_deploy/ssh_key" \
             -o IdentitiesOnly=yes \
             -o ServerAliveInterval=30 \
             -o ServerAliveCountMax=120 \
             -o TCPKeepAlive=yes \
-            deploy/bootstrap.sh deploy/deploy.sh \
+            deploy/bootstrap.sh deploy/deploy.sh deploy/configure_tls.sh \
             "${SSH_USER}@${HOST}:/tmp/"
+          ssh -i "$HOME/.odoo_deploy/ssh_key" \
+            -o IdentitiesOnly=yes \
+            "${SSH_USER}@${HOST}" \
+            'mkdir -p /tmp/nginx'
+          scp -i "$HOME/.odoo_deploy/ssh_key" \
+            -o IdentitiesOnly=yes \
+            deploy/nginx/odoo.conf.template \
+            deploy/nginx/odoo.http-only.conf.template \
+            "${SSH_USER}@${HOST}:/tmp/nginx/"
 
       - name: Bootstrap droplet
         if: startsWith(steps.mode.outputs.value, 'bootstrap')
@@ -167,6 +186,8 @@ jobs:
             ODOO_ADMIN_PASSWD="$(cat "$HOME/.odoo_deploy/admin_passwd")" \
             GH_CLONE_TOKEN="$(cat "$HOME/.odoo_deploy/clone_token")" \
             REPO_URL="${REPO_URL}" \
+            ODOO_DOMAIN="${ODOO_DOMAIN}" \
+            ODOO_LETSENCRYPT_EMAIL="$(cat "$HOME/.odoo_deploy/letsencrypt_email")" \
             GIT_BRANCH=production \
             bash /tmp/bootstrap.sh
 
@@ -186,6 +207,8 @@ jobs:
             ODOO_DB_NAME="${DB_NAME}" \
             GH_CLONE_TOKEN="$(cat "$HOME/.odoo_deploy/clone_token")" \
             REPO_URL="${REPO_URL}" \
+            ODOO_DOMAIN="${ODOO_DOMAIN}" \
+            ODOO_LETSENCRYPT_EMAIL="$(cat "$HOME/.odoo_deploy/letsencrypt_email")" \
             GIT_BRANCH=production \
             UPDATE_MODULES="${UPDATE_MODULES}" \
             GIT_SHA="${{ github.sha }}" \
@@ -193,13 +216,14 @@ jobs:
 
       - name: Health check
         run: |
+          URL="${ODOO_PUBLIC_URL}/web/login"
           for i in 1 2 3 4 5 6 7 8 9 10; do
-            if curl -fsS -o /dev/null -m 15 "http://${HOST}:8069/web/login"; then
-              echo "OK: http://${HOST}:8069/web/login"
+            if curl -fsS -o /dev/null -m 20 "${URL}"; then
+              echo "OK: ${URL}"
               exit 0
             fi
-            echo "Waiting for Odoo... ($i/10)"
+            echo "Waiting for Odoo at ${URL}... ($i/10)"
             sleep 6
           done
-          echo "::warning::Login page not reachable yet — check ufw/DO firewall and systemctl status odoo"
+          echo "::warning::HTTPS login not reachable yet — check DNS (erp A record), nginx, certbot, ufw/DO firewall"
           exit 0

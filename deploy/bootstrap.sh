@@ -198,5 +198,19 @@ systemctl restart "${SERVICE}"
 sleep 3
 systemctl --no-pager --full status "${SERVICE}" | head -n 25 || true
 
+# Nginx + Let's Encrypt + web.base.url (requires DNS A record for ODOO_DOMAIN)
+if [ -n "${ODOO_DOMAIN:-}" ] && [ -n "${ODOO_LETSENCRYPT_EMAIL:-}" ]; then
+  echo "==> Configuring TLS for ${ODOO_DOMAIN}"
+  TLS_SCRIPT="${DEPLOY_PATH}/deploy/configure_tls.sh"
+  if [ ! -f "${TLS_SCRIPT}" ]; then
+    TLS_SCRIPT="/tmp/configure_tls.sh"
+  fi
+  chmod +x "${TLS_SCRIPT}"
+  ODOO_DEPLOY_PATH="${DEPLOY_PATH}" ODOO_SERVICE="${SERVICE}" ODOO_DB_NAME="${DB_NAME}" \
+    bash "${TLS_SCRIPT}"
+else
+  echo "==> Skipping TLS (set ODOO_DOMAIN + ODOO_LETSENCRYPT_EMAIL to enable)"
+  echo "    Temporary URL: http://$(curl -fsS ifconfig.me 2>/dev/null || echo HOST):${HTTP_PORT}"
+fi
+
 echo "==> Bootstrap finished"
-echo "    URL: http://$(curl -fsS ifconfig.me 2>/dev/null || echo HOST):${HTTP_PORT}"

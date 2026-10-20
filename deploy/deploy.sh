@@ -85,4 +85,16 @@ systemctl restart "${SERVICE}"
 sleep 2
 systemctl --no-pager --full status "${SERVICE}" | head -n 20 || true
 
+# Re-apply nginx template + ensure cert/base URL (idempotent; needs DNS)
+if [ -n "${ODOO_DOMAIN:-}" ] && [ -n "${ODOO_LETSENCRYPT_EMAIL:-}" ]; then
+  echo "==> Reconciling TLS / nginx for ${ODOO_DOMAIN}"
+  TLS_SCRIPT="${DEPLOY_PATH}/deploy/configure_tls.sh"
+  if [ ! -f "${TLS_SCRIPT}" ]; then
+    TLS_SCRIPT="/tmp/configure_tls.sh"
+  fi
+  chmod +x "${TLS_SCRIPT}"
+  ODOO_DEPLOY_PATH="${DEPLOY_PATH}" ODOO_SERVICE="${SERVICE}" ODOO_DB_NAME="${DB_NAME}" \
+    bash "${TLS_SCRIPT}"
+fi
+
 echo "==> Deploy finished"
