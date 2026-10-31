@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <function model="survey.survey" name="_aciu_apply_survey_user_rules"/>
+</odoo>

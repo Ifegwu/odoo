@@ -3,7 +3,6 @@
 import base64
 import logging
 
-from odoo import SUPERUSER_ID, api
 from odoo.tools.misc import file_open
 
 from .brand_colors import (
@@ -53,6 +52,5 @@ def apply_aciu_branding(env):
         main_company.write(write_vals)
 
 
-def post_init_hook(cr, registry):
-    env = api.Environment(cr, SUPERUSER_ID, {})
+def post_init_hook(env):
     apply_aciu_branding(env)

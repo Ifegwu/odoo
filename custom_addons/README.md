@@ -9,13 +9,14 @@ Custom Odoo 19 modules for Abiriba Communal Union (ACIU). Do **not** modify Odoo
 | `aciu_base` | Companies (central + 11 DE branches), `is_registered_ev`, officer/central security groups, Branch menu, branding (logo + aciuworldwide.com `#00B686` theme) |
 | `aciu_membership` | Member profile on contacts, soft open-debt display, branch-scoped Contacts rules |
 | `aciu_dues` | €20 annual due product, per-branch roll-call fee, contribution helpers |
+| `aciu_forms` | Questionnaires and other forms shared by public link (no portal login) |
 
 ## Addons path
 
 Point Odoo at this folder (in addition to core addons), for example:
 
 ```bash
-./odoo-bin -d aciu --addons-path=addons,odoo/addons,custom_addons -i aciu_base,aciu_membership,aciu_dues
+./odoo-bin -d aciu --addons-path=addons,odoo/addons,custom_addons -i aciu_base,aciu_membership,aciu_dues,aciu_forms
 ```
 
 Or in `odoo.conf`:
@@ -29,6 +30,7 @@ addons_path = addons,odoo/addons,custom_addons
 1. `aciu_base`
 2. `aciu_membership`
 3. `aciu_dues`
+4. `aciu_forms` (pulls in Surveys; public links do not use the portal)
 
 Depends on: `base`, `contacts`, `account`, `product` (and transitively `l10n_de` when you load German CoA on companies).
 
@@ -39,6 +41,7 @@ Depends on: `base`, `contacts`, `account`, `product` (and transitively `l10n_de`
 3. Load `l10n_de` chart on ACIU Germany and each branch company as needed.
 4. Create bank journals per company for real accounts.
 5. Branch officers: allowed companies = home branch only. Central roles: include ACIU Germany (+ branches as needed).
+6. Forms: ACIU → Forms → Questionnaires & Forms. Leave **Require Login** off. Copy **Public Link** (`/survey/start/…`) or the short link (`/s/…`). Profile and roll-call forms must be sent with **Share** as a personal invite. Join requests, profile changes, and check-ins stay in **To Review** until a secretary or president accepts them.
 
 See `docs/aciu/ACIU-Odoo-PRD.md` for full requirements.
 

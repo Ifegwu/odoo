@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="survey_survey_view_form_aciu" model="ir.ui.view">
+        <field name="name">survey.survey.form.aciu</field>
+        <field name="model">survey.survey</field>
+        <field name="inherit_id" ref="survey.survey_survey_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_aciu_open_submissions" type="object"
+                        class="oe_stat_button" icon="fa-inbox">
+                    <field name="aciu_submission_count" widget="statinfo" string="Responses"/>
+                </button>
+            </xpath>
+            <xpath expr="//field[@name='user_id']" position="after">
+                <field name="aciu_company_id"/>
+                <field name="form_purpose"/>
+                <field name="closes_on"/>
+            </xpath>
+            <xpath expr="//group[@name='participants']" position="inside">
+                <field name="aciu_public_url" widget="CopyClipboardChar"/>
+                <div class="alert alert-warning" role="alert" colspan="2"
+                     invisible="not users_login_required">
+                    Require Login sends people to the ERP sign-in page.
+                    Leave it off so the link can be filled without an account or the portal.
+                </div>
+                <div class="text-muted" colspan="2"
+                     invisible="form_purpose not in ('profile', 'attendance')">
+                    Send this one with Share, as a personal invite.
+                    An open link is not tied to a member, so it cannot update a profile or mark attendance.
+                </div>
+            </xpath>
+            <xpath expr="//field[@name='session_link']" position="attributes">
+                <attribute name="string">Short Link</attribute>
+            </xpath>
+            <xpath expr="//field[@name='question_and_page_ids']/list/field[@name='question_type']" position="after">
+                <field name="aciu_answer_slot" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="survey_survey_view_tree_aciu" model="ir.ui.view">
+        <field name="name">survey.survey.list.aciu</field>
+        <field name="model">survey.survey</field>
+        <field name="inherit_id" ref="survey.survey_survey_view_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='title']" position="after">
+                <field name="form_purpose"/>
+                <field name="aciu_company_id"/>
+                <field name="closes_on" optional="hide"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="survey_question_form_aciu" model="ir.ui.view">
+        <field name="name">survey.question.form.aciu</field>
+        <field name="model">survey.question</field>
+        <field name="inherit_id" ref="survey.survey_question_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='question_type'][@widget='radio']" position="after">
+                <field name="aciu_answer_slot" invisible="is_page"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_aciu_surveys" model="ir.actions.act_window">
+        <field name="name">Questionnaires &amp; Forms</field>
+        <field name="res_model">survey.survey</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{
+            'default_users_login_required': False,
+            'default_access_mode': 'public',
+            'default_form_purpose': 'questionnaire',
+            'default_questions_layout': 'one_page',
+            'default_scoring_type': 'no_scoring'
+        }</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Create a form and share the link</p>
+            <p>
+                Members open the public link and fill it in. They do not sign in
+                and they do not open the portal. Copy Public Link from the form,
+                or use Share for a personal invite.
+            </p>
+        </field>
+    </record>
+</odoo>

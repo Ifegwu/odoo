@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_aciu_forms"
+              name="Forms"
+              parent="aciu_base.menu_aciu_root"
+              sequence="25"
+              groups="aciu_base.group_aciu_branch_treasurer,aciu_base.group_aciu_branch_financial_secretary,aciu_base.group_aciu_branch_secretary,aciu_base.group_aciu_branch_speaker,aciu_base.group_aciu_branch_vice_president,aciu_base.group_aciu_branch_leader,aciu_base.group_aciu_central_treasurer,aciu_base.group_aciu_central_executive,base.group_system"/>
+
+    <menuitem id="menu_aciu_form_pending"
+              name="To Review"
+              parent="menu_aciu_forms"
+              action="action_aciu_form_submission_pending"
+              sequence="10"
+              groups="aciu_base.group_aciu_branch_secretary,aciu_base.group_aciu_branch_leader,aciu_base.group_aciu_central_executive,base.group_system"/>
+
+    <menuitem id="menu_aciu_form_surveys"
+              name="Questionnaires &amp; Forms"
+              parent="menu_aciu_forms"
+              action="action_aciu_surveys"
+              sequence="20"
+              groups="aciu_base.group_aciu_branch_secretary,aciu_base.group_aciu_branch_leader,aciu_base.group_aciu_central_executive,base.group_system"/>
+
+    <menuitem id="menu_aciu_form_submissions"
+              name="Responses"
+              parent="menu_aciu_forms"
+              action="action_aciu_form_submission"
+              sequence="30"/>
+</odoo>

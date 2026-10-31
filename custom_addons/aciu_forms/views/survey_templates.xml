@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="survey_layout_aciu" inherit_id="survey.layout" name="ACIU survey bar">
+        <xpath expr="//div[@id='wrap']" position="before">
+            <div class="aciu_survey_bar">
+                <img src="/aciu_base/static/img/aciu_logo.png" alt="ACIU"/>
+                <span>ACIU</span>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="survey_closed_page" name="ACIU form closed">
+        <t t-call="survey.layout">
+            <div class="container py-5 o_survey_wrap">
+                <h1 t-out="survey.title"/>
+                <p class="mt-3">This form is closed.</p>
+                <p>If you still need to respond, contact your branch secretary.</p>
+            </div>
+        </t>
+    </template>
+</odoo>

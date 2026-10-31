@@ -1,0 +1,29 @@
+/* Public survey page — ACIU green, no portal chrome. */
+
+.aciu_survey_bar {
+    background: #00B686;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.aciu_survey_bar img {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.o_survey_wrap .btn-primary {
+    background-color: #00B686;
+    border-color: #00B686;
+}
+
+.o_survey_wrap .btn-primary:hover,
+.o_survey_wrap .btn-primary:focus {
+    background-color: #009e74;
+    border-color: #009e74;
+}

@@ -186,7 +186,7 @@ if [ ! -f "${MARKER}" ]; then
   systemctl stop "${SERVICE}" || true
   sudo -u odoo "${DEPLOY_PATH}/venv/bin/python" "${DEPLOY_PATH}/odoo-bin" \
     -c /etc/odoo/odoo.conf -d "${DB_NAME}" \
-    -i base,aciu_base,aciu_membership,aciu_dues \
+    -i base,aciu_base,aciu_membership,aciu_dues,aciu_forms \
     --stop-after-init
   touch "${MARKER}"
   chown odoo:odoo "${MARKER}"

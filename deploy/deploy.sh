@@ -68,12 +68,13 @@ if [ -f requirements.txt ] && [ -x "${DEPLOY_PATH}/venv/bin/pip" ]; then
 fi
 
 if [ "${UPDATE_MODULES}" = "true" ]; then
-  echo "==> Odoo -u aciu modules on ${DB_NAME}"
+  echo "==> Odoo install/update ACIU modules on ${DB_NAME}"
   systemctl stop "${SERVICE}" || true
   # Odoo 19: run as server command; conf supplies addons_path (incl. custom_addons)
   if ! sudo -u odoo "${DEPLOY_PATH}/venv/bin/python" "${DEPLOY_PATH}/odoo-bin" server \
     -c /etc/odoo/odoo.conf -d "${DB_NAME}" \
-    -u aciu_base,aciu_membership,aciu_dues \
+    -i aciu_forms \
+    -u aciu_base,aciu_membership,aciu_dues,aciu_forms \
     --stop-after-init --http-port=8070 2>&1; then
     echo "==> Odoo module upgrade failed (see output above)" >&2
     exit 1

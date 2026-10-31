@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_aciu_form_submission_treasurer,aciu.form.submission treasurer,model_aciu_form_submission,aciu_base.group_aciu_branch_treasurer,1,0,0,0
+access_aciu_form_submission_financial_secretary,aciu.form.submission financial secretary,model_aciu_form_submission,aciu_base.group_aciu_branch_financial_secretary,1,0,0,0
+access_aciu_form_submission_secretary,aciu.form.submission secretary,model_aciu_form_submission,aciu_base.group_aciu_branch_secretary,1,1,0,0
+access_aciu_form_submission_speaker,aciu.form.submission speaker,model_aciu_form_submission,aciu_base.group_aciu_branch_speaker,1,0,0,0
+access_aciu_form_submission_vice_president,aciu.form.submission vice president,model_aciu_form_submission,aciu_base.group_aciu_branch_vice_president,1,0,0,0
+access_aciu_form_submission_president,aciu.form.submission president,model_aciu_form_submission,aciu_base.group_aciu_branch_leader,1,1,0,0
+access_aciu_form_submission_central_treasurer,aciu.form.submission central treasurer,model_aciu_form_submission,aciu_base.group_aciu_central_treasurer,1,0,0,0
+access_aciu_form_submission_central_executive,aciu.form.submission central executive,model_aciu_form_submission,aciu_base.group_aciu_central_executive,1,1,0,1
+access_aciu_form_submission_system,aciu.form.submission system admin,model_aciu_form_submission,base.group_system,1,1,1,1

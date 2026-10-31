@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Design forms: secretary and president. Central executive sees every branch. -->
+    <record id="aciu_base.group_aciu_branch_secretary" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('survey.group_survey_user'))]"/>
+    </record>
+    <record id="aciu_base.group_aciu_branch_leader" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('survey.group_survey_user'))]"/>
+    </record>
+    <record id="aciu_base.group_aciu_central_executive" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('survey.group_survey_manager'))]"/>
+    </record>
+
+    <record id="rule_aciu_form_submission_branch_read" model="ir.rule">
+        <field name="name">ACIU form response: branch officers read own branch</field>
+        <field name="model_id" ref="model_aciu_form_submission"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field name="groups" eval="[
+            (4, ref('aciu_base.group_aciu_branch_treasurer')),
+            (4, ref('aciu_base.group_aciu_branch_financial_secretary')),
+            (4, ref('aciu_base.group_aciu_branch_speaker')),
+            (4, ref('aciu_base.group_aciu_branch_vice_president')),
+        ]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+    <record id="rule_aciu_form_submission_branch_review" model="ir.rule">
+        <field name="name">ACIU form response: secretary and president review own branch</field>
+        <field name="model_id" ref="model_aciu_form_submission"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+        <field name="groups" eval="[
+            (4, ref('aciu_base.group_aciu_branch_secretary')),
+            (4, ref('aciu_base.group_aciu_branch_leader')),
+        ]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+    <record id="rule_aciu_form_submission_central_read" model="ir.rule">
+        <field name="name">ACIU form response: central treasurer reads all ACIU forms</field>
+        <field name="model_id" ref="model_aciu_form_submission"/>
+        <field name="domain_force">[('company_id.is_aciu_company', '=', True)]</field>
+        <field name="groups" eval="[(4, ref('aciu_base.group_aciu_central_treasurer'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+    <record id="rule_aciu_form_submission_central_review" model="ir.rule">
+        <field name="name">ACIU form response: central executive reviews all ACIU forms</field>
+        <field name="model_id" ref="model_aciu_form_submission"/>
+        <field name="domain_force">[('company_id.is_aciu_company', '=', True)]</field>
+        <field name="groups" eval="[(4, ref('aciu_base.group_aciu_central_executive'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
+
+    <record id="rule_aciu_form_submission_system" model="ir.rule">
+        <field name="name">ACIU form response: system admin</field>
+        <field name="model_id" ref="model_aciu_form_submission"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('base.group_system'))]"/>
+    </record>
+</odoo>

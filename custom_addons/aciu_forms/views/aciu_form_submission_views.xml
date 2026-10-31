@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_aciu_form_submission_list" model="ir.ui.view">
+        <field name="name">aciu.form.submission.list</field>
+        <field name="model">aciu.form.submission</field>
+        <field name="arch" type="xml">
+            <list string="Responses" create="false">
+                <field name="create_date"/>
+                <field name="name"/>
+                <field name="survey_id"/>
+                <field name="form_purpose"/>
+                <field name="company_id"/>
+                <field name="partner_id"/>
+                <field name="state"/>
+                <field name="attendance_marked" optional="hide"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_aciu_form_submission_form" model="ir.ui.view">
+        <field name="name">aciu.form.submission.form</field>
+        <field name="model">aciu.form.submission</field>
+        <field name="arch" type="xml">
+            <form string="Response" create="false" edit="false">
+                <header>
+                    <button name="action_accept" type="object" string="Accept"
+                            class="btn-primary" invisible="state != 'pending'"/>
+                    <button name="action_reject" type="object" string="Reject"
+                            invisible="state != 'pending'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <div class="alert alert-info" role="alert"
+                         invisible="form_purpose != 'attendance' or state != 'pending'">
+                        Accepting marks this member present. It does not post the roll-call fee.
+                    </div>
+                    <div class="alert alert-info" role="alert"
+                         invisible="form_purpose != 'intake' or state != 'pending'">
+                        Accepting creates a pending member, or links an existing contact.
+                        Nothing is written until you accept.
+                    </div>
+                    <div class="oe_title">
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="survey_id"/>
+                            <field name="form_purpose"/>
+                            <field name="company_id"/>
+                            <field name="partner_id"/>
+                            <field name="email"/>
+                        </group>
+                        <group>
+                            <field name="create_date"/>
+                            <field name="attendance_marked" invisible="form_purpose != 'attendance'"/>
+                            <field name="applied_partner_id"/>
+                            <field name="reviewed_by_id"/>
+                            <field name="reviewed_on"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="answer_summary" nolabel="1" placeholder="No answers stored."/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_aciu_form_submission_search" model="ir.ui.view">
+        <field name="name">aciu.form.submission.search</field>
+        <field name="model">aciu.form.submission</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="survey_id"/>
+                <field name="partner_id"/>
+                <field name="email"/>
+                <filter name="pending" string="To Review" domain="[('state', '=', 'pending')]"/>
+                <filter name="attendance" string="Roll-call" domain="[('form_purpose', '=', 'attendance')]"/>
+                <filter name="intake" string="Join requests" domain="[('form_purpose', '=', 'intake')]"/>
+                <separator/>
+                <filter name="group_purpose" string="Purpose" context="{'group_by': 'form_purpose'}"/>
+                <filter name="group_branch" string="Branch" context="{'group_by': 'company_id'}"/>
+                <filter name="group_state" string="Status" context="{'group_by': 'state'}"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_aciu_form_submission" model="ir.actions.act_window">
+        <field name="name">Responses</field>
+        <field name="res_model">aciu.form.submission</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{}</field>
+    </record>
+
+    <record id="action_aciu_form_submission_pending" model="ir.actions.act_window">
+        <field name="name">To Review</field>
+        <field name="res_model">aciu.form.submission</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('state', '=', 'pending')]</field>
+        <field name="context">{'search_default_pending': 1}</field>
+    </record>
+</odoo>
