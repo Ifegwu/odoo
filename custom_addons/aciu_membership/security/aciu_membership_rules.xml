@@ -27,6 +27,19 @@
         <field name="groups" eval="[(4, ref('aciu_base.group_aciu_central_executive')), (4, ref('aciu_base.group_aciu_central_treasurer'))]"/>
     </record>
 
+    <!-- Discuss and outgoing mail load OdooBot (partner id 2). That contact
+         is not an ACIU member, so officer and Central Executive rules miss it. -->
+    <record id="rule_aciu_system_partners_read" model="ir.rule">
+        <field name="name">ACIU: read OdooBot and public contacts</field>
+        <field name="model_id" ref="base.model_res_partner"/>
+        <field name="domain_force" eval="[('id', 'in', [ref('base.partner_root'), ref('base.public_partner'), ref('base.partner_admin')])]"/>
+        <field name="groups" eval="[(4, ref('aciu_base.group_aciu_member'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
     <!-- Own contact + parent branch company contact (Contacts hierarchy) -->
     <record id="rule_aciu_member_own_partner" model="ir.rule">
         <field name="name">ACIU Member: own partner and branch contact</field>

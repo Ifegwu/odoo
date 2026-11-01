@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Member forms read invoices to show open dues. Grant portal access
+        does not give Accounting rights. These implications follow the PRD:
+        officers and Central Executive read dues; treasurers post them.
+    -->
+    <record id="aciu_base.group_aciu_branch_financial_secretary" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('account.group_account_readonly'))]"/>
+    </record>
+    <record id="aciu_base.group_aciu_branch_secretary" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('account.group_account_readonly'))]"/>
+    </record>
+    <record id="aciu_base.group_aciu_branch_speaker" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('account.group_account_readonly'))]"/>
+    </record>
+    <record id="aciu_base.group_aciu_branch_vice_president" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('account.group_account_readonly'))]"/>
+    </record>
+    <record id="aciu_base.group_aciu_branch_leader" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('account.group_account_readonly'))]"/>
+    </record>
+    <record id="aciu_base.group_aciu_central_executive" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('account.group_account_readonly'))]"/>
+    </record>
+    <record id="aciu_base.group_aciu_branch_treasurer" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('account.group_account_invoice'))]"/>
+    </record>
+    <record id="aciu_base.group_aciu_central_treasurer" model="res.groups">
+        <field name="implied_ids" eval="[(4, ref('account.group_account_invoice'))]"/>
+    </record>
+</odoo>

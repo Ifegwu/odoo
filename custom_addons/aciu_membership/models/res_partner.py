@@ -198,7 +198,7 @@ class ResPartner(models.Model):
 
     @api.depends('invoice_ids.amount_residual', 'invoice_ids.payment_state', 'invoice_ids.state', 'is_aciu_member')
     def _compute_aciu_open_debt(self):
-        Move = self.env['account.move']
+        Move = self.env['account.move'].sudo()
         for partner in self:
             if not partner.is_aciu_member:
                 partner.aciu_open_debt = 0.0
